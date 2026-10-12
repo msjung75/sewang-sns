@@ -1,0 +1,5 @@
+{
+  "crons": [
+    { "path": "/api/fetch/all", "schedule": "0 18 * * *" }
+  ]
+}
