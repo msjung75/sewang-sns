@@ -1,0 +1,47 @@
+name: Fetch SNS data
+
+on:
+  schedule:
+    - cron: "0 18 * * *"   # 매일 03:00 KST (= 18:00 UTC)
+  workflow_dispatch:        # 수동 트리거 — 갱신 버튼이 호출
+
+permissions:
+  contents: write           # posts.json 커밋을 위해
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch data
+        env:
+          IG_LONG_LIVED_TOKEN: ${{ secrets.IG_LONG_LIVED_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_CHANNEL_HANDLE: "@sewangliquor"
+          NAVER_BLOG_ID: sewang88
+        run: |
+          # .env.local 작성 (run_fetch.py가 읽음)
+          cat > .env.local <<EOF
+          IG_LONG_LIVED_TOKEN=$IG_LONG_LIVED_TOKEN
+          IG_USER_ID=$IG_USER_ID
+          YOUTUBE_API_KEY=$YOUTUBE_API_KEY
+          YOUTUBE_CHANNEL_HANDLE=$YOUTUBE_CHANNEL_HANDLE
+          NAVER_BLOG_ID=$NAVER_BLOG_ID
+          EOF
+          python scripts/run_fetch.py
+          rm -f .env.local
+      - name: Commit changes
+        run: |
+          git config user.name "sewang-sns-bot"
+          git config user.email "noreply@github.com"
+          git add data/posts.json
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "chore: fetch data $(date -u +'%Y-%m-%dT%H:%MZ')"
+            git push
+          fi
