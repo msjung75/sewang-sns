@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { Post, Category } from "../lib/types";
 import { PostGrid } from "./PostCard";
+import { RefreshButton } from "./RefreshButton";
 
 const CATS: (Category | "전체")[] = ["전체", "주요뉴스", "시장트렌드", "신제품", "거래처케이스", "세왕소식", "TBD"];
 
@@ -23,11 +24,12 @@ export function HomeDashboard({ posts, fetched_at, summary }: { posts: Post[]; f
 
   return (
     <main style={{ maxWidth: 1280, margin: "0 auto", padding: 20 }}>
-      <header style={{ marginBottom: 20 }}>
-        <p style={{ color: "var(--muted)", fontSize: 12 }}>
+      <header style={{ marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+        <p style={{ color: "var(--muted)", fontSize: 12, margin: 0 }}>
           마지막 수집: {fetched_at ? new Date(fetched_at).toLocaleString("ko-KR") : "미수집"} ·{" "}
           IG {summary.instagram ?? "-"} · YT {summary.youtube ?? "-"} · 블로그 {summary.naver ?? "-"}
         </p>
+        <RefreshButton />
       </header>
 
       <section style={grid4}>

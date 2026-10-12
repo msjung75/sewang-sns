@@ -1,5 +1,3824 @@
 {
-  "fetched_at": "",
-  "summary": {},
-  "posts": []
+  "fetched_at": "2026-10-12T01:43:37.115656+00:00",
+  "summary": {
+    "naver": 28,
+    "youtube": 37,
+    "instagram": 100
+  },
+  "posts": [
+    {
+      "platform": "naver",
+      "post_id": "224432666198",
+      "url": "https://blog.naver.com/sewang88/224432666198",
+      "title_or_caption": "호프 창업 주류 첫 발주, 과하게 주문하지 않는 5가지 기준",
+      "date": "2026-10-06",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjEwMDZfNDcg/MDAxNzkxMjQ3MTk4OTQ2.1juLfXtNojMYzj8ilQkshz2cUPsyOsSrD4kjCv12gMkg.GW0yI9u9En8bie1_0lDQ6M6NrqJtkDsZyDcCStIY3OQg.PNG/01-%BF%C0%C7%C1%B4%D7.png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "호프창업",
+        "주류첫발주",
+        "주점창업",
+        "음식점창업",
+        "주류도매",
+        "주류납품",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.013049+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224431944152",
+      "url": "https://blog.naver.com/sewang88/224431944152",
+      "title_or_caption": "생맥주 관리, 호프 창업 전 첫 잔부터 체크하세요",
+      "date": "2026-10-05",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjEwMDVfMTM5/MDAxNzkxMTc0NTQ2Nzk3.9jV4x-1jd3IOP8WTbhepr-zD_xrbJE8QD4DgAQNb-okg.ukotvLhWhWc7V05SgcN-qRHGFx8t0UwxJlxaPkm6dsIg.PNG/page-01.png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주관리",
+        "호프창업",
+        "생맥주전문점",
+        "음식점주류납품",
+        "서울경기주류도매",
+        "신규창업주류"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.339437+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224428326203",
+      "url": "https://blog.naver.com/sewang88/224428326203",
+      "title_or_caption": "술집 음료 메뉴, 술 안 마시는 일행도 함께 고를 수 있나요? | 세왕상사",
+      "date": "2026-10-01",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjEwMDFfNDgg/MDAxNzkwODM2MDU0NjMw.y1aqocukgop9-ffB6MQfYO2ImUwmU9J4waTux5mKdhYg.EGV7IE8Cn-IswG5mGJq0v6pRnkzcccr_HTDeyDcss5gg.PNG/01_%B8%C5%C0%E5%B0%F8%B0%A3_%BA%B8%C1%A4.png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "술집음료메뉴",
+        "술집운영",
+        "사장님노트",
+        "서울경기주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.794592+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224426222683",
+      "url": "https://blog.naver.com/sewang88/224426222683",
+      "title_or_caption": "송리단길 연주방, 이전 오픈 전 냉장고를 먼저 확인한 이유",
+      "date": "2026-09-29",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA5MjlfMTQ4/MDAxNzkwNjc1Njk0MzM4.1ESnlBYAG2UQxiGVZJnyXJ0R7aBei7xDGitFlGh1xSUg.migopVoVE4hNvEkZMLbhmf9hbCvQ-0rHOmtwuhBw48cg.PNG/1790670927913_%BE%F3%B1%BC%BA%ED%B7%AF.png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "송리단길이전오픈",
+        "음식점이전",
+        "주류냉장고",
+        "서울경기주류도매"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.240766+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224424398480",
+      "url": "https://blog.naver.com/sewang88/224424398480",
+      "title_or_caption": "주류업체 변경, 견적 받기 전에 정리할 4가지 | 서울·경기 세왕상사",
+      "date": "2026-09-28",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA5MjhfMzAw/MDAxNzkwNTQ5ODQ4NDUz.FYtdQhtQQPBQS23Vmc574tFgi32ia2PymemsCENbgHcg.HuI6JGZDuqZDOBcNN2FMs3KrdRwjRcMkradNFjInzUcg.JPEG/20260916_193227.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "주류업체변경",
+        "주류납품",
+        "서울주류도매",
+        "경기주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.650361+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224420679538",
+      "url": "https://blog.naver.com/sewang88/224420679538",
+      "title_or_caption": "생맥주 맛이 다른 이유, 가게에서 확인할 다섯 가지 | 세왕상사",
+      "date": "2026-09-23",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA5MjNfMjM0/MDAxNzkwMTI2ODczNDg5.MvmmNNmkL3Dd9jTtuFmCYDEpkoy-VCz5SfaqjXZS4BQg.46elisCCCW1VYhtQZY6DxF0KU18BOe1vjxchRit2F_Mg.JPEG/01_%BB%FD%B8%C6%C1%D6_%B5%FB%B8%A3%B1%E2.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "생맥주관리",
+        "생맥주기계",
+        "술집운영",
+        "서울경기주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.432183+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224417118762",
+      "url": "https://blog.naver.com/sewang88/224417118762",
+      "title_or_caption": "폐업이 창업보다 많다는 기사, 주류도매 세왕의 장부도 열어봤습니다",
+      "date": "2026-09-19",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA5MTlfMTI4/MDAxNzg5ODA5NDI3MDUx.pxDFoJDrUeFkHjN3KpwwvfqjwwkeqO30Bkpt58ZO6KEg.EMrGFtPR0fRhsWE9u4yl3Rn_SDIV1YziAZ9BPb051Ogg.JPEG/04_%C8%AB%B4%EB_%BA%F1%BE%EE%C6%E0_%BF%DC%B0%FC.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "주류업체",
+        "자영업",
+        "술집창업",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.839395+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224415786556",
+      "url": "https://blog.naver.com/sewang88/224415786556",
+      "title_or_caption": "서울·경기 주류도매, 세왕상사의 아침 출고 현장",
+      "date": "2026-09-18",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA5MThfMjc1/MDAxNzg5Njk1MTAyNDYz.Ylk95-d2MQd36ti6ASLmPwbOSAaJyVNeTImRvpAveFAg.Z8476qhOUF3cl9UYUdhUSsHwEYQRiVSa97GxpcqHZTsg.JPEG/01_%BE%C6%C4%A7_%B8%B6%B4%E7_%C0%FC%B0%E6.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "서울주류도매",
+        "경기주류도매",
+        "음식점주류납품",
+        "음식점창업",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:18.310918+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224412138938",
+      "url": "https://blog.naver.com/sewang88/224412138938",
+      "title_or_caption": "서울·경기 주류도매 세왕상사, 납품부터 매장 운영까지 함께합니다",
+      "date": "2026-09-15",
+      "thumbnail": null,
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "서울주류도매",
+        "경기주류도매",
+        "세왕상사",
+        "음식점주류납품",
+        "주류거래처",
+        "생맥주장비"
+      ],
+      "fetched_at": "2026-10-12T01:43:18.744667+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224410731977",
+      "url": "https://blog.naver.com/sewang88/224410731977",
+      "title_or_caption": "고깃집 창업, 소주만 준비하면 놓치는 4가지",
+      "date": "2026-09-14",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA5MTNfMTk0/MDAxNzg5MzExMjYwMTA5.EonmzzCAo-4gCBhW7LfjNspgO-ghiL5JslAkn31t-gEg.1ChnNmKSRGr-wKQI9QnPDrxlDNMValU5FZOSifBASN0g.JPEG/20260720_181821.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "고깃집창업",
+        "고깃집주류구성",
+        "음식점창업",
+        "주류도매",
+        "서울주류도매",
+        "경기주류도매",
+        "생맥주장비",
+        "고깃집첫발주",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:19.406139+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224399404425",
+      "url": "https://blog.naver.com/sewang88/224399404425",
+      "title_or_caption": "술집 창업, 도면 나오기 전에 주류 쪽에서 정해둬야 할 것들",
+      "date": "2026-09-03",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA5MDNfMTA5/MDAxNzg4Mzk2NjcyMTM1.DA24KZ06_i9Y6W4EtfBy8yh647EAQY1mg2lfy9cp_t8g.KTKCfn-yLiWMMJV2ru3yRXzAoB-tNJxdVkc5Mtqj20kg.PNG/%BA%ED%B7%CE%B1%D71%C6%ED_%B0%B3%B3%E4%B5%B51_%B3%C3%C0%E5%B0%ED%C4%DC%BC%BE%C6%AE.png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "술집창업호프집창업이자카야창업주류도매서울주류도매경기주류도매생맥주장비주류냉장고가게오픈준비세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:19.911789+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "224300324741",
+      "url": "https://blog.naver.com/sewang88/224300324741",
+      "title_or_caption": "세왕상사 — 서울·경기 외식 매장의 종합 주류 도매 파트너   (맥주·소주·위스키·일본주·수제맥주·와인까지)",
+      "date": "2026-05-29",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNjA1MjlfMjYg/MDAxNzgwMDQ4ODQ5MzM1.qMLeAN0GYzG6ZudF-MXihlVVsJ__rI3xur63TFQ2ELIg.Ec48Kv32fLjGBIeM6zJxpvoHoLCIpaOkuwIHlwCmsXgg.PNG/profile_sewang_v2.png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:20.303563+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223983773779",
+      "url": "https://blog.naver.com/sewang88/223983773779",
+      "title_or_caption": "< 스텔라, 한맥 생맥주 퍼펙트 서브 교육 >",
+      "date": "2025-08-26",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTA4MjZfMTQ0/MDAxNzU2MTc3MjgwMjM5.M7l32c1PH4O5aW5PH1T6a23tY0XYxk9MO69y0EscetUg.LVY88BmWUlOXm7YVJyAl_k43Fmd4oHd_Q79xnKuBfm0g.JPEG/17df4cac-080d-4e82-b3da-8138a2633e02.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "TBD",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:20.713187+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223819588457",
+      "url": "https://blog.naver.com/sewang88/223819588457",
+      "title_or_caption": "광고",
+      "date": "2025-04-02",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTA0MDJfMjk4/MDAxNzQzNTgwODQzMjk3.qE4lxlIhN4UJdCplGrAHqJAxbz8Co4l5CPkX8ME2RHwg.fT_Z7Y83qfHH7QOjp7cTBCE361_Fl4TbopTjqeuFCM0g.JPEG/57a29cc2-97d9-41f2-aea5-375795000f05.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "TBD",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:21.141242+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223804564134",
+      "url": "https://blog.naver.com/sewang88/223804564134",
+      "title_or_caption": "<시라타키 양조장 견학>",
+      "date": "2025-03-21",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTAzMjFfMTE2/MDAxNzQyNTIwNzUwMDI1.8rLt9kxate1AqxdRQzZ0qEv1jWedCDCuHOvZFetZFWAg.u8qLszwtkRVb_hFU2cB-xrUfigdw8s1nwootCvP6FCYg.JPEG/49d396ee-c7f9-48fe-8b0d-d67ff0254508.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "TBD",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:21.542043+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223804562646",
+      "url": "https://blog.naver.com/sewang88/223804562646",
+      "title_or_caption": "\"사내교육-  일본외식 트랜드\"",
+      "date": "2025-03-21",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTAzMjFfMjU4/MDAxNzQyNTIwNjc4NTUy.CpfqvmsVrsx7gry_bBFdIYE6UMJS8U9hj8jgOwcBx5cg.bVGKW1XYXkynqt5icG2D6LFU8XCV6c587zgC-1b8-9Mg.JPEG/6d0219d3-df40-4f91-84bf-08d8d610c0e4.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:21.934030+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223804561222",
+      "url": "https://blog.naver.com/sewang88/223804561222",
+      "title_or_caption": "<<시라카베구라 양조장  견학>>",
+      "date": "2025-03-21",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTAzMjFfODEg/MDAxNzQyNTIwNTk3MTMw.PYovQtQk7J7MzpkZHEK7SLspDfNihevM-lAD3LaCDJog.5SvlGUClhA3Ydi-1PNxlBH_PNxghz_LUISdpwgg5GmAg.JPEG/6352ec7c-e407-4e56-936b-f1ee4f8aeaa8.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "TBD",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:22.305456+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223804559536",
+      "url": "https://blog.naver.com/sewang88/223804559536",
+      "title_or_caption": "<< 갤로 와이너리 투어 >>",
+      "date": "2025-03-21",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTAzMjFfNzQg/MDAxNzQyNTIwNTIxODIy.F_90fxMQ3wgLSdOw022kb1s8ToTzqOEcwk7ViuDxTfIg.SKcQBqwiNwB6oQ-znUwLlRJX2eqK84BZ9-8N39XB_hcg.JPEG/3d2f1818-69f8-4e2a-8284-af0075f40bfd.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:22.706258+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223804557769",
+      "url": "https://blog.naver.com/sewang88/223804557769",
+      "title_or_caption": "\"2024년  임직원 해외여행 2차\"",
+      "date": "2025-03-21",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTAzMjFfOTQg/MDAxNzQyNTIwNDMwMjg0.qWJTv9Qjp423cG9v6gSZ_ifAaBMJT2O4fmoc-Btq2UQg.hnVLiqGVK3fm1rypq4IR4kVJ6bj4t_70gkgVjmezZ2Ig.JPEG/7789c0a1-fb0e-43a9-8b6f-7e3c90745e44.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:23.130883+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223804555860",
+      "url": "https://blog.naver.com/sewang88/223804555860",
+      "title_or_caption": "임직원 일본 견학_  2024.11",
+      "date": "2025-03-21",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTAzMjFfMjQ1/MDAxNzQyNTIwMzE3Njkz.w611AXnSLkFVwM4Cp-BuzhO7j8pQmnrRNsiglSt2Ncog.vYkbkqeDZ4qMeFht0uxkyFgj23l_58vBcvwpw7i0SBgg.JPEG/cb9cc2ca-02be-41bb-9325-ba38b0c2c326.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:23.508525+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223799343728",
+      "url": "https://blog.naver.com/sewang88/223799343728",
+      "title_or_caption": "안산 이자카야 맛집 자쿠와 안산본점",
+      "date": "2025-03-17",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNTAzMTdfMTk4/MDAxNzQyMTkwNjYwNDI2.M4ZQ2_lcwJnF327Yypj3YqDGFruZToqGnivcubKjLWsg.ukTr07d7Zs06OK_QlfnDUFTY66tBaPEBWi_KcrF7_4og.JPEG/%C0%DA%C4%ED%BF%CD0.JPG?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:24.031226+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223666294332",
+      "url": "https://blog.naver.com/sewang88/223666294332",
+      "title_or_caption": "\" 2024  임직원 해외여행 \"   1차",
+      "date": "2024-11-19",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNDExMTlfMTg4/MDAxNzMyMDAwODAyMjM5.TS2CAacs2W60vmqcTDCzcIabzOrHqHEKcxMq1r77zEcg.LGwo6GMI-A8rKGUAppKS2UIkj3if3dFCGe3iGvfQKEgg.JPEG/8fb0731d-885e-4da6-b8a2-f29928a18a32.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:24.420485+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223666291877",
+      "url": "https://blog.naver.com/sewang88/223666291877",
+      "title_or_caption": "와인시음회",
+      "date": "2024-11-19",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNDExMTlfMjI4/MDAxNzMyMDAwNzAwNjky.Rxo-94LHi1tlYclLmoctv7HqSU-NKeScrqQ-4rTphpkg.EOxxV2iAki4Eh903KhQKgXz7YpZ_jWaXN0kW4Zi15b0g.JPEG/cdc6c193-e62f-4beb-a9e9-cd8daa238781.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "TBD",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:24.950947+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "223666287226",
+      "url": "https://blog.naver.com/sewang88/223666287226",
+      "title_or_caption": "사내교육 < 일본 주류시장 환경>",
+      "date": "2024-11-19",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAyNDExMTlfMTQ0/MDAxNzMyMDAwNDY3NzYy.glwsRsFyaVMczgLWuL23yuRX9tVLrQLhzDjD4yDfnyog.tcZqMafNzJwxcS0FQS6P5KW46sd3_mfzZycLP3Daqrwg.JPEG/c9ed44c1-bd2e-4995-8015-4d82c6023795.jpg?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:25.339928+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "221541992983",
+      "url": "https://blog.naver.com/sewang88/221541992983",
+      "title_or_caption": "서울주류 경기주류도매상 세왕주류와 함께하세요:)",
+      "date": "2019-05-20",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAxOTA1MjBfMTcg/MDAxNTU4MzI1MjcxMDcx.m-1nk6k836SyeFra0Z6B_54pOiYtUOQxG8hagFxrE10g.WJ_06FqsSuyNPmpkr79nqpmNVh38d-3TykuqaErp0mEg.PNG.sewang88/경기주류도매상_(3).png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "서울주류",
+        "경기주류도매상"
+      ],
+      "fetched_at": "2026-10-12T01:43:25.700259+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "221528990868",
+      "url": "https://blog.naver.com/sewang88/221528990868",
+      "title_or_caption": "경기주류도매상 세왕상사 회사소개서 다운로드&사옥소개",
+      "date": "2019-05-03",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAxOTA1MDNfMTgy/MDAxNTU2ODc3MDA2NTEz.ydkphYdyyLtL2v3xuEimpz3VafzPhpgymSzJ3wbeEAcg.r6gsK9nH9kNRN6fU_Pfvvn_pdwLfIIg3OvQjb4oeKMog.PNG.sewang88/세왕상사_(1).PNG?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "세왕상사",
+        "세왕주류",
+        "서울주류",
+        "경기주류",
+        "경기주류도매상",
+        "주류도매",
+        "주류도매상"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.046809+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "221528253693",
+      "url": "https://blog.naver.com/sewang88/221528253693",
+      "title_or_caption": "세왕상사 - 회사소개  /  주류도매상 세왕주류",
+      "date": "2019-05-02",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAxOTA1MDJfODEg/MDAxNTU2ODAzNTE2MTU1.6Adg41_mtMJheBLBw6CMUhFGVR9rzAUtHm3JZSTSWqcg.tIkzy-t9UlrW_ViT8WyHAX5IBk3SoLkyXf-6zELT5iYg.JPEG.sewang88/세왕상사.JPG?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "세왕상사",
+        "서울주류",
+        "세왕주류",
+        "경기주류",
+        "경기주류도매상",
+        "주류도매",
+        "주류도매상"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.381519+00:00"
+    },
+    {
+      "platform": "naver",
+      "post_id": "221523383435",
+      "url": "https://blog.naver.com/sewang88/221523383435",
+      "title_or_caption": "[세왕상사] 주류주문 이제 주고로 주문하세요.",
+      "date": "2019-04-26",
+      "thumbnail": "https://blogthumb.pstatic.net/MjAxOTA0MjZfMjkw/MDAxNTU2MjY5MzgxOTYz.8jYVp72qW9ARazdit6sWH2mElfbMl5dMNLN9NI3gcBog.GEVQgOIFBqO_cepAvhzB3wFGAH0cG1Dl_zRbOyYLsuQg.PNG.sewang88/PreviewFiles주고_팜플렛_190417-1.png?type=s3",
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "세왕상사",
+        "세왕주류",
+        "주류주문",
+        "주고"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.772293+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "DF9c8QUjbhA",
+      "url": "https://www.youtube.com/watch?v=DF9c8QUjbhA",
+      "title_or_caption": "오사카 모모쥬가 홍대에 왔다! 한국 1호점 | 세왕상사 #Shorts",
+      "date": "2026-10-09",
+      "thumbnail": "https://i.ytimg.com/vi/DF9c8QUjbhA/hqdefault.jpg",
+      "metrics": {
+        "views": 1561,
+        "likes": 4,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383445+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "0c4i_h0tfps",
+      "url": "https://www.youtube.com/watch?v=0c4i_h0tfps",
+      "title_or_caption": "함께 앉지만 메뉴는 각자? 미국 외식의 두 가지 신호 | 세왕상사 #Shorts",
+      "date": "2026-10-04",
+      "thumbnail": "https://i.ytimg.com/vi/0c4i_h0tfps/hqdefault.jpg",
+      "metrics": {
+        "views": 1269,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383496+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "ssFDghrz-VI",
+      "url": "https://www.youtube.com/watch?v=ssFDghrz-VI",
+      "title_or_caption": "2026년 바깥 술집은 이렇게 갑니다 | 해외 칵테일 트렌드 6가지 | 세왕상사 #Shorts",
+      "date": "2026-10-02",
+      "thumbnail": "https://i.ytimg.com/vi/ssFDghrz-VI/hqdefault.jpg",
+      "metrics": {
+        "views": 29,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383510+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "y29Tagcxs0E",
+      "url": "https://www.youtube.com/watch?v=y29Tagcxs0E",
+      "title_or_caption": "“언제 한번 보자” 그 사람에게 보내세요 | 달맞이 바베큐 수원인계점",
+      "date": "2026-10-02",
+      "thumbnail": "https://i.ytimg.com/vi/y29Tagcxs0E/hqdefault.jpg",
+      "metrics": {
+        "views": 325,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383519+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "_JJTcwEpfR4",
+      "url": "https://www.youtube.com/watch?v=_JJTcwEpfR4",
+      "title_or_caption": "일본 맥주값이 내려간다는데, 한국도? | 세왕상사 #Shorts",
+      "date": "2026-10-01",
+      "thumbnail": "https://i.ytimg.com/vi/_JJTcwEpfR4/hqdefault.jpg",
+      "metrics": {
+        "views": 374,
+        "likes": 7,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383539+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "mY5-siamGX4",
+      "url": "https://www.youtube.com/watch?v=mY5-siamGX4",
+      "title_or_caption": "오늘 저녁, 이런 곳에서 한 잔 어때요? | 아사히 노 토마레",
+      "date": "2026-09-30",
+      "thumbnail": "https://i.ytimg.com/vi/mY5-siamGX4/hqdefault.jpg",
+      "metrics": {
+        "views": 196,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383561+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "6N2Hs4_4lrY",
+      "url": "https://www.youtube.com/watch?v=6N2Hs4_4lrY",
+      "title_or_caption": "생맥주 청소, 물만 돌리면 끝? 물·볼·탭 세 가지를 확인하세요 | 세왕상사 #Shorts",
+      "date": "2026-09-28",
+      "thumbnail": "https://i.ytimg.com/vi/6N2Hs4_4lrY/hqdefault.jpg",
+      "metrics": {
+        "views": 245,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383569+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "GHUZ5tkOb10",
+      "url": "https://www.youtube.com/watch?v=GHUZ5tkOb10",
+      "title_or_caption": "인테리어도 아직인데, 주류는 언제 준비할까요? | 세왕상사 #Shorts",
+      "date": "2026-09-28",
+      "thumbnail": "https://i.ytimg.com/vi/GHUZ5tkOb10/hqdefault.jpg",
+      "metrics": {
+        "views": 253,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383575+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "-bZcD0d4UJk",
+      "url": "https://www.youtube.com/watch?v=-bZcD0d4UJk",
+      "title_or_caption": "생맥주 종류 늘리기 전, 한 통 며칠 걸리나요? | 세왕상사 #Shorts",
+      "date": "2026-09-27",
+      "thumbnail": "https://i.ytimg.com/vi/-bZcD0d4UJk/hqdefault.jpg",
+      "metrics": {
+        "views": 66,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383584+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "u-O_6RoEwTE",
+      "url": "https://www.youtube.com/watch?v=u-O_6RoEwTE",
+      "title_or_caption": "생맥주 거품이 금방 꺼진다면? 잔부터 보세요 | 세왕상사 #Shorts",
+      "date": "2026-09-23",
+      "thumbnail": "https://i.ytimg.com/vi/u-O_6RoEwTE/hqdefault.jpg",
+      "metrics": {
+        "views": 44,
+        "likes": 5,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383591+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "qCYwRcEmKs0",
+      "url": "https://www.youtube.com/watch?v=qCYwRcEmKs0",
+      "title_or_caption": "생맥주 맛이 갈리는 다섯 군데 — 온도·압력·라인·잔·회전 | 세왕상사",
+      "date": "2026-09-23",
+      "thumbnail": "https://i.ytimg.com/vi/qCYwRcEmKs0/hqdefault.jpg",
+      "metrics": {
+        "views": 298,
+        "likes": 8,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383598+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "0dY_UN2jDBw",
+      "url": "https://www.youtube.com/watch?v=0dY_UN2jDBw",
+      "title_or_caption": "술집은 다릅니다 | 올해 1~8월 들어온 곳 764, 나간 곳 458 #shorts",
+      "date": "2026-09-19",
+      "thumbnail": "https://i.ytimg.com/vi/0dY_UN2jDBw/hqdefault.jpg",
+      "metrics": {
+        "views": 190,
+        "likes": 4,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383608+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "rlU2a1Z9hmY",
+      "url": "https://www.youtube.com/watch?v=rlU2a1Z9hmY",
+      "title_or_caption": "살얼음 생맥주로 여는 가게 — 씨네마맥주 제주 1호점·대구 수성못점 #shorts",
+      "date": "2026-09-15",
+      "thumbnail": "https://i.ytimg.com/vi/rlU2a1Z9hmY/hqdefault.jpg",
+      "metrics": {
+        "views": 198,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383616+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "-3nLe2uWPSo",
+      "url": "https://www.youtube.com/watch?v=-3nLe2uWPSo",
+      "title_or_caption": "첫 달에 생맥주 걸면 그냥 버립니다 #shorts",
+      "date": "2026-09-11",
+      "thumbnail": "https://i.ytimg.com/vi/-3nLe2uWPSo/hqdefault.jpg",
+      "metrics": {
+        "views": 1192,
+        "likes": 6,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383623+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "CWlQesZDoXI",
+      "url": "https://www.youtube.com/watch?v=CWlQesZDoXI",
+      "title_or_caption": "술집 창업 첫 발주, \"얼마\"가 아니라 \"몇 종\"입니다 #shorts",
+      "date": "2026-09-11",
+      "thumbnail": "https://i.ytimg.com/vi/CWlQesZDoXI/hqdefault.jpg",
+      "metrics": {
+        "views": 211,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383630+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "5VdOfyNo4oU",
+      "url": "https://www.youtube.com/watch?v=5VdOfyNo4oU",
+      "title_or_caption": "술집 창업, 술은 얼마어치 넣고 시작하나 — 신규 536곳 첫 달 발주",
+      "date": "2026-09-11",
+      "thumbnail": "https://i.ytimg.com/vi/5VdOfyNo4oU/hqdefault.jpg",
+      "metrics": {
+        "views": 169,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383638+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "QbeeymK1ung",
+      "url": "https://www.youtube.com/watch?v=QbeeymK1ung",
+      "title_or_caption": "가게 오픈할 때 생맥주 기계는 이렇게 받습니다 — 48년 주류도매사가 처음부터 (업소용·창업자용)",
+      "date": "2026-09-07",
+      "thumbnail": "https://i.ytimg.com/vi/QbeeymK1ung/hqdefault.jpg",
+      "metrics": {
+        "views": 5118,
+        "likes": 9,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주기계",
+        "업소용생맥주기계",
+        "생맥주기계대여",
+        "생맥주기계설치",
+        "생맥주냉각기",
+        "케그",
+        "생맥주창업",
+        "술집창업",
+        "호프집창업",
+        "이자카야창업",
+        "주류도매",
+        "주류납품",
+        "세왕상사",
+        "생맥주관리사",
+        "가게오픈준비"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.383649+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "eVxLY1GZs8U",
+      "url": "https://www.youtube.com/watch?v=eVxLY1GZs8U",
+      "title_or_caption": "혼술바가 왜 갑자기 늘었을까 — 올해만 76곳, 주류도매 장부로 본 이유",
+      "date": "2026-09-03",
+      "thumbnail": "https://i.ytimg.com/vi/eVxLY1GZs8U/hqdefault.jpg",
+      "metrics": {
+        "views": 75,
+        "likes": 4,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "혼술바",
+        "주류도매",
+        "세왕상사",
+        "술집창업",
+        "자영업",
+        "야화 혼술바",
+        "달맞이광장바베큐",
+        "상권분석",
+        "외식창업",
+        "주류유통",
+        "하이볼",
+        "서울 주류도매",
+        "경기 주류도매",
+        "신규오픈",
+        "브랜드 창업"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.383658+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "IaeLboUUpTY",
+      "url": "https://www.youtube.com/watch?v=IaeLboUUpTY",
+      "title_or_caption": "AI가 상권을 다 분석해줘도, 마지막은 사람이 정합니다",
+      "date": "2026-09-02",
+      "thumbnail": "https://i.ytimg.com/vi/IaeLboUUpTY/hqdefault.jpg",
+      "metrics": {
+        "views": 28,
+        "likes": 5,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383664+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "MerTkETPpSc",
+      "url": "https://www.youtube.com/watch?v=MerTkETPpSc",
+      "title_or_caption": "2035년, 술은 로봇이 나릅니다",
+      "date": "2026-09-02",
+      "thumbnail": "https://i.ytimg.com/vi/MerTkETPpSc/hqdefault.jpg",
+      "metrics": {
+        "views": 57,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383675+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "_ITuF-YXdps",
+      "url": "https://www.youtube.com/watch?v=_ITuF-YXdps",
+      "title_or_caption": "소주 한 병이 가게까지 오는 데 여덟 군데를 지납니다 #Shorts",
+      "date": "2026-09-02",
+      "thumbnail": "https://i.ytimg.com/vi/_ITuF-YXdps/hqdefault.jpg",
+      "metrics": {
+        "views": 41,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383707+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "CvT2sMB1g2M",
+      "url": "https://www.youtube.com/watch?v=CvT2sMB1g2M",
+      "title_or_caption": "도매사는 술만 갖다주는 곳일까요? 세어보니 열두 가지 | 서울·경기 주류도매 세왕상사",
+      "date": "2026-08-31",
+      "thumbnail": "https://i.ytimg.com/vi/CvT2sMB1g2M/hqdefault.jpg",
+      "metrics": {
+        "views": 94,
+        "likes": 9,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "술집창업",
+        "생맥주",
+        "생맥주냉각기",
+        "주류냉장고",
+        "자영업",
+        "사장님",
+        "세왕상사",
+        "서울주류도매",
+        "경기주류도매",
+        "이자카야창업",
+        "호프집창업",
+        "오픈준비",
+        "첫발주",
+        "주류납품",
+        "요식업",
+        "매장운영",
+        "신규오픈",
+        "사케",
+        "도매사"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.383722+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "nY8Y8ZW8X2k",
+      "url": "https://www.youtube.com/watch?v=nY8Y8ZW8X2k",
+      "title_or_caption": "도매사는 술만 갖다주는 곳일까요? 세어보니 열두 가지 | 세왕상사 #Shorts",
+      "date": "2026-08-31",
+      "thumbnail": "https://i.ytimg.com/vi/nY8Y8ZW8X2k/hqdefault.jpg",
+      "metrics": {
+        "views": 328,
+        "likes": 6,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "술집창업",
+        "생맥주",
+        "생맥주냉각기",
+        "주류냉장고",
+        "자영업",
+        "사장님",
+        "세왕상사",
+        "서울주류도매",
+        "경기주류도매",
+        "이자카야창업",
+        "호프집창업",
+        "오픈준비",
+        "첫발주",
+        "주류납품",
+        "요식업",
+        "매장운영",
+        "신규오픈",
+        "사케",
+        "shorts"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.383731+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "CjxUb_Mrf94",
+      "url": "https://www.youtube.com/watch?v=CjxUb_Mrf94",
+      "title_or_caption": "이 소주 한 병이 사장님 가게에 오기까지, 아홉 곳을 지납니다 | 서울·경기 주류도매 세왕상사",
+      "date": "2026-08-31",
+      "thumbnail": "https://i.ytimg.com/vi/CjxUb_Mrf94/hqdefault.jpg",
+      "metrics": {
+        "views": 157,
+        "likes": 8,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "주류도매상",
+        "소주유통",
+        "술집창업",
+        "술집운영",
+        "자영업",
+        "사장님",
+        "세왕상사",
+        "서울주류도매",
+        "경기주류도매",
+        "주류납품",
+        "생맥주",
+        "소주",
+        "주류발주",
+        "요식업",
+        "매장운영",
+        "신규오픈",
+        "물류",
+        "배송",
+        "도매"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.383741+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "3-3RK2zms0U",
+      "url": "https://www.youtube.com/watch?v=3-3RK2zms0U",
+      "title_or_caption": "한국 주점 8년 만에 46% 사라졌는데, 매달 100곳이 새로 엽니다 | 세왕상사 #Shorts",
+      "date": "2026-08-20",
+      "thumbnail": "https://i.ytimg.com/vi/3-3RK2zms0U/hqdefault.jpg",
+      "metrics": {
+        "views": 1321,
+        "likes": 6,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383749+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "lzOpvxze26c",
+      "url": "https://www.youtube.com/watch?v=lzOpvxze26c",
+      "title_or_caption": "메뉴를 바꿨는데 매출이 그대로라면 — 다시 오게 만드는 4가지 | 세왕상사",
+      "date": "2026-08-18",
+      "thumbnail": "https://i.ytimg.com/vi/lzOpvxze26c/hqdefault.jpg",
+      "metrics": {
+        "views": 47,
+        "likes": 2,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383762+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "eTWwj4cG-n8",
+      "url": "https://www.youtube.com/watch?v=eTWwj4cG-n8",
+      "title_or_caption": "위스키 한 병이면 하이볼 23잔, 계산해 보셨나요? | 세왕상사 #Shorts",
+      "date": "2026-08-16",
+      "thumbnail": "https://i.ytimg.com/vi/eTWwj4cG-n8/hqdefault.jpg",
+      "metrics": {
+        "views": 467,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383769+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "TnLSfKM16pI",
+      "url": "https://www.youtube.com/watch?v=TnLSfKM16pI",
+      "title_or_caption": "도쿄에서 먹던 몬자야키, 강남 한복판에 | 오몬자 | 세왕상사 #Shorts",
+      "date": "2026-08-15",
+      "thumbnail": "https://i.ytimg.com/vi/TnLSfKM16pI/hqdefault.jpg",
+      "metrics": {
+        "views": 1784,
+        "likes": 4,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383783+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "cVeGPc_xZSU",
+      "url": "https://www.youtube.com/watch?v=cVeGPc_xZSU",
+      "title_or_caption": "사장님이 영화배우인 양재 펍, 맥주 하나는 진심입니다 | PUB정 | 세왕상사 #Shorts",
+      "date": "2026-08-15",
+      "thumbnail": "https://i.ytimg.com/vi/cVeGPc_xZSU/hqdefault.jpg",
+      "metrics": {
+        "views": 2226,
+        "likes": 5,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383797+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "LBh3wt5NhKM",
+      "url": "https://www.youtube.com/watch?v=LBh3wt5NhKM",
+      "title_or_caption": "20L 케그, 500cc 몇 잔 나오세요? 사라진 8잔의 정체 | 세왕상사 #Shorts",
+      "date": "2026-08-11",
+      "thumbnail": "https://i.ytimg.com/vi/LBh3wt5NhKM/hqdefault.jpg",
+      "metrics": {
+        "views": 56,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383804+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "TaejGpj85K0",
+      "url": "https://www.youtube.com/watch?v=TaejGpj85K0",
+      "title_or_caption": "올 상반기 치킨집 1,259곳 오픈 | 신규 매장 TOP 10 #Shorts",
+      "date": "2026-08-09",
+      "thumbnail": "https://i.ytimg.com/vi/TaejGpj85K0/hqdefault.jpg",
+      "metrics": {
+        "views": 1064,
+        "likes": 4,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383810+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "oBJFn46DOHM",
+      "url": "https://www.youtube.com/watch?v=oBJFn46DOHM",
+      "title_or_caption": "토마토를 술에 넣는다고? SNS에서 난리 난 토마토 하이볼 | 세왕상사 #Shorts",
+      "date": "2026-08-09",
+      "thumbnail": "https://i.ytimg.com/vi/oBJFn46DOHM/hqdefault.jpg",
+      "metrics": {
+        "views": 975,
+        "likes": 7,
+        "comments": 0
+      },
+      "category": "신제품",
+      "sub_category": null,
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383823+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "5GoJs8sUUwQ",
+      "url": "https://www.youtube.com/watch?v=5GoJs8sUUwQ",
+      "title_or_caption": "도쿄에서 줄 서던 그 몬자집, 오픈 첫날 웨이팅 400팀 | 세왕상사 #Shorts",
+      "date": "2026-08-08",
+      "thumbnail": "https://i.ytimg.com/vi/5GoJs8sUUwQ/hqdefault.jpg",
+      "metrics": {
+        "views": 2202,
+        "likes": 6,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383829+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "ec5K3pzNFUI",
+      "url": "https://www.youtube.com/watch?v=ec5K3pzNFUI",
+      "title_or_caption": "잘되는 가게 뒤에는, 보이지 않는 파트너가 있습니다 | 서울·경기 주류도매 세왕상사 #Shorts",
+      "date": "2026-08-05",
+      "thumbnail": "https://i.ytimg.com/vi/ec5K3pzNFUI/hqdefault.jpg",
+      "metrics": {
+        "views": 97,
+        "likes": 4,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383836+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "hT5E1Ufy0ew",
+      "url": "https://www.youtube.com/watch?v=hT5E1Ufy0ew",
+      "title_or_caption": "의정부 한복판에 초록 소주병 포차 | 포차중문 의정부중앙점 그랜드 오픈 #Shorts",
+      "date": "2026-08-04",
+      "thumbnail": "https://i.ytimg.com/vi/hT5E1Ufy0ew/hqdefault.jpg",
+      "metrics": {
+        "views": 120,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383842+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "4MAOmlNIlmY",
+      "url": "https://www.youtube.com/watch?v=4MAOmlNIlmY",
+      "title_or_caption": "간판에 '혼술'을 단 새 매장 277곳 | 2026 상반기 신규 인허가 #Shorts",
+      "date": "2026-08-04",
+      "thumbnail": "https://i.ytimg.com/vi/4MAOmlNIlmY/hqdefault.jpg",
+      "metrics": {
+        "views": 1580,
+        "likes": 7,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [],
+      "fetched_at": "2026-10-12T01:43:15.383848+00:00"
+    },
+    {
+      "platform": "youtube",
+      "post_id": "_uNzOWhSteQ",
+      "url": "https://www.youtube.com/watch?v=_uNzOWhSteQ",
+      "title_or_caption": "잘되는 가게 뒤에는, 보이지 않는 파트너가 있습니다 | 서울·경기 주류도매 세왕상사",
+      "date": "2026-08-03",
+      "thumbnail": "https://i.ytimg.com/vi/_uNzOWhSteQ/hqdefault.jpg",
+      "metrics": {
+        "views": 174,
+        "likes": 23,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "종합주류도매",
+        "세왕상사",
+        "술집창업",
+        "호프집창업",
+        "이자카야창업",
+        "요식업창업",
+        "주류유통",
+        "생맥주",
+        "생맥주관리",
+        "사케",
+        "하이볼",
+        "무알콜맥주",
+        "서울주류도매",
+        "경기주류도매",
+        "음식점창업",
+        "자영업자",
+        "매장운영",
+        "주류발주",
+        "술장사"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.383856+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18176815141389663",
+      "url": "https://www.instagram.com/reel/DeYBrEkCHDd/",
+      "title_or_caption": "월세 올리겠다는 통보, 얼마까지가 한도일까요? 🧮\n\n[점주 계산 — 월세 편]\n\n■ 한 번에 올릴 수 있는 한도는 5%\n상가건물 임대차보호법이 적용되는 가게는 월세·보증금 모두, 청구 당시 금액의 5%를 넘겨 올릴 수 없습니다. (법 제11조, 시행령 제4조)\n\n■ 월세 300만 원이라면\n· 300만 원 × 5% = 15만 원\n· 올려도 최대 315만 원\n",
+      "date": "2026-10-12",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/844137563_917267497988744_1987697018222945179_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4S0ze-vxtXgQ7kNvwGWV_Bg&_nc_oc=Adp4RSY6XRhw6DaKp2x4mnETNSXNwOmgdzo76nnPh0IMh2KKrM7uOa6wXHUMyDcxW2Y&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQLZfEk7YMjUGwywLH7h9rHbdJKqJXPiizM9V2J-EQXTxcEfepCAlAbBl2Dchy_01ZFSIQskiwJ9qA&oh=00_AQMlIOpt9UR3T2lVMiuPObuVzyUU6cRCz8VXp1EKYjnDMQ&oe=6AD20F19",
+      "metrics": {
+        "views": 32,
+        "likes": 3,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "월세인상",
+        "상가임대차보호법",
+        "술집사장",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.161034+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18125175349907747",
+      "url": "https://www.instagram.com/p/DeVWSgHj_II/",
+      "title_or_caption": "[해외 트렌드] 증권사 금고가 와인바가 됐다 — 일본 나고야 \"お台所 六六堂\" (2026.10.8 오픈)\n\n구 증권사 지점의 금고실을 통째로 와인 셀러로 리노베이션. 손님이 메뉴판 대신 셀러에 들어가 와인을 고르는 곳.\n\n국내 와인바·이자카야·호텔 F&B 사장님께 바로 쓰시라 정리했습니다.\n\n① 죽은 공간 리프레임 — 창고·백야드 하나를 \"왜 여기서?\"의 ",
+      "date": "2026-10-11",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/843205748_18079325807432241_6622973460471401658_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Qh2IN5Ny_jEQ7kNvwEeAttp&_nc_oc=AdqwotNWJKrS2Kdl41mk7MQjoNcWik0L7mWtRi2MP-D2jnzVj17L2wkOLRqmoLWzF3c&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQI4VIa425lzh5kiOSslKsoNR1OEerrRwLe4PzeHKD-nUzsWkOoqpfAgigf88g21oAOuohHsAkusKA&oh=00_AQM8V4bqJMtKiasApgwdcmAD0jnQyvw0u0f0drUHWwzJ7g&oe=6AD214F2",
+      "metrics": {
+        "views": 0,
+        "likes": 11,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "와인바",
+        "호텔F&B",
+        "레스토랑트렌드",
+        "와인셀러",
+        "공간기획",
+        "세왕상사",
+        "와인유통",
+        "나고야맛집",
+        "리노베이션",
+        "객단가전략"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.161130+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17994875859020650",
+      "url": "https://www.instagram.com/reel/DeRpRMuEa9Y/",
+      "title_or_caption": "오사카에서 시작한 모모쥬, 이제 홍대에서 만나요. 🇯🇵→🇰🇷\n\n1991년 오사카에서 문을 연 철판요리점 모모쥬(百十)가\n10월 5일, 홍대에 한국 1호점을 열었습니다.\n\n따끈한 철판 앞에 앉아\n눈앞에서 완성되는 몬자야키를 조금씩 나누는 저녁.\n오코노미야키와 다양한 철판요리도 만날 수 있어요.\n이번 홍대 약속은 여기로 잡아볼까요?\n\n📍 모모쥬 홍대입구점\n서울",
+      "date": "2026-10-09",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/840094826_1824527491888585_4026206088090398700_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=0mGjAuYiuvcQ7kNvwFluOj-&_nc_oc=Adr1AYtN8Btif0Hpva1yRpH5QYum2_fuhAC7b9lBSnpxxU-ROEx_nNbVbIIkmP8S9N4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKvexTE77KFRYVwLFjEhWW3X8G0M6ORW3Aw1SKEGYTN6ZuL2cQv2GregTx7Y3hy7oBF2vYOdPuAKg&oh=00_AQPW_pDqbR10xRumKa2PMtJ0UZLfF1W_fDeTacBuVPP7Yg&oe=6AD1FAC0",
+      "metrics": {
+        "views": 498,
+        "likes": 6,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "세왕상사",
+        "모모쥬",
+        "홍대맛집",
+        "몬자야키",
+        "오코노미야키"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.531867+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18125553478908021",
+      "url": "https://www.instagram.com/reel/DeQq7_SlBXq/",
+      "title_or_caption": "카드 수수료, 우리 가게는 몇 %일까요? 💳\n\n[점주 계산 — 카드 수수료 편]\n\n■ 신용카드 우대수수료율 (2026년 하반기 기준)\n· 연매출 3억 이하 0.4%\n· 3억~5억 1.0%\n· 5억~10억 1.15%\n· 10억~30억 1.45%\n(체크카드는 0.15~1.15%)\n\n■ 계산해 보면\n월 카드매출 3,000만 원인 가게(연매출 3억~5억 구간 가정",
+      "date": "2026-10-09",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/841084079_30062231063368979_4591794037820083987_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=j4ymKj6AeHAQ7kNvwES-Z9B&_nc_oc=AdpfgJsSx_NcrHuYvefpHt3lGg58pCXkJb3TWnh6M0QW_5rsNpNnG0Tt5m85T8lJTPE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKpaZjXaoZne_s4yA26ub2ZwQnqLPF85javjqDLMPJ1QsW8h1aYZPu5gVyspErIUkoOiGa5LK-0pQ&oh=00_AQNEq8zfZl217JAmwyCDWnPw19TLONlTb6hI3J6mPcEUEw&oe=6AD1FD71",
+      "metrics": {
+        "views": 222,
+        "likes": 5,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "카드수수료",
+        "세액공제",
+        "술집사장",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:15.826852+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18022102715718512",
+      "url": "https://www.instagram.com/reel/DeN8qhYDO6h/",
+      "title_or_caption": "초성만 보고, 술 이름 몇 개 맞히세요? 🔤\n\n한글날 맞이 술 이름 초성 퀴즈!\n익숙한 이름부터 마지막 보너스 문제까지, 총 5문제입니다.\n\n정답이 나오기 전에 맞혀보세요.\n5개 중 몇 개 맞혔는지 댓글로 남겨주세요 👇\n다른 술 이름이 떠올랐다면 그것도 함께요!\n\n제품 이미지: 하이트진로·롯데칠성음료·오비맥주 공식 자료\n\n#세왕상사 #한글날 #초성퀴즈 #술",
+      "date": "2026-10-08",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/840346668_1640178994302396_7607951085860771099_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=uXUNToAV2NQQ7kNvwFQNgp6&_nc_oc=AdrUyJGNMYmtaMqgY9MaTBvGSuj62TP-Hjg1Euv5eyx8ub9H1TvzTqhIHwPQDJAwWmQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKfKKWSf9stHpSz0_mVgESYQDcFt2oKVqpJ6JfN0hq7T72Xr_wkAPyNA_P643_w2mM84hNilhWw0Q&oh=00_AQOHMZrbpjfUlx6eWVQkLEg0gLQ81wTznRrJgy7HFRca4g&oe=6AD220E8",
+      "metrics": {
+        "views": 396,
+        "likes": 6,
+        "comments": 1
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "세왕상사",
+        "한글날",
+        "초성퀴즈",
+        "술이름퀴즈"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.139980+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18073308011487376",
+      "url": "https://www.instagram.com/p/DeLHLJiGVN2/",
+      "title_or_caption": "젊은 손님은 음료를 무엇으로 고를까 — 해외 조사 한 장 요약 🍹\n\nOpeepl이 Z세대·젊은 밀레니얼을 대상으로 한 Youth Pulse Study 결과를 정리했습니다.\n해외 조사이고 국내 수치가 아니라는 점은 감안해서 봐주세요.\n\n■ ① 선택 1순위는 맛 (63%)\n· 그다음이 가격 48%, 영양 21%, 브랜드 16%, 포장 14%\n· 브랜드 이름보다",
+      "date": "2026-10-07",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/838893628_18078945266432241_6381190583865682732_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ps5THTx9br4Q7kNvwFpMwhE&_nc_oc=AdpKgYYEw26taua7VIjO_HCtE0HLgt2LhLiWalo_98eM93Dv7GShkPOMx1u_LD4e2D4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKqx7phZsc5ccWhz89PrJeASTtQfnPFghtKWcTgHD37AfZC_wlpSvmuOWAZRv_a-0L0PdmZp-GZ1Q&oh=00_AQNgccn7GTxVmvEu72lefnDSyz2or1CYZGmKTSv3ewqTHg&oe=6AD20569",
+      "metrics": {
+        "views": 0,
+        "likes": 10,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [
+        "무알콜",
+        "모크테일",
+        "술집사장님",
+        "해외리포트",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.140096+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18002875688990977",
+      "url": "https://www.instagram.com/p/DeIZ3P1k5EG/",
+      "title_or_caption": "주점·호프 창업의 첫 발주는\n‘얼마나 싸게 사느냐’만의 문제가 아닙니다.\n\n메뉴에 맞는 주류인지,\n첫 주문량이 과하지 않은지,\n배송·반품·냉장고 동선까지 확인해야\n오픈 뒤가 덜 흔들립니다.\n\n첫 발주 전에 꼭 볼 5가지를 정리했습니다.\n\n창업 전 주류 첫 발주 체크리스트가 필요하시면\n프로필 링크의 카카오톡 채널 ‘세왕상사’에\n‘창업 체크리스트’라고 보내주세",
+      "date": "2026-10-05",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/837888048_18078853346432241_7415696959155093671_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=A-q1Vk0Z8HEQ7kNvwEvF5K4&_nc_oc=AdpW7SpyFmHPT20wVEWOgqb6cr5VSKPdTG9FZyhsLiF0fF9qgFbKT3J0Oydhn-kMaFk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIxoqPykuqroHml6R4GYZQYP_m0rGgOXqj8fIWzNoaE-lFYpWVWw_2V5LrgqV9RQPrmDdk7XK2vKw&oh=00_AQNiMhwnGKgilGIoCkTeZ5-BQchm3deeMt3WYBiw6BLXUA&oe=6AD1F273",
+      "metrics": {
+        "views": 0,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주점창업",
+        "호프창업",
+        "음식점창업",
+        "창업준비",
+        "주류도매",
+        "주류납품",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.140132+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18088574054692249",
+      "url": "https://www.instagram.com/p/DeGfYyAE5Sw/",
+      "title_or_caption": "맛있는 생맥주는 의자보다 첫 잔에서 시작됩니다.\n\n이번 W41에서는 수도권 생맥주 매장 39곳을 다시 보며, 손님이 기억하는 한 잔의 기준을 정리했습니다.\n\n라인·잔·온도.\n맛의 차이를 설명하는 한마디.\n그리고 첫 잔 주문과 재주문의 기록.\n\nW41 원문 리포트는 프로필 링크에서 받아보세요.\n\n#생맥주 #음식점운영 #주류도매 #세왕상사",
+      "date": "2026-10-05",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/835950491_18078785756432241_1300742320943059948_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-5ie7KgUSOAQ7kNvwG_ePqw&_nc_oc=Adpj9cOzal9mXWrpwdsUPrxF3qqikISzbC_wgukQl9DJowkcRLPIYyNOxQXRNPsqqqw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQLI8ltM7d4ROjahgz1V24NSq5i7TUFFB4o_Ud9artzo2utHd_Vny_iUXrjoC2aa3IsDZWtNGM-Tbg&oh=00_AQNKFJiFZ9bE_gNrEJoS6KDeBAFiEQ8BGMWjKZ21yBr8ag&oe=6AD200FD",
+      "metrics": {
+        "views": 0,
+        "likes": 9,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국내",
+      "tags": [
+        "생맥주",
+        "음식점운영",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.140155+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18095289887400243",
+      "url": "https://www.instagram.com/reel/DeF4RSxkiHV/",
+      "title_or_caption": "12년산 위스키를 집에 10년 두면 22년산? 🥃\n\n정답은, 여전히 12년산입니다.\n\n스카치위스키의 숙성 연수는 오크통에서 숙성한 시간을 기준으로 해요. 병에 담긴 뒤 보관한 10년은 라벨의 숫자에 더해지지 않습니다.\n\n오래된 병의 소장 가치와 숙성 연수는 별개의 이야기예요.\n알고 계셨나요, 오늘 처음 알았나요?\n\n출처: 스카치위스키협회(SWA) 공식 FA",
+      "date": "2026-10-05",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/836881994_919431721020963_22235568497332709_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=R2vAuN5bzIwQ7kNvwFHgjY1&_nc_oc=Adqk6UhhExo9YUYbdXmYocr2kgV24zRFeUda9s-ja-iGGyd8fHwSo89Vrt5hVubh7RY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQLSGu6VChfyAUFLUSOd04hJ7ul254Ve0G2Ei2K_r_JDlLyPuLVcxKqryb6lh-NJIowX8jPNwdIAkg&oh=00_AQOTX00sma_t4G34Y94wloqLJdvqDERwj3o8_YyxXfuqFQ&oe=6AD1FC0E",
+      "metrics": {
+        "views": 317,
+        "likes": 5,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "세왕상사",
+        "위스키상식",
+        "스카치위스키",
+        "12년산",
+        "술상식"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.438250+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17970139614174432",
+      "url": "https://www.instagram.com/reel/DeDY0Wej7Pa/",
+      "title_or_caption": "함께 앉지만, 메뉴는 각자. 🍽️\n\n모임은 즐기면서, 먹는 건 내 취향대로 고르고 싶은 걸까요?\nOpenTable의 2026 미국 외식 전망에서 눈에 띄는 두 결과를 골랐습니다.\n\n① 소비자 설문: 52%\n2026년에는 음식을 나눠 먹기보다 자기 메뉴를 주문하고 싶다고 답했습니다.\n미국 응답자 1,527명을 대상으로 2025년 9월 조사한 ‘의향’입니다.\n",
+      "date": "2026-10-04",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/834527977_2140540510164031_557003823348810797_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=WqVpgZNpZWsQ7kNvwE_5To6&_nc_oc=AdoMseNvTNs4u7Kelzbw9aDEs4um-_k9D2KMkPmfuc_ups-euMjmL2Rb9u893K9quiE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKYiD9pHnnDNve--AtWVi-AFquaqUS1EH3rTT6dWd-HABE6hEuKL_NAPjI0s7WNCA2fjceI8ZQhSQ&oh=00_AQN8C4ruX2JO5tMfU-pFTI5DtErFptseOF81uNxk6dLmjA&oe=6AD208DF",
+      "metrics": {
+        "views": 257,
+        "likes": 6,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [
+        "외식트렌드",
+        "개인취향",
+        "음식점사장님",
+        "해외리포트",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.752960+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18216693229343487",
+      "url": "https://www.instagram.com/p/DeCDP7CCfrk/",
+      "title_or_caption": "다시, 금빛 대한민국. 🇰🇷🥇\n\n대한민국 1–0 일본\n대한민국 남자축구의 아시안게임 금메달을 축하합니다.\n끝까지 뛰어준 선수들, 고맙습니다.\n\n오늘, 우리 동네 가게에서\n함께 마음 졸이고 목청 높여주신 손님들.\n맛있는 음식과 따뜻한 자리를 준비해주신 사장님들.\n\n여러분 덕분에\n함께 본 경기가, 함께 웃은 추억이 됐습니다.\n\n경기는 끝나도\n오늘 나눈 이야기는",
+      "date": "2026-10-03",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/836331658_18078602924432241_666103159654048985_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Kg_Aa3tMVKYQ7kNvwEMeZ1Q&_nc_oc=AdrcTGTiVI1jinX-mPJbkdvtF2XVDLJB2O4dVPPxE2bUUQ6ZWj_mAMv1GsMroqRdFpk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQLir-NHzX4mNCImVNb5LSIRFpbQ8pPcyCHoZDiNlI4EQEKbUhT56bUltDgtGh4a8Bqa4xyfBXW7og&oh=00_AQOv7n8ZlQa-8Ut35KBil1Y9HIUKS3tFfV1gIx2NI3NTuw&oe=6AD221E6",
+      "metrics": {
+        "views": 0,
+        "likes": 6,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [
+        "대한민국축구",
+        "금메달",
+        "음식점사장님",
+        "함께하는응원",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.753014+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18062118740793501",
+      "url": "https://www.instagram.com/p/DeBth-WiS0F/",
+      "title_or_caption": "🇰🇷 대한민국도 웃고, 사장님도 웃는 밤이 되길.\n\n오늘 10월 3일(토) 저녁 7시 30분,\n대한민국과 일본의 아시안게임 남자축구 결승전이 열립니다.\n\n한 골에 함께 환호하고,\n옆 테이블과도 웃음을 나누는 밤.\n\n오랜만에 만석이 된 가게,\n주방으로 연달아 들어오는 주문,\n바쁜 와중에도 미소 짓는 사장님.\n\n오늘의 응원이\n우리 동네 가게에도 기분 좋은 활기",
+      "date": "2026-10-03",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/834601095_18078590279432241_3062092629153884731_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XVPWW9mUwR0Q7kNvwE3HiuC&_nc_oc=Adq-k1PP8UP5q-toDe9TVnjHdHi_Of2eFvTpWUoXAEBhrTgGxqZBG1alBWwug92ZpWU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQK7-i8ApxVTqNTrSHhzo6hGW17Rq1PBN-YLjwRUNY_qF2L9kSue2H6UDaQznLLiaRTNJwXQ4T5oxA&oh=00_AQPaW0CDpeWO5QBecn_3YQee9JI4GL_Fc7YrIyMw_pvBMQ&oe=6AD207F0",
+      "metrics": {
+        "views": 0,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [
+        "대한민국응원",
+        "한일전",
+        "음식점사장님",
+        "사장님응원",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.753036+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18353832952217812",
+      "url": "https://www.instagram.com/p/DeAl3H3E2_5/",
+      "title_or_caption": "덜 마시는데 더 제대로 마신다 — 2026년 바깥 술집 이야기 🍸\n\nBarMagazine이 정리한 2026 칵테일 트렌드 여섯 가지를,\n숫자는 바카디 2026 리포트 원문으로 확인해서 세왕 관점으로 뽑았습니다.\n\n■ ① 오후 시간대가 열렸습니다\n· 미국 젊은 손님 34%, 프랑스 51%가 저녁 자리를 앞당기는 중\n· 늦은 밤 대신 오후 네 시~일곱 시. '",
+      "date": "2026-10-02",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/828443150_18078549611432241_2297541051865783880_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=li1_A6DsTTgQ7kNvwFJMVhY&_nc_oc=AdpaIm90quvk-3t-3ayqt0fEjvlDYmsdyVzWfGWosyCwaVL7jXVerCSQyUf_ijRkez0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJwnFlUzLXE6Gp0CVocUJMFmPeDmK3Uhcu_ZeJp3odXf4AjgI331bOIGjkQ5TtIoebHVBj8LIQvGg&oh=00_AQPN5B6yS_OzVZvCLx4p-aGzkspYqF-N_urtHR1Aw-jSzg&oe=6AD1F4BA",
+      "metrics": {
+        "views": 0,
+        "likes": 10,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "칵테일트렌드",
+        "무알코올",
+        "하이볼",
+        "술집사장님",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:16.753059+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18004923812791222",
+      "url": "https://www.instagram.com/reel/Dd-I9nplMA1/",
+      "title_or_caption": "“언제 한번 보자.”\n그 말만 남겨둔 사람이 있나요?\n\n소시지를 잘라 나누고,\n맛있는 걸 서로의 접시에 놓아주고.\n별 얘기 아닌데도 자꾸 웃게 되는 시간.\n\n오랜만이라는 말보다\n“야, 이거 먹어봐.”\n\n문득 떠오르는 그 사람에게\n사진 한 장 보내보세요.\n\n📍 달맞이 바베큐 수원인계점\n📷 2026.10.01 방문 촬영\n\n#달맞이바베큐 #바베큐 #수원맛집 #매",
+      "date": "2026-10-01",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/834284736_2193788264515200_1600648713937842815_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=3n5zc_njzCEQ7kNvwEKLkbP&_nc_oc=AdrvUBMUgsntDmBYBG298NfWCuVQtegWKBzD-qwCFP6UnjS4fpumMN59M28B6eQ4RXg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKIDFph9bYJ9p4_ZxZZPSbRlOBumzvf0XCkoJP1wzPOYZIYoR8yQTMQ-9qngd4SZ2K-VTRSYN2vMw&oh=00_AQM7q6xb4wZ-E0dfKIV6d4s5bu8sXsrWAb5FqwZVL1F7cA&oe=6AD228D2",
+      "metrics": {
+        "views": 655,
+        "likes": 16,
+        "comments": 2
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "달맞이바베큐",
+        "바베큐",
+        "수원맛집",
+        "매장소개",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.318587+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18118209124971049",
+      "url": "https://www.instagram.com/p/Dd-FdU4G89e/",
+      "title_or_caption": "같은 맥주인데 거품이 다르다면, 맥주 말고 잔을 먼저 보세요 🍺\n\n[사장님 노트 — 잔 관리]\n\n■ 01 물 한 컵으로 확인합니다\n잔에 물을 채웠다가 흘려보세요.\n물이 고르게 미끄러져 내려가면 깨끗한 잔입니다.\n물방울이 맺히거나 갈라지면 기름이나 세제가 남아 있다는 신호입니다.\n업계에서는 이걸 '비어 클린 글라스'라고 부릅니다.\n\n■ 02 남은 기름·세제는",
+      "date": "2026-10-01",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/831641741_18078453359432241_7075622056405091594_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=2jFemWvedbIQ7kNvwHsFaiE&_nc_oc=AdqJUr4wTT3HJM5H-4ymFJIKcmsMzdQR3lL0Zl_WZPbwrdxJcI5Duf75AKfugsTEEC4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJzgk13ueF5yR0xh9kUVDAnatgVpf58BMJPp45px5fbG83SMx4c2YPkiyyR4HWh_mLrsoj4RABZxA&oh=00_AQMakkacXRWbSG7bepmXy_YmsD3-iLpaFU5ebo_ltJfR5g&oe=6AD22445",
+      "metrics": {
+        "views": 0,
+        "likes": 8,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "맥주잔",
+        "맥주거품",
+        "식당사장",
+        "사장님노트",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.318636+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18091807982665421",
+      "url": "https://www.instagram.com/p/Dd78SxPCUzo/",
+      "title_or_caption": "일본 맥주값이 내려간다는데, 한국도? 🍺\n\n2026년 10월 1일, 일본의 맥주류 주세가 하나로 맞춰집니다.\n\n350mL 기준으로 맥주는 63.35엔 → 54.25엔.\n저세율 발포주·제3맥주는 46.99엔 → 54.25엔.\n맥주의 세금은 내려가고, 저가 맥주류의 세금은 올라갑니다.\n\n닛케이는 가격 차이가 줄면서 맥주로 수요가 옮겨갈 것을 기대한 주요 업체들",
+      "date": "2026-10-01",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/830612401_18078374618432241_3011817172178801257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=77fIi_0CX2sQ7kNvwFxx5DB&_nc_oc=AdpAqHVxDBxkkehCQxQChOaf3jv1SWwnJCd7WlfM6rvQKf6FgOhmQZaTkbuXr9AGZ8U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJfS8jrd7UJCJIWmFzGZQAIVIuUDMX-l2Bwotvlqtyudp-XTWy8gMMpJbJ7Kd8gZ-ufJLMkFQL-qQ&oh=00_AQM5GSZvnWpK6KF56JSKMYbvMOIpMH2ixK6wOJP_EYTH5Q&oe=6AD21A84",
+      "metrics": {
+        "views": 0,
+        "likes": 22,
+        "comments": 1
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "세왕상사",
+        "주류시장",
+        "일본맥주",
+        "주류도매",
+        "사장님노트"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.318663+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18014401688752888",
+      "url": "https://www.instagram.com/p/Dd7ek4ak4rr/",
+      "title_or_caption": "10월 26일(월), 부가세 예정고지 납부 마감입니다. 🗓️\n\n■ 누가 얼마나\n개인사업자는 예정신고 대신 고지서를 받습니다. 금액은 1~6월에 낸 납부세액의 절반입니다. (예: 600만 원 → 300만 원, 이해를 돕는 예시입니다)\n\n■ 사장님 체크\n· 25일이 일요일이라 납부는 26일 월요일까지\n· 이번 분기 매출이 상반기의 1/3 미만이면 직접 예정신고",
+      "date": "2026-09-30",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/828561864_18078359462432241_207212025397840985_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nGTnzY4m_jAQ7kNvwGVzQ8y&_nc_oc=Adp8indm2BK3K3i7FVBIU9pE3CIvTghkG3OkzESCOjbNvR0Tg__d5Qwty9MoXuXyBYY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIDZtMmjWAmigF3R8UkWG57nUDtLKkWzw8ik0BY2hBG3KgyJB7qndj5tfClb5M-okAb4kIfQ2geww&oh=00_AQPTxrIup31XzSpGV2MFzr8Qude69TterZ2JBY4FVaYxzA&oe=6AD224B0",
+      "metrics": {
+        "views": 0,
+        "likes": 10,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "부가세",
+        "예정고지",
+        "자영업사장님",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.318680+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18100424711037486",
+      "url": "https://www.instagram.com/reel/Dd5ER8NlOZn/",
+      "title_or_caption": "오늘 저녁, 이런 곳에서 한 잔 어때요? 🍺\n\n다양한 스타일의 맥주를 맛있게 즐기는 곳,\n아사히 노 토마레.\n\n풍성한 거품의 생맥주부터 짙은 빛깔의 흑맥주까지.\n오늘 기분에 맞는 한 잔을 골라보세요.\n\n감자사라다와 야끼소바, 쿠루미를 곁들이며\n좋아하는 사람과 천천히 이야기 나누는 저녁.\n\n함께 가고 싶은 사람에게 보내주세요.\n\n📷 2026.09.29 방문 ",
+      "date": "2026-09-30",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/829602594_1124187383598088_2858750702724250666_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DH9UH4k0bHkQ7kNvwGkk-6p&_nc_oc=AdoZYP0qiNFCUHv4ojtOQtbCUOghiELsy1CCLaxTxJt-be5PgfOGCRmZ2DP4xJWULDc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIokO-vh40iR-EodGCgQFnnjvUCX1euzsmc-m0Cxp-iMmbh-MWztgu-M6EDLrIbpHRVWbRcllWqXQ&oh=00_AQPzdqda86cKZpjKYbOK9kqJKifRs58yrDbrwFRU6bkjkg&oe=6AD1F82A",
+      "metrics": {
+        "views": 483,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "아사히노토마레",
+        "생맥주",
+        "맥주러버",
+        "매장소개",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.602300+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18171402820459623",
+      "url": "https://www.instagram.com/p/Dd4C5ltE1rR/",
+      "title_or_caption": "문을 열기 전의 가게에는\n이상하게 가장 좋은 시간이 있습니다.\n\n아직 손님은 없지만,\n송리단길의 저녁빛이 테라스에 들고\n실내는 곧 시작될 이야기를 기다립니다.\n\n이번 주말, 송리단길에\n새로운 밤을 맞이할 준비를 마친\n연주방 송리단길점.\n\n친구와 오래 앉아 이야기할 자리,\n가볍게 한 잔을 시작할 자리.\n그 첫 장면이 곧 열립니다.\n\n📍 서울 송파구 백제고분로",
+      "date": "2026-09-29",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825325739_18078229505432241_5243219965434448987_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=UDPbMePkpsYQ7kNvwGTnhfE&_nc_oc=AdqAPkxyLQyqKL8unPZTf0-Y35uuBzU0qTdyu_E_CVB3tO003cscZMw2qHGx3nnh0g8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJXepIB7yndcFcnr8eiVtvewyCnpfvckcv3U_hMXkCTa7XmFH4ymct50iWbbTD8aiNifa-zAcsC1g&oh=00_AQORJzhn9Km5KOWUbZMPD6hZKtMYKSB5HRnKyYSH9zZsdg&oe=6AD21FB9",
+      "metrics": {
+        "views": 0,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "송리단길",
+        "연주방송리단길점",
+        "송리단길맛집",
+        "송파맛집",
+        "가오픈",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.602347+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17888578941617062",
+      "url": "https://www.instagram.com/p/Dd2U5Yek1aI/",
+      "title_or_caption": "김포 구래동인데, 새벽 세 시까지 불이 켜져 있었습니다 🌙\n\n[그 집, 이 술 — 망부석 김포구래점]\n\n어제 저녁 여섯 시 반, 김포 구래역 상권에 들렀습니다.\n퓨전 한식 주점입니다.\n공개된 영업시간은 저녁 다섯 시부터 새벽 세 시까지입니다.\n\n■ 01 닭발집 메뉴가 주점 메뉴판에 있습니다\n\n숯불에 불향 입힌 무뼈닭발이 먼저 나왔습니다.\n은박 깔고, 무쌈하",
+      "date": "2026-09-28",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825323466_18078167081432241_7390951388108019920_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=zFhF4UQfUS8Q7kNvwFtCIPq&_nc_oc=Adon5RIkrsSrRdfNkBzINyOCG5GFKhY1uEN-wSinmyNa3cTtv7jSPA94C0T_iJ7MNC4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJtLJVblFB2DK-Grpzn3NmKSCKT2QfAXHWb0lIDyzIbfoGp0wOs3OihQvqTR11rUn-X94pqXC7Kog&oh=00_AQPy0Utq4d02o9xpj-fXrMfz_u8zL365fcFDtQJEjVbrlQ&oe=6AD21CA2",
+      "metrics": {
+        "views": 0,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "김포술집",
+        "구래동맛집",
+        "그집이술",
+        "식당사장",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.602370+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18097495148097312",
+      "url": "https://www.instagram.com/reel/Dd0YmV5lNHz/",
+      "title_or_caption": "생맥주 청소, 물만 돌리면 끝일까요?\n\n물 청소 · 스펀지 볼 청소 · 탭 세척.\n세 가지는 하는 일이 다릅니다.\n\n① 물 청소: 영업 후 라인에 남은 맥주를 씻어내기\n② 스펀지 볼 청소: 관 안쪽 찌꺼기를 제거하기\n③ 탭 세척: 분리한 부품과 틈새를 전용 브러시로 닦기\n\n※ 장비별로 가능한 세척 방식이 다릅니다. 볼 규격·세척 주기·분해 순서는 제조사 안",
+      "date": "2026-09-28",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/825326594_2002572313740862_1051051187787686055_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=82fxI2tk_xcQ7kNvwHqaTFQ&_nc_oc=AdpEStV7f6gfChUJ5A2A1-qARDNkOvp2Z-i2ELQp_ldjh9sVdDC4StLDAIKLaKkZ8Wo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJYM2OZNrgFDcKum0OuQx22bU5WECk8z0HJlnAUURMGn_5chVRFwLTfxKfJcgsx9gmOEa5E3J3heQ&oh=00_AQPC14RgLpSU_KNyO4ZQO1pZKWNWmTDrQWo17_l175wQJQ&oe=6AD202B0",
+      "metrics": {
+        "views": 684,
+        "likes": 19,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주청소",
+        "생맥주관리",
+        "술집운영",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.900917+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18104156197984854",
+      "url": "https://www.instagram.com/p/Dd0E9l_EzPF/",
+      "title_or_caption": "가게 오픈 한 달 전, 주류는 언제 준비해야 할까요?\n\n인테리어 일정 잡고, 메뉴 정하고, 간판 알아보다 보면\n“술은 오픈 직전에 주문하면 되나?” 싶을 수 있습니다.\n\n처음이라 무엇부터 물어봐야 할지 몰라도 괜찮습니다.\n메뉴와 수량을 전부 정한 뒤에 연락하실 필요는 없어요.\n\n① 공사 중이라면\n냉장고와 생맥주 장비가 들어갈 공간, 설치 조건부터 확인합니다",
+      "date": "2026-09-28",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825325494_18078081263432241_6009677410762946172_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=mmS9u20w7k8Q7kNvwHZFfOq&_nc_oc=AdpuUpnXjt-Ai2WKuYkQC9xLV0aSMoNKRPhlOqmRrtqa295kQjPshY15FN2thx7Q1es&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQLDa77ZfsIGq8B7UUffEr4_OHHPLg53GQvLq9kBJ8Nmm3F3J4SEPN3VyFkiiV2N1lSaGpMkXmxjOA&oh=00_AQMkgXurqhOrxbfa_7sN7IiLJadvHiUrzKAp0QIV4BH4kQ&oe=6AD2063B",
+      "metrics": {
+        "views": 0,
+        "likes": 29,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "음식점창업",
+        "술집창업",
+        "창업준비",
+        "서울경기주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:17.900963+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18127613425849525",
+      "url": "https://www.instagram.com/reel/DdzxO6ViUkS/",
+      "title_or_caption": "배달앱으로 판 매출, 진짜 사장님 손에 남는 건 얼마일까요?\n\n중소기업중앙회가 온라인플랫폼 입점업체 1,250곳을 조사했더니, 배달앱 거래비용이 매출의 26.2%였습니다. 1년 전보다 5.2%포인트 늘었어요.\n\n뜯어보면 중개수수료 42.0% · 배달비 29.9% · 광고비 15.6% · 결제대행수수료 12.4% 순으로 빠져나갑니다.\n\n매출 100만 원을 팔",
+      "date": "2026-09-27",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/825276867_1573205854278145_3612448061715710206_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Pxk0_9tQQuIQ7kNvwFDTsuM&_nc_oc=AdrAXWio7k0j18arLdBZpbx2snSYOUqRwOaIPXjHWtEuKB1NebYYERntFHuBzouX2OE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKLyYoIs0bHnzGwqur4oiYtyIW4zESgHjLhBdt_ZpBIM2nNiyV2IZEGelF-pnSEu9T2IXXYrGV0Sw&oh=00_AQMeEvXoSMiSZHiUIHl5ydJ55PfXtXGP6im9BpzpwHgRjw&oe=6AD213E3",
+      "metrics": {
+        "views": 299,
+        "likes": 9,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "배달앱수수료",
+        "정산서확인",
+        "자영업사장님",
+        "점주계산",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:21.094487+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18097351532101002",
+      "url": "https://www.instagram.com/reel/DdyThvHjyJK/",
+      "title_or_caption": "생맥주 종류 늘리기 전, 한 통 며칠 걸리나요?\n\n탭이 많아도 잘 팔리지 않으면 관리가 어려워집니다.\n우리 가게에서 케그 한 통이 며칠 만에 비는지부터 기록해 보세요.\n\n✔ 가게 규모와 손님 수 확인\n✔ 탭별 판매 속도 기록\n✔ 잘 팔리는 흐름을 보고 종류 늘리기\n\n전체 영상은 유튜브 「세왕상사」에서 보실 수 있습니다.\n서울·경기 주류도매 세왕상사 | 02",
+      "date": "2026-09-27",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/825324209_1606442387612290_7006937777857848779_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Nl9Q2KR3pUMQ7kNvwHcA68Y&_nc_oc=AdrcFwJACQZ7WSzM_JWd1sIFAgNkk3fHOVuIFGNSGntYb7aOBnT7oElymTK35sz03EY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJiERBbSvScp8oel97LnEsqwnlH5QDesWEosbjcWtF3fIz2itTeleFCpO_Aqwzm_8C7nuwh9T0gEQ&oh=00_AQNbTwJzpyHBvHm6inFWqA7YPLQVDEzSvjcz-xB0AKCulQ&oe=6AD21519",
+      "metrics": {
+        "views": 528,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주",
+        "생맥주관리",
+        "술집운영",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:21.369281+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18219118783350536",
+      "url": "https://www.instagram.com/reel/DdyQwTnEZvC/",
+      "title_or_caption": "생맥주 종류 늘리기 전, 한 통 며칠 걸리나요?\n\n탭이 많아도 잘 팔리지 않으면 관리가 어려워집니다.\n우리 가게에서 케그 한 통이 며칠 만에 비는지부터 기록해 보세요.\n\n✔ 가게 규모와 손님 수 확인\n✔ 탭별 판매 속도 기록\n✔ 잘 팔리는 흐름을 보고 종류 늘리기\n\n전체 영상은 유튜브 「세왕상사」에서 보실 수 있습니다.\n서울·경기 주류도매 세왕상사 | 02",
+      "date": "2026-09-27",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/825324013_4507930169474990_8506266741100389208_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=FmaFXCUpDfYQ7kNvwFRGf5q&_nc_oc=AdqVUiBHIE1-FPjG03VXYGD0tSeOVaemnr_c7W49WdfryKBtPRd92gHp28i1VtF_3SI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKSpv0CFb50cJT3mBKristKBFRq1OFGn_SC-V7awDSmJOVCvUJaqWYyIWP-wyGjMqhVbT94ZEpQOQ&oh=00_AQO8b6Gb3_tEf7cGykL_aOh89WfYPSjsh7bFrjS23CoZ7Q&oe=6AD21BC3",
+      "metrics": {
+        "views": 441,
+        "likes": 7,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주",
+        "생맥주관리",
+        "술집운영",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:21.677030+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18140677330615013",
+      "url": "https://www.instagram.com/p/DdxSVyvky-7/",
+      "title_or_caption": "노쇼 한 번, 사장님 가게에서 44만 3천원이 사라집니다 🧮\n\n[점주 계산 — 노쇼 편]\n\n최근 발표된 정부 조사 결과입니다. 중소벤처기업부·소상공인시장진흥공단·한국외식업중앙회가 외식업 214개사를 조사했더니, 최근 3년 안에 노쇼를 겪은 사장님이 65%였습니다. 피해를 본 가게는 3년간 평균 8.6번, 1회당 평균 44만 3천원이 사라졌습니다.\n\n계산해보",
+      "date": "2026-09-27",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825323603_18077966492432241_4485265458331868967_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=S3pc08UR-0oQ7kNvwGZx0e2&_nc_oc=AdoXScLQc6vn-4HPjXlfmsWB-rZPxL5Xr9Qr53YEnoo-hThzPUsF6b29VgIiUSdv6Wo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQLr4yyBDRDKEvPUMXNjRAgI8Atnw0Adwn45bP7UzAJpyJG8l3EmmKawZnwfHB8TfJinXp31ZYlSnA&oh=00_AQMYdnLunZ89CsPqgyCpEYai6izco5vH9ae6721UQx4DEA&oe=6AD215C7",
+      "metrics": {
+        "views": 0,
+        "likes": 14,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국내",
+      "tags": [
+        "노쇼",
+        "예약부도",
+        "외식업사장님",
+        "소상공인",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:21.677153+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18075685847437237",
+      "url": "https://www.instagram.com/p/Ddul9CVk3Z7/",
+      "title_or_caption": "미국 시장이 미리 알려주는 2026 술장사 5가지 신호 🇺🇸\n\nPenn State Extension이 정리한 2026-03 리포트를 세왕 관점으로 뽑아봤습니다.\n\n■ ① RTD 캔칵테일 CAGR 최대 14.1%\n· 스피릿 베이스가 미국 RTD 시장의 56.8%\n· 하이볼 흐름과 정합\n\n■ ② 와인 무너지는데 사케·매실주는 성장\n· 레드 -10% / 화이트 ",
+      "date": "2026-09-25",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825323759_18077864732432241_4448208756811073034_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=FyT0LAncbVQQ7kNvwEYyI7C&_nc_oc=AdozGIQ6qLibapTJNq4OMYFOEiAcCf8G0KxjkAwCqRD6YoNy8Acf0giAfw8pGnAM_lk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJUUdGxmtIeapz8Qp6H9oYQ4-LSaJPlZco6BYpP1uje_KQulm1Kc91grALJhBk65fpM7Jg6S-Ig7Q&oh=00_AQOY53Cw3cKEpeAWledZ_GHZoLedTkaN0IOj8D5boV1aMw&oe=6AD20DE1",
+      "metrics": {
+        "views": 0,
+        "likes": 16,
+        "comments": 0
+      },
+      "category": "신제품",
+      "sub_category": null,
+      "tags": [
+        "미국주류트렌드",
+        "하이볼트렌드",
+        "술집사장님",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:21.677211+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18111922790028391",
+      "url": "https://www.instagram.com/p/DdsB7gME59I/",
+      "title_or_caption": "연어·육회가 한 주에 두 번 터졌습니다 🍣\n\n[데이터 — 외식 트렌드 편]\n\n이번 주 나란히 발표된 숫자 두 개입니다.\n\n■ ① 이자카야 우규 (연어·육회 전문)\n· 운영사 ㈜SH524, 2026-09-23 기준\n· 전국 가맹 계약 97호점 체결, 100호점 목전\n· 가맹비·교육비 면제 등 지원으로 확장 가속\n\n■ ② 육회바른연어 (육회·연어 전문)\n· 2",
+      "date": "2026-09-24",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/818291390_18077771312432241_9059333903673293059_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZIELoOrM6CUQ7kNvwH4xjAy&_nc_oc=AdqISej8IfwDKKqXiDoDvwWrEPFZFspjMs5D_wxirBu4CgOJdgNDSyY_aJwHTkyegRE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJS48sC0tkYBtw9phny2W4e8Idg57uD0FNuVelGdHPZ9Rb5z3UxUoiH29qsk7Rq-kdiAy609LrR5A&oh=00_AQPtMiTUl9hsbba5qWmCZfKpQaQOyvzsS-pzueGCQNnSXQ&oe=6AD21721",
+      "metrics": {
+        "views": 0,
+        "likes": 11,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국내",
+      "tags": [
+        "연어육회안주",
+        "프랜차이즈트렌드",
+        "술집사장님",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:21.677255+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17934597777399706",
+      "url": "https://www.instagram.com/reel/Ddpc88OkYFH/",
+      "title_or_caption": "추석 끝나면 바로 10월, 사흘 연휴가 두 번입니다 📅\n\n[시즌 캘린더 — 10월 편]\n\n■ 연휴 ① 10/3(토) ~ 10/5(월)\n· 개천절이 토요일이라 10/5(월)이 대체공휴일\n· 토·일·월 사흘\n\n■ 연휴 ② 10/9(금) ~ 10/11(일)\n· 한글날이 금요일\n· 금·토·일 사흘\n\n■ 사장님 체크 세 가지\n01 연휴 앞 발주는 평소보다 하루 일찍",
+      "date": "2026-09-23",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/818062449_2339709093523842_6467628494181609717_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=FTh0ZceXWTEQ7kNvwHL5B52&_nc_oc=AdoZnSjBhazOnMzBGir5s_qgLT-BA7gi-WvtaH2X2msIFTq39jSLKlq8lTDoTfTQSRo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIuSndZKefUuhPy0Oyw5_10M3rF4aV8m1p6EpLYomdpOLon66E63wRKU51OWDilkeJb5mQf0WG3Ug&oh=00_AQN85EL1XWEgr1Xo2XVbC92AJ8_EX-JNUtS8ISueZFkspA&oe=6AD1F883",
+      "metrics": {
+        "views": 422,
+        "likes": 11,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "10월연휴",
+        "대체공휴일",
+        "술집사장",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:21.969897+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18126519799890842",
+      "url": "https://www.instagram.com/reel/DdnHPorj1Bv/",
+      "title_or_caption": "생맥주 거품이 금방 꺼지면, 잔부터 보세요.\n\n온도·압력·라인이 맞아도 잔 안쪽의 기름기나 세제 때문에 거품이 무너질 수 있습니다.\n\n✔ 충분히 헹구기\n✔ 행주로 닦지 않기\n✔ 엎어놓고 자연건조\n\n거품이 유리에 고리처럼 남으며 내려가는지도 확인해 보세요.\n생맥주 관리 다섯 가지 전체 영상은 유튜브 「세왕상사」에서 보실 수 있습니다.\n\n서울·경기 주류도매 세",
+      "date": "2026-09-23",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/795289339_1051421577716675_5460427344060227670_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=eP2Gr0DzRTEQ7kNvwEQ7RCc&_nc_oc=AdpTB2EWLnFP91gvGROu13AdLLmkBPrLVw_sZcwpSXTio6egdqtFPOnC16ntRnJqtTU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQI-zwud4EriRoX5K7Lb1yjoINd3DXQbUpY7gggKOYz5IPCc1ItEApdNVKxXmG06tmjaAL0XF0HZlg&oh=00_AQMVx3IOjXEewzdG0Iy60AD_gjLkSeJ_td5Mk7qYGdwVXA&oe=6AD2224E",
+      "metrics": {
+        "views": 426,
+        "likes": 9,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주관리",
+        "술집운영",
+        "생맥주",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:22.279036+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18021472499707863",
+      "url": "https://www.instagram.com/p/Ddm4MtFkyLP/",
+      "title_or_caption": "추석에 문 여시나요? 지도는 아직 '평소 영업'입니다 🌕\n\n[가게 운영 — 추석 연휴 편]\n\n내일부터 추석 연휴입니다. 연휴에 영업을 하든 쉬든, 네이버·카카오 지도에 적힌 시간이 평소 그대로면 손님은 헛걸음을 하거나, 열려 있는 가게를 닫힌 줄 알고 지나칩니다.\n오늘 마감 전 5분이면 바꿀 수 있습니다.\n\n■ ① 네이버 플레이스\n· 스마트플레이스 → 내 ",
+      "date": "2026-09-22",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/817651017_18077582462432241_4955821479108442687_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-VFi0rO0jWAQ7kNvwFwa2tL&_nc_oc=Ado9Fq1-49xj9pwZEalgsaYhFc7ALa1LvGqlhb2XmN5egamhkrFNu_iWzxKBZMGRpdI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJvEcz-OaFcrHMdu2BzsFLs9bx4pi_DPCqZC0ZoxeuCgO_T1ydPWHllSm3Ikw3jiqhlWD3tLAgn-g&oh=00_AQMAd7lbOxHgfEAaODnb5RWY6lsEN-pxhjrSPZPsuKb1XQ&oe=6AD1F873",
+      "metrics": {
+        "views": 0,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국내",
+      "tags": [
+        "추석영업",
+        "스마트플레이스",
+        "술집사장님",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:22.279143+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18625174312009241",
+      "url": "https://www.instagram.com/reel/DdkTYojj_Ww/",
+      "title_or_caption": "단골 한 팀이 발길을 끊으면, 1년에 144만 원이 사라집니다 🧮\n\n[점주 계산 — 단골 편]\n\n매출표에는 \"조금 줄었네\"로만 보이는 숫자를 계산해봤습니다.\n\n■ 가정 (우리 가게 숫자로 바꿔 넣으셔도 됩니다)\n· 두 분이 오셔서 한 번에 60,000원\n· 한 달에 2번\n\n■ 계산\n· 60,000원 × 2번 = 월 120,000원\n· × 12달 = 연 1,",
+      "date": "2026-09-21",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/818563417_1646562116830629_8288593050014888219_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=AvftZhJua94Q7kNvwHAQNrs&_nc_oc=AdqyMlgFBx-uJHtl9oCsviMo7afa28CKyFFSujRGA7yL2I7aFvS8M6B05n4oE64ABJc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIR6uply-oaREc3Wr0U-n7TNUn2j5Gw9wwfLgjzUxvzdr10uHEb65kMrWg-wVPm4G22JJe6Ed3bRA&oh=00_AQNA56LBcE2iQOni2-OFl9GeHQ42SCoMnfb2DS4v5mPNPw&oe=6AD208CC",
+      "metrics": {
+        "views": 424,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "단골",
+        "재방문",
+        "술집사장",
+        "점주계산",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:22.536496+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17944990731325755",
+      "url": "https://www.instagram.com/reel/DdhxHU6D9RW/",
+      "title_or_caption": "어제 뉴스에서는 20대 술자리가 반토막 났다고 했습니다.\n\"100 → 48.\" 3년 만에 절반.\n20대 점유율은 34%에서 25%로 내려앉고, 그 자리를 60대가 12%에서 19%로 밀고 올라왔습니다.\n\n뉴스는 어제 나왔지만, 우리 발주서에는 몇 달 전부터 신호가 있었습니다.\n20대 상권 매장의 발주 간격이 벌어지고, 밤 11시 이후 소주·맥주 SKU 주문",
+      "date": "2026-09-21",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/818062532_1394645136112924_4513213494161414808_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=KqjDe2NKc54Q7kNvwGa65EZ&_nc_oc=AdoERYvKRmYCpmFyHFG1OSoVwBSKYDWXPESQ3Sis9IJAOhn63htyMcDaFvW-tuQZSek&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQI0oqr1yha36MzLuRS1P4sVNkKTmQ-3hauw1sQIDCGPvJqT8_hrZGXH57zUppQs5mgtuq_aIg7xPA&oh=00_AQPd0Qfl0m7h_g4DBfLWED1WwW7b8R-EZrgECjziX7Kvzw&oe=6AD201B7",
+      "metrics": {
+        "views": 398,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국내",
+      "tags": [
+        "세왕상사",
+        "세왕리포트",
+        "주류도매",
+        "술집운영",
+        "자영업",
+        "상권분석",
+        "20대소비변화",
+        "고객세그먼트",
+        "업주노트",
+        "소상공인"
+      ],
+      "fetched_at": "2026-10-12T01:43:22.827243+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18104759462355924",
+      "url": "https://www.instagram.com/reel/DdfMSiWD7ps/",
+      "title_or_caption": "술값이 올랐습니다. 뭘 바꾸시겠습니까.\n\n일본 나가사키 짬뽕 체인 '링거헛' 이야기입니다.\n\n■ 2009년 2월기, 창업 이래 최대 적자 24억 엔\n물러나 있던 창업자 요네하마 카즈히데가 사장으로 돌아옵니다. 1962년 나가사키에서 돈가스집으로 시작해, 1974년 짬뽕 체인 1호점을 낸 사람입니다.\n\n■ 적자 한복판에서 채소를 전부 국산으로\n비용이 14억 ",
+      "date": "2026-09-19",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/818062765_2151599392372427_6394240358993379975_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=a6FgFFq31usQ7kNvwHnqyTB&_nc_oc=Ado7Is6-ZOAtjCKrIYjOxwOFNV1wAJSdg-s3jwvAf8O5NQyl73SGe1q7hxt82BNAzFE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJGDUaLg6d37AGBY9jIeS9kPSsX8unMU-CTTba0hrFeN9IT8iOunZBnWHN2Dv0i5UrxuZ6dsOz4dA&oh=00_AQPeTHLZf0p3M3-DtHy-NTg2vQAjK3eXOzmG6BsAD6SzCQ&oe=6AD22107",
+      "metrics": {
+        "views": 377,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "외식업",
+        "자영업",
+        "술집",
+        "호프집",
+        "이자카야",
+        "원가관리",
+        "가격인상",
+        "메뉴판",
+        "링거헛",
+        "나가사키짬뽕",
+        "주류도매",
+        "세왕상사",
+        "상권분석",
+        "사장님",
+        "장사",
+        "소상공인",
+        "업소용주류",
+        "창업",
+        "식자재",
+        "원가절감"
+      ],
+      "fetched_at": "2026-10-12T01:43:23.130393+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17959701153231900",
+      "url": "https://www.instagram.com/reel/DddpAvCgYwV/",
+      "title_or_caption": "\"올해 상반기 자영업 폐업 62만 4,000건, 새로 연 곳의 1.3배\"\n\n뉴스에서 본 숫자입니다. 그래서 저희 장부를 열었습니다.\n서울·경기에서 48년째 술을 넣고 있는 종합주류도매사입니다.\n\n■ 2026년 1~8월 · 서울·경기 업소용 술집\n새로 거래를 튼 가게  764곳\n문 닫은 가게  334곳\n거래만 끊긴 가게  124곳\n\n■ 먼저 짚고 갑니다\n'7",
+      "date": "2026-09-19",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/813773958_1417464180326597_6479072822908620539_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=lHbbOCwMhnMQ7kNvwEoFqBI&_nc_oc=Adr9GqkQQFsovrus6nAN0uMUzex2M47XyZag5VHfJA3s_I8UWbmr3TlCfrnPn6m9tyo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQK4Jre5T3ej9I79GO5VbgTKXHGM7sbrSuvHya9IUL55T3qWc4HjBtfH_PeZmv4T_xIBU7X73V46aQ&oh=00_AQOuF_4wNtTWfW3CbrvZYbMsmFFfvY8eviycvO7RhsfbaQ&oe=6AD1F50F",
+      "metrics": {
+        "views": 404,
+        "likes": 11,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "자영업",
+        "창업",
+        "폐업률",
+        "술집창업",
+        "호프집창업",
+        "이자카야창업",
+        "포차창업",
+        "서울창업",
+        "경기창업",
+        "상권분석",
+        "주류도매",
+        "세왕상사",
+        "첫발주",
+        "발주",
+        "재고관리",
+        "소상공인",
+        "업소용주류",
+        "사장님",
+        "장사",
+        "창업준비"
+      ],
+      "fetched_at": "2026-10-12T01:43:23.436238+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18368021536210566",
+      "url": "https://www.instagram.com/reel/DdaFAxHljva/",
+      "title_or_caption": "아침 8시, 사장님이 어제 넣은 발주는 이미 트럭 위에 있습니다 🚚\n\n[도매사가 하는 일 — 마당 편]\n\n주류 도매사 마당은 손님이 볼 일이 없는 곳입니다.\n그래서 마당 사진을 몇 장 꺼내봤습니다 (2019~2024년, 세왕상사 마당).\n술 한 병이 가게에 닿기까지, 하루가 이렇게 돕니다.\n\n■ 08:07 아침\n어제 들어온 발주가 이 시간엔 이미 차 위에 ",
+      "date": "2026-09-17",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/814560824_1629479132229724_5120512764483796164_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=p4nvTcVqH0oQ7kNvwEEgc1p&_nc_oc=AdreSyUBp1vlc6MosNzuoxmCgH6xHPi12OWJk6d-5zo-h_6czosq4E4PUaXfCZHiviA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJkyA53STqwC2pu5Dwy3nnEH6oOjCm2FAoLvlmU8igno_7YSrYtq9hQ8nX4t2Mlvpet_QzE3mTY4g&oh=00_AQPfUYnJf53kkJnJ5RrzTwd-rTISnF2kSAf4fsW1xba1Jg&oe=6AD22700",
+      "metrics": {
+        "views": 5660,
+        "likes": 51,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "주류도매",
+        "발주",
+        "술집사장",
+        "도매사가하는일",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:23.707129+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18117309644293984",
+      "url": "https://www.instagram.com/reel/DdXdWLWjaCm/",
+      "title_or_caption": "치킨집인 줄 알고 들어갔는데, 생맥 탭이 세 개 걸려 있었습니다 🍺\n\n[가게 운영 — 홍대 현장 노트]\n\n어제 저녁 여섯 시 반, 홍대 레드로드 골목입니다.\n치킨 브랜드 간판 아래에 \"Beer Pub\" 한 줄이 더 붙어 있습니다.\n배달만 돌리는 치킨집이 아니라 **홀 장사를 하려고 만든 매장**입니다. 굽네가 2020년부터 늘려온 '비어펍' 특화 매장 형태",
+      "date": "2026-09-16",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/813520245_1148493534642716_712955217919652435_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=sCd_1hgMKDoQ7kNvwFWj7Yj&_nc_oc=AdqnQc06jGyW8tV1EHAAaaqtS0caNsxZ0CPU-7CPpdUgsJx5OfjCF0iGPefD-dP1WPo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJzdq8SLHki2qET-8f-y7ED1vRUGEL4B11Yjyr62WUsNCnlA_squH_BehJlqzuCDGnupg66EHCNCw&oh=00_AQMDSkCjJm0zAuQ5XnDaItekL361AyFWAr92cV4BZ1h50Q&oe=6AD21EC9",
+      "metrics": {
+        "views": 1703,
+        "likes": 23,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [
+        "치킨집",
+        "비어펍",
+        "생맥주",
+        "식당사장",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:23.994967+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17883020925504762",
+      "url": "https://www.instagram.com/p/DdVzl5gCWRl/",
+      "title_or_caption": "[캡션]\n\n지난주 카드에서 후보지로 소개한 송해길·신당동·청량리는 빠졌습니다. 서울시가 9월 14일 발표한 '서울 달빛야장' 시범상권은 이 여섯 곳입니다.\n\n· 강남 세로수길\n· 관악 사당오락 (사당역 일대)\n· 광진 건대맛의거리\n· 도봉 창동역 상점가\n· 동작 사당1동 먹자골목\n· 중랑 상봉먹자골목\n\n당초 5곳이었는데 심사에서 1곳이 늘었습니다. 상권당 ",
+      "date": "2026-09-16",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/799829898_18076929182432241_9211498442586807818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TRjS1wXLp8AQ7kNvwH9t0ip&_nc_oc=AdoVTWSZdVqBwc2haUxdWVCVGkEcqmK94zxak3gdzyA9B_l-SHy2VDHhvxw7A0q6IrM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJ1KRR6qDVca65zC0cqzdtaxtx8IZLz8gMCKJrMyJgrgucCeIxnbem50jTRngx-grJYbgzCbgl6Jg&oh=00_AQMr0Wd49UwBG6oBVi0A5IpqyicnmkTuxVPByJ1M2S7e0g&oe=6AD21150",
+      "metrics": {
+        "views": 0,
+        "likes": 18,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "달빛야장",
+        "야장",
+        "술집사장님",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:23.995054+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17900052333598050",
+      "url": "https://www.instagram.com/p/DdU2sozEwBo/",
+      "title_or_caption": "대구 오리집이 역삼 골목에 왔는데, 문 앞에 술 박스가 벌써 세 개였습니다 🦆\n\n[그 집, 이 술 — 전수창오리주물럭 강남역삼점]\n\n어제 저녁 여섯 시, 역삼 오피스 골목에 들렀습니다.\n대구에서 올라온 오리주물럭 집입니다.\n오픈 열한 시, 마감 열한 시.\n문 열고 얼마 안 됐는데 문 앞에 술 박스가 세 개 나와 있었습니다.\n\n■ 01 저녁 업종인데, 낮 현",
+      "date": "2026-09-15",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/800165560_18076897829432241_8128126018266916772_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yRGMw9z9XuoQ7kNvwEa9IX_&_nc_oc=AdqtCfS_aiIjVpE3cK1jBEjZWVF3BKWGluF04ojzv_FCS9td1_JzgBbkV5nCAbJ2lKg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJCounWhPj32ALJtEV1KzMpeNY4UYSIBjNxKM7ZZALH4BOKz5cnZ-TpOEa9pmn_iYDZAeID3YFdDQ&oh=00_AQPgCWnwlczfm9A36KPgCeHTRVQ27WhjahStho_0-Ak5lQ&oe=6AD20784",
+      "metrics": {
+        "views": 0,
+        "likes": 19,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "오리주물럭",
+        "회식맛집",
+        "그집이술",
+        "식당사장",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:23.995132+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17945192535313115",
+      "url": "https://www.instagram.com/p/DdTI-mxE1_K/",
+      "title_or_caption": "살얼음 생맥주로 여는 브랜드, 씨네마맥주가 지금 이렇게 열고 있습니다.\n\n제주에 1호점이 열렸고, 대구에는 수성못점이 문을 열었습니다.\n\n무기 하나 — 생맥주\n브랜드 이름부터 살얼음 맥주입니다. 간판이 안주가 아니라 맥주인 집은 생각보다 많지 않습니다. 잔 온도로 승부를 보는 컨셉이라, 맥주 관리가 그대로 매출로 나옵니다.\n\n무기 둘 — 안주\n치킨, 피자,",
+      "date": "2026-09-15",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/811303987_18076832006432241_1417255197484927524_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=P-BQi17jrO8Q7kNvwGGnL48&_nc_oc=AdrHst6EfLl2TfaG3dBb8inO0RC0O9Jc3qCROnwdzx4KalzZJT4oeHRydsQSWp4YXiU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKfHg5VXsNiuDU2QKgyB_--trC-WbUcAnsxy8qWgUfHHVrOeiIDMj7f6lS-Udkj1Wwyu-tgUGNsDQ&oh=00_AQObulJqt7miA3L5wapRQWxeCElniJ8BK5XQkhprzHc1tA&oe=6AD22123",
+      "metrics": {
+        "views": 0,
+        "likes": 16,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "씨네마맥주",
+        "술집창업",
+        "맥주집창업",
+        "프랜차이즈창업",
+        "제주술집",
+        "대구술집",
+        "수성못",
+        "가게창업",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:23.995169+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18111014087098415",
+      "url": "https://www.instagram.com/reel/DdSVouGiBbI/",
+      "title_or_caption": "추석 당일 7시간 알바 인건비, 평일보다 36,120원 더 나갑니다 🧮\n\n[점주 계산 — 추석 편]\n\n추석(9/25 금)까지 열흘. 문을 열지 말지 정하기 전에\n알바 시급이 그날 얼마가 되는지부터 계산해봤습니다.\n\n■ 직원 5명 이상이면 (근로기준법 제55조 ②·제56조)\n· 추석 같은 관공서 공휴일 = 법정 유급휴일\n· 그날 일하면 8시간 이내 +50%,",
+      "date": "2026-09-14",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/811203258_1093683053144801_1415794408688220304_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xkh9DpzKDXgQ7kNvwHGPsaF&_nc_oc=AdpTOI1zB2CzZKWn9E1iVZle1INv2MuPt3r9SoPPXcGMpJBIC2mR2ujGz5ulTh1nYYE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQK2wMA5NjgGApol34WFjDe7qJ8x0rFc4980QGPNDHXK-J0pfQsbgCmyeF9PKpYUlH1BbWvjX4s1Bw&oh=00_AQNcGKXQuBn1geGy6GEzAHaGzgu2JVWODETowL8Gto6QKQ&oe=6AD21DA3",
+      "metrics": {
+        "views": 434,
+        "likes": 11,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "추석알바",
+        "휴일근로수당",
+        "식당사장",
+        "점주계산",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:24.342973+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18112074626517884",
+      "url": "https://www.instagram.com/reel/DdP1BliDFUO/",
+      "title_or_caption": "20·30대 손님 열 명 중 셋은 지난 한 달 술을 한 잔도 안 마셨습니다 📉\n\n[세왕 데이터 — 국내편 (미국편 갤럽에 이어)]\n\n지난주 미국 갤럽 조사(성인 음주율 54%)를 올리면서 \"우리나라는 어떨까\"가 궁금했습니다.\n마침 오픈서베이가 9월 7일에 'MZ세대 주류 트렌드 리포트 2026'을 냈습니다.\n(전국 20~39세 2,000명 · 2026년 8",
+      "date": "2026-09-14",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/809167735_28303660335965173_2065240191251628436_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=p4oVtAE6OK0Q7kNvwFfPshO&_nc_oc=Ado27pnfKNhZ7CMb1T69czNgTQq1swU49IZ4zcyiBuDMphWJRiR6NiDn2tItCM0flfU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKzAVZhzqadPipZzA6qH_4xYXVikuBqxtX2SPZbhg5PIk_CfDS1mPok_s9Ry1BurGoPEMsbMNviQQ&oh=00_AQMO5YNeTyvnO4yjJX0L_oNXl4wcCIE7Iq5gO3OFSajiMA&oe=6AD1FC7C",
+      "metrics": {
+        "views": 1599,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "MZ세대",
+        "무알콜",
+        "식당사장",
+        "세왕데이터",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:24.595139+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18634889662030838",
+      "url": "https://www.instagram.com/p/DdNSrLYD3B5/",
+      "title_or_caption": "서리 낀 잔, 손님은 좋아하는데 맥주는 싫어합니다 🍺\n\n[사장님 노트 — 잔은 냉동실에 넣지 마세요]\n\n거래처 돌다 보면 냉동고 문 열고 잔을 꺼내는 집이 꽤 있습니다.\n\"차가운 잔이 좋은 잔\"이라고들 하는데, 미국 양조자협회 생맥주 서비스 기준은 반대로 적어놨습니다.\n\"얼린 잔은 얼음 결정이 생겨 따를 때 거품 문제를 일으킨다. 잔을 차갑게 하더라도 서리",
+      "date": "2026-09-13",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/808397412_18076598243432241_3887402455683554582_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=gbJRe9Cj30UQ7kNvwETJEnk&_nc_oc=Adpt0TDmei1n03MfLpuKXBy1GrqFGSNunXFvceNxegifi5oisoMcp8cfn5pYCVoQcwY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJzjKDRcCni8fQIETKlWn0fKhvMVE6ed5fBqczqcM03qtaNl-Ws-3Wc7oe6113wgRWS3LqJB4Ijgw&oh=00_AQMkOvEGVjeaNzpSl8SBG2AoI-d_VMDyAEKuLZVGShaSBA&oe=6AD217CF",
+      "metrics": {
+        "views": 0,
+        "likes": 19,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "맥주잔",
+        "생맥주관리",
+        "사장님노트",
+        "자영업",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:24.595204+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18495819763102859",
+      "url": "https://www.instagram.com/p/DdLoEpBk0JM/",
+      "title_or_caption": "서울시가 가게 앞 보도에 테이블 놓는 기준을 처음으로 정했습니다.\n\n8월 31일 '서울특별시 옥외영업장 도로점용 가이드라인'안이 행정예고됐고, 9월 10일까지 의견을 받아 각 자치구에 배포됩니다. 이른바 '서울 달빛야장'을 제도권 안으로 들이는 작업입니다.\n\n핵심은 가게가 아니라 길입니다.\n· 보도와 차도가 나뉜 길 — 테이블 놓고도 보행 폭 2m 이상 (",
+      "date": "2026-09-12",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/806141753_18076530221432241_334994906725081998_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sq-sr5LjpAgQ7kNvwGlu87b&_nc_oc=AdrH_GKeaMGx5JpyJ37BS0wZY5aYag6XijqkqFPdGcyWzDcnjTJwXeqhMYPo52oBNsw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQJUNv08xq_LbyLIiII3YgCqJsFSQebh0g_fMpekcA_1iwxka6wPVboQsH764x3H5-I69YDnf3L1EA&oh=00_AQPTQK1II9r5IWhC2XiwWocvzz2hQyQ_7aBrtfJ9v8fSfA&oe=6AD20509",
+      "metrics": {
+        "views": 0,
+        "likes": 15,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "술집창업",
+        "가게운영",
+        "달빛야장",
+        "서울시",
+        "옥외영업",
+        "호프집",
+        "포차",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:24.595225+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17890894665609691",
+      "url": "https://www.instagram.com/p/DdKoBgBk7wO/",
+      "title_or_caption": "밤 아홉 시면 문 닫는 우동집인데, 술이 네 줄 있었습니다 🍜\n\n[그 집, 이 술 — 우동키노야 잠실점]\n\n지난 월요일 낮, 잠실 우동집에 들렀습니다.\n\"국내 최초 48시간 저온 숙성 우동\", \"우린, 면발로 말한다\".\n간판부터 끝까지 면 얘기만 하는 집입니다.\n\n오픈 열한 시, 라스트오더 여덟 시, 마감 아홉 시.\n술로 버는 집이 아닙니다.\n그런데 메뉴판",
+      "date": "2026-09-11",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/806298913_18076494821432241_3945168154619132169_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=81ObRNWOj6YQ7kNvwHEXKo5&_nc_oc=Adp3i3NkDpZMnFbwPgYQUXmh8IEZ5FZhq9FB-cSoX1fGqIZ8PsjYzl6lbOWVKnIvvAU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIqVqZCol_fwE3_vjRsacO3P9Vd1YJiIvCFO8P2ikVuFR4GQii0d4iJvkc4hH0BJf7XSkm_jGfUcA&oh=00_AQOqMslGWf3Y7TpR7TDqrYuNGihjX03_FUYWwOtO30rjtQ&oe=6AD2190D",
+      "metrics": {
+        "views": 0,
+        "likes": 14,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "낮장사",
+        "술메뉴판",
+        "그집이술",
+        "식당사장",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:24.595240+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17901706731593131",
+      "url": "https://www.instagram.com/reel/DdH-kfeiOii/",
+      "title_or_caption": "청소년한테 술이 나갔습니다. 이러면 무조건 영업정지일까요 🪪\n\n법에 면제되는 길이 하나 있습니다.\n다만 \"억울합니다\" 만으로는 안 되고, 조건이 붙습니다.\n\n■ 법에 뭐라고 돼 있냐면\n\n식품위생법 제75조 제1항 단서입니다.\n청소년의 신분증 위조·변조 또는 도용으로\n청소년인 사실을 알지 못하였던 사정이 인정되면\n행정처분을 면제할 수 있다 — 이렇게 적혀 있",
+      "date": "2026-09-10",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/804725514_928401886732087_2912586142490683354_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=nvWgq4DkCCEQ7kNvwENq8bO&_nc_oc=AdpTCbTnfbBsxKevn3KQrGD4U2SUC0TI0xMRbP5_lBuVAx_YiKZ5GdZBo0-Bg8lbOW8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKKtQsywhelW_y93syIkSGm6RyZ36QI9dCl4LVT45TK0QhOjGF6pZG-9p_7UPIsxgvGN9mtjXkrZw&oh=00_AQPK1Wy4G9EmwRKK3VJejJbmaqMAvGKdmilu-eeOOVr2Vw&oe=6AD207B8",
+      "metrics": {
+        "views": 511,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "신분증확인",
+        "청소년주류판매",
+        "식당사장",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:24.861783+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18101652584210187",
+      "url": "https://www.instagram.com/p/DdFgo-VEzT2/",
+      "title_or_caption": "한국 젊은 손님도 덜 마십니다. 그런데 무알콜은 두 배가 됐습니다.\n\n며칠 전 미국 성인 음주율 54%(갤럽) 얘기를 올렸는데, 국내 숫자도 나왔습니다. 이번엔 남의 나라 얘기가 아닙니다.\n\n▪ 한 달 안에 술 마신 20~39세 — 67.2%\n2024년보다 4.9%p 내려갔습니다. 월평균 음주 횟수도 6.40회.\n\n▪ 무알콜 — 한 달 내 음용 16.6% ",
+      "date": "2026-09-10",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/802457000_18076297265432241_251059109772842033_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sqEkG1AyGCsQ7kNvwFlYIIw&_nc_oc=AdoTaT7fRdzuuXWGHGlMPKkWz2eaWzjdhYLhvMAyCMrG4lkiwXSdH6WcLSdEt-ZJ9SY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIaUPdsKsqocjlTr72-3tKb3FpF6RLNDoufbqlLjXmn94c5tPYAC0xu7vJjVmsnpSFsbZDQ8txLJg&oh=00_AQMZseyzF-Xlnp019OXj2EHfuiqFNKfWNK9j_zwKMTQeiA&oe=6AD20548",
+      "metrics": {
+        "views": 0,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류트렌드",
+        "무알콜",
+        "논알콜",
+        "술집창업",
+        "호프집창업",
+        "이자카야창업",
+        "가게오픈",
+        "자영업",
+        "소상공인",
+        "주류도매",
+        "세왕상사",
+        "라이트맥주",
+        "하이볼",
+        "잔술",
+        "MZ주류"
+      ],
+      "fetched_at": "2026-10-12T01:43:24.861841+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18082427780706983",
+      "url": "https://www.instagram.com/reel/DdC70nVtFxd/",
+      "title_or_caption": "가게 열면서 생맥주 하기로 하셨으면, 기계부터 알아보지 마세요.\n\n기계는 사는 게 아닙니다.\n어떤 생맥주를 팔지 브랜드를 정하시면\n그 맥주를 만드는 회사, 수입 맥주면 수입사에서 기계를 공급합니다.\n설치도 사용법 교육도 그 회사가 직접 나와서 해줍니다.\n\n저희 같은 도매사는 맥주를 공급하고, 그 회사하고 사장님 사이를 연결합니다.\n\n케그하고 탄산가스통은 보",
+      "date": "2026-09-09",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/801008796_18076197233432241_3653747537818068253_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=rQamNHqBHFsQ7kNvwFIFvV_&_nc_oc=AdrFV_1uRBE9BtPZr_GquBXJgYKW8SPk4FMfuk4vkngPnhDyIeBdunDRzCIGmvsELcI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKSG2wOGhlX_92fElaG4IYjHjDyZ7r3sbf_IYX5fxaNX_PI-XfGWp06nlZz706sesGEwN3x3uu8Ag&oh=00_AQP9TNQLjtYsk3w8PzBz3atQm8KMEvqBcN54YYrjqwx5OA&oe=6AD1F703",
+      "metrics": {
+        "views": 437,
+        "likes": 11,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주",
+        "생맥주기계",
+        "술집창업",
+        "호프집창업",
+        "이자카야창업",
+        "가게오픈",
+        "창업준비",
+        "주류도매",
+        "자영업",
+        "세왕상사",
+        "업소용생맥주",
+        "케그",
+        "맥주창업",
+        "소상공인"
+      ],
+      "fetched_at": "2026-10-12T01:43:25.154575+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17885556042654034",
+      "url": "https://www.instagram.com/p/DdAWFCYk3eR/",
+      "title_or_caption": "한국 소주 100년, 30년 전쟁, 그리고 2026년 판을 흔드는 한 병. 🍶\n\n[사장님 노트 — 소주 100년사와 오비의 도전]\n\n1924년. 평남 용강.\n교단에서 쫓겨난 청년 교사 한 사람이 술을 빚기 시작했습니다.\n장학엽. 세 사람이 500원씩 모아 자본금 1,500원.\n'진천양조상회'가 문을 열었고, 첫해 700석. 그 술이 뒤에 진로가 됩니다.\n\n",
+      "date": "2026-09-07",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/799958356_18076093496432241_3079040235455696509_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=m6zB5O1247QQ7kNvwHuMHJS&_nc_oc=Ado4pnpA9kBjBgvd94npYPQ_8J-oFdIjiKFOanp9WkGGMI4ZSsfzLYh3HXNHq0bUynU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQIbx5oqRBRnMUua4L1gXpRS_xppXtXVJueB-S6gLLuXAEcEljB2xzEWnHaTEkerLGvJBfiBaXj1aQ&oh=00_AQMM29dQlHkR17utJ_PvkC0rLeI1HQC5bQpiABc8OTgYBQ&oe=6AD21BAC",
+      "metrics": {
+        "views": 0,
+        "likes": 17,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "소주",
+        "참이슬",
+        "처음처럼",
+        "찰랑",
+        "오비맥주",
+        "하이트진로",
+        "롯데칠성",
+        "소주역사",
+        "사장님노트",
+        "세왕상사",
+        "주류도매"
+      ],
+      "fetched_at": "2026-10-12T01:43:25.154636+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17971781003940319",
+      "url": "https://www.instagram.com/reel/Dc9xMI7CNwH/",
+      "title_or_caption": "추석 당일, 손님은 '문 여는 식당'을 검색합니다 🏮\n\n[세왕 시즌 캘린더 — 추석 편]\n\n작년 추석 때 네이버에서 '추석 문여는 식당 / 추석 영업 식당 / 오늘 문여는 식당'이\n얼마나 검색됐는지 데이터랩으로 뽑아봤습니다. (기간 내 최고일 = 100)\n\n· 9월 평일: 0.2 ~ 0.6 사이\n· 추석 전날(10/5): 52.4\n· 추석 당일(10/6):",
+      "date": "2026-09-06",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/798884251_1081670877773926_5305360493520968847_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=159bawKQnzUQ7kNvwHuhwk0&_nc_oc=AdqyIJhTYF3E8QZymGb1IxSJlZE9FUCquLmZZaZpfFR-zFcixFpWKBM4MBtCDvKWGWw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=iUZTYIQBB2yzaSEMuGD6QA&_nc_tpa=Q5bMBQKXM0VKomJ1wi5f0iE3n_wJjOPJQJQeUk6iiQRdBA8HNBpYHLDQCshxRgw-77q1yo_nyIMqYuRu_w&oh=00_AQOahH5XUwUGBUT-_X4tVgulKARgzUKqSbG2kWrQKermUQ&oe=6AD203D8",
+      "metrics": {
+        "views": 370,
+        "likes": 8,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "추석연휴",
+        "식당영업",
+        "자영업자",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:25.442535+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17994983321826828",
+      "url": "https://www.instagram.com/p/Dc7GsvOk36d/",
+      "title_or_caption": "미국 어른 절반은 이제 술을 안 마십니다 — 그런데 마시는 사람은 더 마십니다\n\n[세왕 노트 — 해외 리포트 읽기 EP.02]\n\n갤럽이 8월 20일에 낸 연례 소비습관 조사입니다.\n(2026년 7월 1~19일, 미국 성인 1,200명, 오차 ±4%p)\n\n· 술을 마신다는 성인 54% — 1939년 조사 시작 후 최저\n· 3년 연속 하락 62% → 58% →",
+      "date": "2026-09-05",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/797841049_18075884399432241_9155707578771215674_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sCqZoZ_BLLAQ7kNvwFV71eV&_nc_oc=Adqx_wiTKjT264NO0U0hYszS_vlsytwtRF24z6wP8Pa749vY1Q8xJC4UlfO_Cd-sTM0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKg6ZSxmJxoDSl_35Mm9_D_obB26D3sMIj-7Ej8AoVerEaLA7cXNoGLy7Hj8naH4D8x1DQ6FLKedw&oh=00_AQNUFmsGkXw2L1qt6eZ-P9D3Q37ZW-Homz8VfimSHcz2Yw&oe=6AD215E7",
+      "metrics": {
+        "views": 0,
+        "likes": 21,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류트렌드",
+        "논알콜",
+        "자영업자",
+        "술집운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.201960+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18091985888389126",
+      "url": "https://www.instagram.com/p/Dc4h4A4E1Bg/",
+      "title_or_caption": "밥집인데, 앉기도 전에 와인이 보였습니다 🍷\n\n[그 집, 이 술 — 보께리우·투어낭, 하남 미사]\n\n어제 낮 열두 시, 하남 미사에 들렀습니다.\n창고처럼 생긴 건물인데\n아래는 피자와 파스타, 위는 레스토랑과 디저트 카페가 들어 있었습니다.\n\n저녁 술집이 아닙니다. 낮에 여는 밥집입니다.\n그런데 이 집에서 제일 먼저 눈에 들어온 게 술이었습니다.\n\n이 집이 ",
+      "date": "2026-09-04",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793867549_18075780032432241_7164210804749417019_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=llBdy91JsFwQ7kNvwGMywAs&_nc_oc=AdrnAA5nKfwgWBQXlBAxS1YeDuKFbYDuLenvFAEaGoBkbQ1qsKdpRpXpIaz6iBlnSDg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKI-KThysubjgXD406KhAvTtb6SoHQMvc0DnOaZuWsPQ2BGd3k6Und0mtY4-VLCOlE8SKGHB_0P7g&oh=00_AQNkaxzr5NdWZIfRftqwZvHX0u2caI24rppEXlMXa0yZBA&oe=6AD22599",
+      "metrics": {
+        "views": 0,
+        "likes": 14,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "와인진열",
+        "낮장사",
+        "식당사장",
+        "그집이술",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.202030+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18093070934398281",
+      "url": "https://www.instagram.com/reel/Dc1_XnsFExL/",
+      "title_or_caption": "올해 서울·경기에 이 간판이 유난히 많이 붙었습니다. 혼술바 🥃\n\n인허가 공개 데이터를 보니 야화 혼술바 한 브랜드가 1~8월에만 76곳.\n4월부터는 매달 열 곳 넘게 붙었습니다. 작년엔 세왕 거래처에 한 곳도 없던 이름입니다.\n\n■ 혼술바가 작아서 되는 게 아닙니다\n\n야화 한 지점이 세왕에서 사가는 양이,\n올해 새로 연 집 평균의 2.7배입니다.\n자리는 ",
+      "date": "2026-09-03",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/795027587_4474931176099509_2874619633930157670_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qR68DZqLyDQQ7kNvwGqOIcZ&_nc_oc=Adq7h7uXKMBZPTARHayvDwfczYw5FqhmAZoN9cd7hP6wxg1UPwO6w0L-TkbMs_ehYak&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIipReqmfM2XokNOQ48cQ27EL_9y0l2ZfY2YZ9G-nictaNBVTdLgfeyRWs7x0o7ZE1k1kMwvyQg5g&oh=00_AQNz2pUVmCAmRcsnAFamogrp_NodQ6tpz4qejXHqokgnGA&oe=6AD1FDE4",
+      "metrics": {
+        "views": 338,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "혼술바",
+        "주류도매",
+        "술집창업",
+        "신규오픈",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.501181+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18038783879828786",
+      "url": "https://www.instagram.com/p/DczYXP7E4c3/",
+      "title_or_caption": "메뉴판을 한 장 바꾸면 술이 한 줄 더 나갑니다 🍶\n\n[가게 운영 — 술 메뉴판 점검]\n\n손님은 술을 따로 고르지 않습니다.\n대개 안주를 정하면서 같이 정합니다.\n그때 손님 손에 있는 건 메뉴판 하나뿐입니다.\n\n오늘 영업 전에 볼 수 있는 네 가지입니다.\n\n① 술을 맨 뒤에서 안주 옆으로\n— 안주를 다 고르고 페이지를 넘기면,\n대부분 늘 마시던 걸 시킵니다",
+      "date": "2026-09-02",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/792198138_18075589019432241_9166442411911826633_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=KyCnFuTaDHAQ7kNvwF8nreC&_nc_oc=AdruMuN1Ad4yNlVr0y9aDbti4R85WcSFSoVhCULpG5B2IzSnXknNo8N0N-Ph3dOkuZE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIGWIs1Gs9Nso8PwQk62ajXjeu1hYCL3Fw3UDi6Rco8zCwD9iqTrWpkrYDWPIU3TOHXN66WiYsuLQ&oh=00_AQNDWmiUtDMu40FSxh0rHmYxjpq8P31UCpCtVxSZ2jE7zQ&oe=6AD22490",
+      "metrics": {
+        "views": 0,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "메뉴판",
+        "객단가",
+        "술집사장",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.501241+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18195852292378792",
+      "url": "https://www.instagram.com/reel/Dcw5tfjDSjH/",
+      "title_or_caption": "하이볼 원가 계산할 때, 얼음도 넣으셨어요? 🧊\n\n[점주 계산 — 잔당 얼음 원가, 두 줄이면 끝]\n\n기주 원가, 믹서 원가는 다들 세십니다.\n그런데 얼음은 공짜 취급하기 쉽습니다. 얼음도 매입가가 있습니다.\n\n■ ① 포장 얼음 받는 집\n\n봉 값 ÷ 봉 무게 × 잔당 사용량(g)\n예를 들어 3kg 한 봉이 4,000원이고 한 잔에 200g을 쓴다면 → 잔당",
+      "date": "2026-09-02",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/791532169_1713451546378928_5338937015232374636_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=FtT7QftQBg8Q7kNvwHqLJSA&_nc_oc=Adr2Yro0lj0PJCozRrFVSeidf_PrjsN6zKkjXZ262tqEoEcrsDDHLY0gcQl1dbBwJaA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJdeANWi3WknuZ59XdER0AOs9b-Ry7Jqwf4PpSInuyztyYt2mImOvkJPPX3j7ngLgXP99eL6AIlUw&oh=00_AQO-MpoKiB6LT4sExlrC-iHXAbuGxq4jaUCfErIk_nv0KA&oe=6AD220B2",
+      "metrics": {
+        "views": 451,
+        "likes": 10,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "하이볼",
+        "원가계산",
+        "자영업",
+        "점주계산",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:26.797913+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18162567850477330",
+      "url": "https://www.instagram.com/reel/DcuaVbFE3_K/",
+      "title_or_caption": "생맥주 관리 기준, 예전과 달라졌습니다. 🍺\n\n[사장님 노트 — 그 집 생맥주가 맛있는 이유]\n\n거래처를 다니다 보면 \"저 집 생맥주는 확실히 다르다\"는 집이 있습니다.\n가서 보면 장비가 대단한 게 아니라, 관리 방식이 지금 기준에 맞춰져 있었습니다.\n\n■ 01 세척 — 물을 순환시켜 밀어냅니다\n\n관에 남아 있는 맥주가 이취의 근원입니다.\n물을 순환시켜 관",
+      "date": "2026-09-01",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/o1/v/t2/f2/m86/AQNiQH6cADM-HIQXcy1DdEYIzsBcbA7mldW4TxZEPlt6zL3tYzSFvP4hHKtEIHqERbG2PRJ-L64zzPiGqxioIczcZCHieOkwAAFGVnk.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=1cB3FzNOjI8Q7kNvwEx86El&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTgwNzU0MDMzMDE0MzIyNDEsImFzc2V0X2FnZV9kYXlzIjo0MSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=bef696f97de51c02&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9CODQ4QjIxRjc4NTNENDFFOTVDNUY5NDk4NjBDQjg5Q192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzI1NEU3Mzc2RjA3OTlCRTBGMDNFRjQ5NjZDMjQwRThBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbirqGP-d6bQBUCKAJDMywXQEtu2RaHKwIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQIM5S1FBT4KhecCVSQvsWAgSOCqxVuQmgFHKaXffheaV717YU_7WNNIgSFoEl3c80_D1p5B8zbmpg&oh=00_AQNziA0iinwY4dStvfPC1XCICkuKrzfWHFdxXdK6W50EVg&oe=6ACE2420",
+      "metrics": {
+        "views": 590,
+        "likes": 22,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "생맥주",
+        "생맥주관리",
+        "사장님노트",
+        "자영업",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:27.091852+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18338902267281121",
+      "url": "https://www.instagram.com/reel/DcsBAB3gWHt/",
+      "title_or_caption": "도매사에 전화하실 일이 \"술 떨어졌을 때\" 하나뿐이라면, 절반은 안 쓰고 계신 겁니다 🍺\n\n세왕이 실제로 하는 일을 세어봤습니다. 열두 가지였습니다.\n그중에 '술 배달'은 한 줄도 없었습니다.\n\n■ 가게를 열 때\n\n① 상권이 어떻게 도는지 먼저 같이 봅니다\n  붐비는 시간 · 객단가 · 요즘 뜨는 컨셉\n② 메뉴 구성을 같이 보고 어울리는 술까지 붙입니다\n③",
+      "date": "2026-08-31",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/789562731_1070089528844011_4258071094486382715_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Y0m2iQtjl3UQ7kNvwHekHzg&_nc_oc=Adrv6AKFnW_LoemNoInvRRNssaV_sy_FxUeqJJ7DJegDbgSf3XC1FNR4qyadBMHGUzg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQK4VGd-LPfavmcnzP0QOK8wvPxR1nz6UmouDqXBWzhVUemY-ATHXrZsIjRph7YtIAP0QokfDJbAkw&oh=00_AQMSL3yBo7RMHaao1xQMfW_geYO7UoLV4XB2i1YXgdK6BQ&oe=6AD224B1",
+      "metrics": {
+        "views": 491,
+        "likes": 18,
+        "comments": 1
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "신규오픈",
+        "술집창업",
+        "생맥주",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:27.357929+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18083607290291352",
+      "url": "https://www.instagram.com/reel/DcrrBPzEXLq/",
+      "title_or_caption": "저녁 장사 하는 술집이 오후 두 시에 문을 엽니다. 왜일까요? 🍺\n\n[그 집, 이 술 EP.28 — 와르르맨숀 방이점, 송파 방이먹자골목]\n\n지난주 수요일 저녁, 방이먹자골목에 들렀습니다.\n6월 25일에 문을 연 두 달 된 집인데 여섯 시부터 자리가 차 있었습니다.\n\n이 집이 하는 것, 세 가지가 보였습니다.\n\n■ 01 피크 앞의 시간을 비워두지 않습니다\n",
+      "date": "2026-08-30",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/791890752_1791328728739470_6750876275613825040_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=yQBF6IFiSkAQ7kNvwEIifyq&_nc_oc=AdoGkK9boYwdzcVrWhZF8bH4b1vQYejfIN_pN0PgTD2cnmkPNjgzLBTp8SjsndzZMfk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKISUq8KQ3ZPpwqGx_9ij_EWXieimLy-epN6wtbDXgfxLMur17uykcEhSmDlSN7tE-y2Z9_nhdZKA&oh=00_AQMPILH-ddRNDIIz7cuA6thnr35Xtw2eeYY3Hy6uWdMJ1w&oe=6AD20CBB",
+      "metrics": {
+        "views": 827,
+        "likes": 19,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "방이동술집",
+        "방이먹자골목",
+        "잠실술집",
+        "생맥주",
+        "자영업",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:27.825428+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18624110323003729",
+      "url": "https://www.instagram.com/p/DcpKzyrE9t9/",
+      "title_or_caption": "이번 주, 대학가가 다시 붐빕니다. 준비되셨나요?\n\n[시즌 캘린더 — 개강 주간]\n\n8월 31일부터 대학들이 차례로 2학기를 시작합니다.\n검색 데이터는 이미 움직이고 있습니다.\n'개강' 검색은 이번 주 벌써 7월 말의 3배,\n'개강총회' 검색은 작년 9월 첫 주에 8월 초의 12배까지 튀었습니다.\n\n대학가 사장님이 이번 주말 체크할 세 가지.\n\n① 단체 예",
+      "date": "2026-08-29",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/789925046_18075185903432241_927171891067813424_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9aIJGoagS2kQ7kNvwGQh_4T&_nc_oc=Ado5GbJHVTqU6wISZqEaWzLp5TAE5CjIArGduuJuh4Ymb-5I-yITahV5Om0OaEdbLrc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQI7DOLo6Fksg2oddy4Pp8HcQkIncHbGfC8KR1_il1tBLW2433vw_jwYk80BJtcIWybJYZcjfxa0tQ&oh=00_AQM-zQDKvi0Fv0SMpui3iCUyuhoGenTV6eYhhS4fdr1xdA&oe=6AD20DE0",
+      "metrics": {
+        "views": 0,
+        "likes": 20,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "개강",
+        "대학가",
+        "자영업",
+        "시즌캘린더",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:27.825503+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17861695029680591",
+      "url": "https://www.instagram.com/reel/DcmuffajyTx/",
+      "title_or_caption": "\"요즘 하이볼 된다던데\" — 그 말, 언제 처음 들으셨습니까? 📉\n\n네이버 검색량으로 7년치를 뽑아봤습니다.\n\n하이볼은 2021년 5월부터 오르기 시작해 2023년 1월에 꼭대기를 찍었습니다.\n오르는 데 20개월.\n\n그리고 지금은 그 꼭대기의 6%입니다.\n내려온 지 43개월째, 아직도 내려가는 중입니다.\n\n그 말을 처음 들으신 게 언제쯤이셨습니까.\n아마 꼭",
+      "date": "2026-08-29",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/785775540_1527198325843410_6119983980908454964_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=CUCbFAiC09cQ7kNvwHjLrwS&_nc_oc=AdoaLn6DOqrMXJvHOyNifNSyXwJ1zGEoaI8QbZtVV_I2CmO_K5DMRYSI2VjvZy2bqUo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIctiddHEclKs9VdA2JIwpxbMxvMuYYjHEGYZETVuC0E8a0noFj2Getqw01uPw3_kgykABhsMKN2g&oh=00_AQP5pUJkNNrGxXtvq_8Z4aEiAt4HrSX0mL2e-LssWUvlfw&oe=6AD1F364",
+      "metrics": {
+        "views": 493,
+        "likes": 16,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "주류트렌드",
+        "하이볼",
+        "주점운영",
+        "메뉴판",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:28.097426+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18440540482120469",
+      "url": "https://www.instagram.com/reel/Dcj6tu5joGi/",
+      "title_or_caption": "\"요즘 20대는 술을 안 마신다\" — 현장 데이터는 정반대였습니다\n\n[세왕 노트 — 해외 리포트 읽기]\n\n미국 외식·주류 업계 미디어 Questex가\n데이터 기업 Datassential과 함께\n'On-Premise Consumer Habits Report'를 냈습니다. (2026년 3월)\n\n· 술집·식당에 나가는 이유 1위 — \"나를 좀 대접하려고\" 53%",
+      "date": "2026-08-27",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/787451482_1519128766651305_1768626412898426707_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=aMWr4LUguagQ7kNvwEmT5HR&_nc_oc=AdpzJqfA_gIMkmtnPUI1w5PDx7RrWm970tSwDU9PiOuqZqgg0MURxxEZTe6zaDpZHno&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIXNEueQGbO8D5zLlqtmouQYvnztSAQR5HdZ1JVySmwd_CMfDp3ojwBNX6C3_vDJ_sQF2hUusKFPA&oh=00_AQNpf3m6HPHHsBC71GcypMWz7vRYGHPwFKM84VxLk2gZtg&oe=6AD1F567",
+      "metrics": {
+        "views": 405,
+        "likes": 24,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [
+        "주류트렌드",
+        "논알콜",
+        "자영업자",
+        "술집운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:28.465919+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18121276067308069",
+      "url": "https://www.instagram.com/reel/DchWtvDkz5M/",
+      "title_or_caption": "주점이 8년 새 절반 가까이 사라지는 동안, 이 골목집은 10주년 현수막을 걸었습니다.\n\n[그 집, 이 술 EP.27 — 주생(酒生), 송파 거여동]\n\n거여역 골목 안쪽, 간판에 \"술과 인생이 머무는 곳\"이라 적힌 작은 술집.\n2016년에 문을 열어 올해로 10년째입니다.\n\n이 집이 오래가는 이유, 세 가지가 보였습니다.\n\n01 안주 스펙트럼이 넓습니다\n화",
+      "date": "2026-08-26",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/783655166_1380648726918566_672919326252527060_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=A5ohJXWjvJUQ7kNvwEnuVag&_nc_oc=AdreohEb7fypvVThffjVWHSryUupU-WxrBblxh41wvNIeeX4QaKUrXaUKmoeTecDZv0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJVHBy1KrM0Dj9T_iriTJBG5EscricH_xCAObD5_8yoTqlB0o1xrGaU3L2Id_KN63IF-XJah9vRuw&oh=00_AQP-NqU-mi7UHrUFCwv2FWEqtTOwGWwgcmHr6C8vBJ4AFw&oe=6AD228D7",
+      "metrics": {
+        "views": 631,
+        "likes": 26,
+        "comments": 1
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "거여동술집",
+        "송파술집",
+        "요리주점",
+        "자영업",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:28.700448+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17947671660258335",
+      "url": "https://www.instagram.com/reel/DcezAEgEws1/",
+      "title_or_caption": "번화가로 안 나가도 술 손님이 모입니다. 먹골역 아파트 상가에서요.\n\n어제 저녁, 먹골역 쇼넨(少年)에 다녀왔습니다.\n홍등이 켜진 카운터석, 숯불 꼬치와 규타타키 — 동네 상권인데 술 무드는 번화가 못지않습니다.\n\n사장님 눈으로 본 포인트 하나.\n이 집은 술이 '곁들임'이 아니라 '목적'이 되게 설계돼 있습니다.\n기린 이찌방 생맥주 4잔 묶음 할인, 하이볼",
+      "date": "2026-08-25",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/787409536_1347303784057497_1253543395116136746_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=lH4Yt5r_m7UQ7kNvwE49jat&_nc_oc=Adrnss9F2UZ3n-a1cGK7xf7jfLTtNwazq5BgnhGl1GTeedYsasQHvxaXbnHjA4mf1-g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJOeZs-vs4tdRmDiDhKZ9BFdqQuNqz8GLCegPHHJyOT3oZCkoOYd0g9F2ky2L0gInOgTfdoo2AmQw&oh=00_AQNXgAO68_H4t0U5ylTgNAERfBtCKnIgGtiC9Os7jHx89w&oe=6AD21D56",
+      "metrics": {
+        "views": 624,
+        "likes": 24,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국내",
+      "tags": [
+        "먹골역술집",
+        "이자카야",
+        "동네상권",
+        "자영업자",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:28.938653+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18014669258941840",
+      "url": "https://www.instagram.com/reel/DccNSltETfZ/",
+      "title_or_caption": "흑석에서 하이볼로 소문난 집이 있습니다.\n\n타마타마하이볼 본점 — '산토리 하이볼 명가 100' 2026 선정 현판이 걸린 이자카야.\n야마자키·히비키·하쿠슈가 벽 한 면을 채우고, 생맥주는 프리미엄 에비스를 각인 잔에 따릅니다.\n\n📍 서울 동작구 현충로 100 1층 (흑석)\n🍸 하이볼 · 위스키 · 생맥주 · 일본 요리\n\n이 집 잔이 얼마나 부지런히 도는지",
+      "date": "2026-08-24",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/786616881_1535514677896675_7935889970216800567_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=GmXjghm6i7oQ7kNvwEKxgqC&_nc_oc=Ado0Dvht4DGIImfCpx52qevxmkSXFdIt71EDVAwwelFO9tr5kpnSNtL6qf1NTOoYy9I&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIE9JzZ_XjUkM9clw81en5TvAtLvmKkEZijPqwZZNVqrXeLt1h2Zco1C3andv_TJc7I9D55ig85yw&oh=00_AQOH-LqzN6ouSmQ7j0cUL4xu26huo61_2R5o7o5LowxowQ&oe=6AD1F496",
+      "metrics": {
+        "views": 626,
+        "likes": 19,
+        "comments": 0
+      },
+      "category": "시장트렌드",
+      "sub_category": "국외",
+      "tags": [
+        "하이볼",
+        "이자카야",
+        "술집사장",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:29.173904+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18109201064109657",
+      "url": "https://www.instagram.com/p/DcZvv16ExWo/",
+      "title_or_caption": "올해 추석은 9월 25일입니다. 작년보다 11일 빠릅니다 📅\n\n[시즌 캘린더 — 9월 장사 달력]\n\n연휴는 9월 24일(목)~26일(토).\n일요일까지 붙어 체감은 나흘입니다.\n\n달력이 당겨지면 대목도 당겨집니다.\n백화점·마트는 벌써 8월부터\n추석 판촉을 시작했습니다.\n\n가게가 지금 체크할 세 가지.\n\n① 연휴 영업 여부, 미리 공지\n— 먼저 알린 가게가 모",
+      "date": "2026-08-24",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/783374653_18074598080432241_7689023183963401131_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3Mu7Rzr5lxcQ7kNvwHCylf_&_nc_oc=AdpFSxcCWRtA47FewfRHPZ2yanboizxmDO8LniDPiyjA7WTUDfJa-t0JvIV9kI_cc4A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKTnY6jJ3ficrSZHaxLtp4waovGo5YUBdB2GUOs_m4GMEnafv4Z3QSXzzoC39bxaBdlrs013rpCfw&oh=00_AQOY4cstuTNvijtuzD2QZZ85Gr37uKjp-rRoShkfsuwAoA&oe=6AD1F1C0",
+      "metrics": {
+        "views": 0,
+        "likes": 16,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "추석준비",
+        "9월장사",
+        "자영업",
+        "가게운영",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:29.173975+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18167408410456142",
+      "url": "https://www.instagram.com/reel/DcXE7mdjIQq/",
+      "title_or_caption": "의자를 없앴더니 1년에 9만 잔이 나갔습니다 🍺\n\n[거래처 현장 — 삿포로 프리미엄 비어스탠드]\n\n삿포로맥주가 해외에서 처음 낸 브랜드 매장이\n성수동에 있습니다. 지난해 7월 문을 열었고,\n운영은 엠즈베버리지가 맡고 있습니다.\n\n여기, 앉을 자리가 없습니다.\n일본식 '타치노미' — 서서 마시는 방식입니다.\n\n· 의자 없음\n· 한 사람당 최대 세 잔\n· 전문",
+      "date": "2026-08-22",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/784075420_2266822580751087_5608691133586755859_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=U_4QPCGCnlMQ7kNvwG9S3Nf&_nc_oc=AdpBtSUbUBstnadW6mPx1EBoVYRNbMC0Wqiw-9aYAdbPB7siFj8bCu3DWJpyWq9f8mM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKLa2cN_SYE0fdYj47WDYKPDsXV7K5CZMxNi0EGdl1WXHCyr09XC2g5VGf_W0r8JPqZdRQ1dgB1Iw&oh=00_AQMoy_IHUe3509tvh4l-_LTXXl7G7rd5hLVA42nw7ATx5A&oe=6AD225ED",
+      "metrics": {
+        "views": 732,
+        "likes": 20,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "성수핫플",
+        "맥주집",
+        "가게운영",
+        "객단가",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:29.398111+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18017539769968426",
+      "url": "https://www.instagram.com/reel/DcU8IULiJyk/",
+      "title_or_caption": "이태원에 500원 맥주가 있습니다 🍺\n\n[그 집, 이 술 EP.24 · 와이키키 비치비어 · 이태원]\n\n이태원역 4번 출구 나오자마자 팜트리·홍등·티키 조각.\n간판 그대로 WAIKIKI BEACH BEER — 하와이 비치를 실내에 옮겨놓은 실내포차 무드입니다.\n\n■ 인스타 감성 이벤트 아이템\n· 500원 미니 맥주잔 (트레이 5개 서빙)\n· 990원 미니 ",
+      "date": "2026-08-22",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/783727453_1374693294848918_2035072870942611739_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=W-0LrKUyb0sQ7kNvwGEDz_q&_nc_oc=AdqWaxg3szjw3Rm53-hS2okDMt7vSbfBjnonYw3ftO5KbY5cAlYKXpWJiywyJIy2Ws8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQL-_W2MEJsfQN6021Ghp0DbX8f4O_6_cj69n2VNAwOcIq2zgo-QZI717UuvBfs7-RCXjnmdCwG9jQ&oh=00_AQM_nfQxRiL6vihIUQvkFhv6dHajqrWu0zI-r2LwzzDKgw&oe=6AD224D5",
+      "metrics": {
+        "views": 921,
+        "likes": 31,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "이태원맛집",
+        "와이키키비치비어",
+        "이태원핫플",
+        "500원맥주",
+        "하와이비어",
+        "이태원비어",
+        "실내포차",
+        "하와이무드",
+        "테라생맥",
+        "기린생맥",
+        "세왕상사",
+        "주류도매",
+        "그집이술"
+      ],
+      "fetched_at": "2026-10-12T01:43:29.686518+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17964017597962883",
+      "url": "https://www.instagram.com/reel/DcUiLf5CDG1/",
+      "title_or_caption": "낮엔 밥집, 밤엔 술집이 되는 집 🍺\n\n[거래처 현장 — 노스(NOS) 성수점]\n\n성수역 3번 출구에서 223m.\n\"Nothing ordinary, something special\"\n간판 그대로인 퓨전 한식집입니다.\n\n블로그마다 \"이건 꼭 시켜라\"로 꼽히는\n· 치즈감자채전\n· 파스타\n· 마무리 디저트까지\n\n그리고 해가 지면 분위기가 바뀝니다.\n바 자리에 생",
+      "date": "2026-08-21",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/775845002_1333860158521660_5393844786780061460_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=uzsPhnXvABkQ7kNvwHtEbon&_nc_oc=AdoHLo9smtW6FnUdiKAMWGOIpWt-w9Jxb8juPZeBUhwArieji3tkYbP3sHc8UfEKHXY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLNMfPkKAzWD3oYVhIOEDzEGadcIkW7U3bYKYNOxo8dE94ByW9h7BAFh76OZFFbGrPgl7IEVDEWUA&oh=00_AQOvj-RDD9ba_51ccJ4NxCfaAEaxOVZuhhiPbJkKXhGmYg&oe=6AD21606",
+      "metrics": {
+        "views": 559,
+        "likes": 10,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "성수맛집",
+        "노스성수점",
+        "레드락생맥주",
+        "치즈감자채전",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:29.979631+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18102243902612775",
+      "url": "https://www.instagram.com/p/DcSGDs-nKC_/",
+      "title_or_caption": "\"8월 창업 시장이 죽었다\"는 말, 숫자를 잘못 나눈 겁니다.\n\n[세왕 데이터 EP.04 · 8월 창업 시장 다시 읽기]\n\n행안부 지방행정 인허가 · 전국 일반음식점/휴게음식점/단란주점/유흥주점 신규 인허가 기준\n\n■ 왜 착시가 생기나\n인허가 데이터에는 두 가지 함정이 있습니다.\n· 주말·공휴일은 접수가 없어 0건입니다\n· 최근 2일치는 아직 시스템에 안 ",
+      "date": "2026-08-21",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/775281956_18074308463432241_2558883622514753134_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=FLgJveVRCDoQ7kNvwGkkzFL&_nc_oc=Adqdy1ZpficiV1aWL5x3hVn-jNKCakSTFCNBvZoZU4FkYDreqsX5ViNK9KLPPJIYAZo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIQ0vu4oJEMSr_o2TX6GFKdJoIZ7f80upXDmPRV94jP3K3JgDibZi9sts75DI3VM0QfjljuPuP6cQ&oh=00_AQOoeZ_Ry1XFBGtdvjc6xD-P4wprPtUdz8ilhm8zIy4erw&oe=6AD1F319",
+      "metrics": {
+        "views": 0,
+        "likes": 14,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "창업트렌드",
+        "상권분석",
+        "주점창업",
+        "소주방",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:29.979717+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17895640602678556",
+      "url": "https://www.instagram.com/reel/DcPiUBXghSF/",
+      "title_or_caption": "영국에서 펍이 사라진다는 기사를 봤습니다.\n25년간 25%, 하루 두 곳씩 문을 닫았다고요.\n\n그런데 한국 숫자를 찾아보니 더 셌습니다.\n간이주점·호프주점 사업자는 8년 만에 52,302곳 → 28,178곳.\n46% 줄었습니다. 하루 여덟 곳꼴입니다.\n\n이유도 비슷합니다.\n20대 남성 고위험 음주율은 10년 새 41% 감소.\n\"많이 마시는 술자리\"라는 형태",
+      "date": "2026-08-20",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/780607228_1719801829232203_6033021523220701999_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=f1Bbf1T5IUwQ7kNvwEI-2HB&_nc_oc=Ado0uzua2wKx2GyPEotYmprlicB9c4Y3r6osZMyXD7uJVmA6a_GPeAvZloAK6AMGu8g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQL_6H1zW-Qm1ZU-wXLNFjRXZOF7ZCQTfLG4RiCAVxoZNMpqY1_8B2s_zmCG0M8jjnI8KK3WIq9L2A&oh=00_AQPZlo7Kn05zYsNzM7swH30_2MLpDQvrW4g75sTzFd03xQ&oe=6AD1FE9F",
+      "metrics": {
+        "views": 533,
+        "likes": 14,
+        "comments": 1
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주점창업",
+        "상권분석",
+        "업종추천",
+        "혼술바",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:30.256495+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17959221573194989",
+      "url": "https://www.instagram.com/reel/DcMyaC2ADF6/",
+      "title_or_caption": "메뉴를 바꿨는데 매출이 그대로라면 🍽️\n\n문제는 메뉴가 아닐 수 있습니다.\n\n새 손님은 메뉴가 부릅니다.\n그런데 다시 오는 손님은 접객이 만듭니다.\n\n서울 마포의 아이스크림 가게 「녹기 전에」는\n직원용 접객 가이드를 따로 만들었습니다.\n\"인사를 몇 번 하라\"는 규칙이 아니라,\n어떤 마음으로 일해야 손님에게 좋은 기분이 전달되는지를 적었습니다.\n(대표 박정수",
+      "date": "2026-08-18",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/775243815_2090657944917820_1293587368853539475_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=zbt1SKv14UsQ7kNvwFFbGyV&_nc_oc=Adr2FtK26oW9oLginvhAcPnW0K7VCPdvQpsQZ81fWssaD_8YMDdtJ3GjxlNk2vTQY28&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLB5_nou7GDOPoDJtECgMy2bWyLWh4llBABAIIKlJgokFTSJhXffExm3rl0hIsEoOlNx-AyqyrLeg&oh=00_AQO-qquzj7Z-Z_7skWsBXIq_npGJooiDJ2CZY_TadpHRLQ&oe=6AD21D66",
+      "metrics": {
+        "views": 397,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "접객",
+        "식당운영",
+        "재방문",
+        "술집사장",
+        "사장님노트"
+      ],
+      "fetched_at": "2026-10-12T01:43:31.556267+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18118031236903824",
+      "url": "https://www.instagram.com/reel/DcKTVEDjIvU/",
+      "title_or_caption": "네 명이 앉았는데 한 명이 \"저는 안 마셔요\" 🥤\n\n그 순간 그 테이블 객단가가 무너집니다.\n그리고 안 마시는 손님은 앞으로 계속 늘어납니다.\n\n· 무알콜 맥주 매출 지난해 대비 +21%\n· 20대 남성 고위험 음주율 10년 새 41% 감소\n\n미국의 논알콜 전문 양조장 애슬래틱 브루잉(Athletic Brewing)은 이걸 다르게 봤습니다.\n\n창업자는 월가",
+      "date": "2026-08-18",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/778103431_1065141769389405_8210564068382765780_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=rLzCSOb35sgQ7kNvwG7AJAC&_nc_oc=AdrsN6pRySK-5siTaS9oxNXrm18Y2bGd9rDTGKE9PzTHvPJrrVfa6WxJ68Kzrhr0yZY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJjFF7iRw2z73cixua7kVOy-SwV-hz3g_UgSNGDIl4CfOWSYKRlFhqi71tuEVTPgtjl0pody2qbxg&oh=00_AQMe3gCKRwyKRluUKu0xxny_mQhqZcWK6wGSWGfE9hqSOg&oe=6AD21152",
+      "metrics": {
+        "views": 534,
+        "likes": 16,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "무알콜맥주",
+        "논알콜",
+        "술집사장",
+        "주점창업",
+        "메뉴판",
+        "객단가",
+        "자영업",
+        "외식업",
+        "주류트렌드",
+        "세왕상사",
+        "주류도매",
+        "서울술집",
+        "경기도술집",
+        "가게운영",
+        "사장님노트"
+      ],
+      "fetched_at": "2026-10-12T01:43:31.851339+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18125000515685845",
+      "url": "https://www.instagram.com/reel/DcHpfO6DD_l/",
+      "title_or_caption": "위스키 한 병이면 하이볼이 몇 잔 나올까요? 🥃\n\n계산은 간단합니다. 한 잔에 위스키 30ml — 700ml 한 병이면 23잔. 소주 한 병이 7~8잔인 걸 생각하면 병 하나의 회전이 완전히 다르죠. 그래서 하이볼은 병 하나로 오래, 많이 파는 메뉴입니다.\n\n단, 계량이 무너지면 이 계산도 무너집니다. 지거 하나면 잔맛도 원가도 일정해져요. 우리 가게 하이",
+      "date": "2026-08-16",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/773995703_1583344523412961_1101285962248453292_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NIR-e_uGBwoQ7kNvwFRHiW2&_nc_oc=Adof7d1m1-SMIFX-_tdrEE1S-Huxn-mq7jVkBgcPYjo-uDeJnM4jtbTgdiIStQn_CMY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJ_6zQTo9Rb1xAPslr2sD509Iomku0tkz9WExl-X-sJuGsbtVQ7nTqLNvpWy34dAazWcWvovIG3qA&oh=00_AQMyl0LNMyb01AaXh7SMQeM8iU-14PiRQiZVqLhRD_51mg&oe=6AD1F91D",
+      "metrics": {
+        "views": 404,
+        "likes": 12,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "하이볼",
+        "위스키하이볼",
+        "술집창업",
+        "주류도매",
+        "사장님노트"
+      ],
+      "fetched_at": "2026-10-12T01:43:32.132638+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18115778326916590",
+      "url": "https://www.instagram.com/reel/DcFBXV5Equh/",
+      "title_or_caption": "철판 위에서 가쓰오부시가 춤을 춥니다 🍳\n\n도쿄 골목에서 먹던 몬자야키를 강남 한복판에서 — 역삼동 '오몬자' 강남점입니다. 반죽을 철판에 펼치고 눌러 먹는 재미에, 시원한 생맥주 한 잔이면 도쿄가 부럽지 않죠. 몬자야키는 천천히 익혀 먹는 안주라 술자리가 길어지는 메뉴입니다.\n\n강남 말고도 성수, 연남에 지점이 있으니 가까운 곳을 저장해 두시고, 같이 갈",
+      "date": "2026-08-15",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/773881985_3662123117259878_5803706381993198185_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Hx11snNskXAQ7kNvwFMeBR0&_nc_oc=AdqmARzSM2Th3lgVpnkuOzWB3AcOkHsQSvpiTF8qWdVPUh3mLD-Ww1gE3-cxVkbaK6w&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJOpRqtggkjDHMLMolLIAKSTFPuTfXsbuL7jLGfN1Ke1Bt2tWgNR_Irj5RcrND0O18znYb6hNTNsA&oh=00_AQNr48IEVPM3om40If4UDid9X3-RpIu149pUQjdDWBMfNg&oe=6AD21C2A",
+      "metrics": {
+        "views": 459,
+        "likes": 16,
+        "comments": 2
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "몬자야키",
+        "강남맛집",
+        "오몬자",
+        "강남회식",
+        "성수맛집"
+      ],
+      "fetched_at": "2026-10-12T01:43:32.569593+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18374173363224329",
+      "url": "https://www.instagram.com/reel/DcC_5s4ESsL/",
+      "title_or_caption": "양재에 좀 특별한 펍이 있습니다 🍺\n\nPUB정 — 사장님이 현역 영화배우입니다. 아직은 단역이 더 많다지만, 카메라 앞보다 탭 앞에 서는 시간이 더 길어서일까요. 맥주 하나는 진심입니다. 두툼한 거품에 브랜드별 전용잔, 스텔라·호가든·구스아일랜드 생맥주부터 위스키·하이볼까지.\n\n시원한 한 잔이 필요한 날, 저장해 두셨다가 맥주 좋아하는 친구랑 가보세요.\n\n",
+      "date": "2026-08-15",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/773581045_891743077064178_2494022429865942341_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gYYkuM6QYd0Q7kNvwEq1HvA&_nc_oc=Ado0uuIw_UK-WceffMmKEkLwIs4mMvzv6TS0HJtdBBZL1N7O3Yp9yhfdw6Cfmir2u_c&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIxaeiPDZgArtxcpOOR8bUV7s6eKKY2spuF_Fit_TH7AEcnyUr_QmmZMBTowNQYD-XOEiwPvDNtXA&oh=00_AQMvLhenJXdGnpKww5WUIN4r8Pmfbza9pwzpBXQkNh4M0g&oe=6AD22460",
+      "metrics": {
+        "views": 733,
+        "likes": 20,
+        "comments": 2
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "양재술집",
+        "양재맥주",
+        "펍정",
+        "서초호프",
+        "생맥주맛집"
+      ],
+      "fetched_at": "2026-10-12T01:43:32.881281+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17911218978451259",
+      "url": "https://www.instagram.com/p/DcALTsJiVvV/",
+      "title_or_caption": "지난주, 서울·경기에 새로 문 연 매장 714곳.\n\n[세왕 데이터 EP.03 · 이번주 경쟁 지도]\n\n2026-08-07 ~ 08-13 · 7일간 · 행안부 지방행정인허가 기준\n\n■ 시·도별\n· 경기도 331곳 (46%)\n· 서울특별시 319곳 (45%)\n· 인천광역시 64곳 (9%)\n\n■ 업종 TOP\n· 한식 179곳 (압도적 1위)\n· 커피숍 66곳\n·",
+      "date": "2026-08-14",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/774514123_18073580747432241_2226294864953509448_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Mbbp54vVUmEQ7kNvwFZjhca&_nc_oc=AdqbH8IwnFZg24QhZaoWwGOd810g8sGzzXpdwZz9NHJj1584bEm2eLwXayAzJ1_DbsQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKREGY1KSdpSoC4eIS1h0H0ZIlh4YV6kcIiMQFz5Gsr8I5ZePn_EIDUzIroWY0kMhGMvkHKt5lGJQ&oh=00_AQPJetLbT4b3Yj4B9xrlgKX6RWrF27POEQny9_YQk7-zKw&oe=6AD21D88",
+      "metrics": {
+        "views": 0,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "세왕상사",
+        "주류도매",
+        "매장운영",
+        "자영업",
+        "신규개업",
+        "상권분석",
+        "자영업사장님",
+        "요식업",
+        "주점운영",
+        "카페창업",
+        "식당창업",
+        "서울창업",
+        "경기창업",
+        "강남상권",
+        "고양시",
+        "수원시",
+        "프랜차이즈",
+        "상권데이터",
+        "창업정보",
+        "소상공인"
+      ],
+      "fetched_at": "2026-10-12T01:43:32.881377+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17981924588878208",
+      "url": "https://www.instagram.com/p/Db9eVKanMWs/",
+      "title_or_caption": "오픈 노트 EP.02 — 첫 발주량, 감이 아니라 기준으로 📦\n\n첫 가게 첫 발주에서 제일 많이 하는 실수가 '넉넉하게'입니다. 발주는 늘리긴 쉽고 줄이긴 어렵습니다.\n\n기둥 주류(소주·맥주)는 2주치로 시작하세요. 오픈 첫 주 매출은 '오픈빨'이라 그 숫자로 다음 발주를 잡으면 과발주가 됩니다. 냉장고에 못 들어가는 재고는 돈이 아니라 품질부터 잡아먹습니",
+      "date": "2026-08-13",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772265399_18073481873432241_8758017135480738348_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Mk5azOhEMlsQ7kNvwFBExN5&_nc_oc=AdqzKUJBjJ-nzNP_4goWB-ua3m4CWrlq9ZFdgf9CpKSJdIIgJdWf5MFfh7pHxbZC5zE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJUcq8o2SdfNlLsCMn5JYJAk5lQVNCqt8VTkP-L7spBz2WRlsoPosB3-O5scVjqlCiJwnTLBUe8vg&oh=00_AQPGs92pkMIV_reg87xfVFOtsYsH_waVvYAl_PfKmlQaNQ&oe=6AD20F43",
+      "metrics": {
+        "views": 0,
+        "likes": 16,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "술집창업",
+        "이자카야창업",
+        "예비창업자",
+        "주류도매",
+        "오픈준비"
+      ],
+      "fetched_at": "2026-10-12T01:43:32.881395+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18117061894920416",
+      "url": "https://www.instagram.com/reel/Db7lMaRgo21/",
+      "title_or_caption": "하이볼 mixer, 뭐가 다르죠?\n\n[주류 상식 EP.02 · 매장에서 자주 헷갈리는 것]\n\n\"소다? 토닉? 진저?\" 손님이 물을 때마다 헷갈리시죠.\n3종 정확히 정리했습니다.\n\n■ 진저에일 (Ginger Ale)\n· 생강 향 · 은은한 단맛\n· 위스키 향을 부드럽게 감싸줌\n· 매장 하이볼 60~70%가 이걸로 · 초보자 안심\n\n■ 토닉워터 (Tonic W",
+      "date": "2026-08-12",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/771814772_4823961994546661_1201630989801326002_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ER6cHXTY4mkQ7kNvwFMVage&_nc_oc=AdoTXw6nY7KraAWHPbWUvvRlwSqTf5ud1tyfZZnEzcszjtNuozj5p-6wVphot5b6Y40&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLMCfxH1vYzdw_lq1dzvZqmd7dIWoT-m9sjVoYfU0q9fT6OqHoJo2REWOLAITf2qJonTAGTGGNRhg&oh=00_AQNuPJpqsvteLWD1bl1TSyx6w8T_F-ouGAKH6tsljegSeQ&oe=6AD21464",
+      "metrics": {
+        "views": 515,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "주류상식",
+        "하이볼",
+        "하이볼레시피",
+        "세왕상사",
+        "주점운영",
+        "주류도매",
+        "바운영"
+      ],
+      "fetched_at": "2026-10-12T01:43:33.173134+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18121739156498440",
+      "url": "https://www.instagram.com/p/Db7QY2YiVoQ/",
+      "title_or_caption": "하이볼 mixer, 뭐가 다르죠?\n\n[주류 상식 EP.02 · 매장에서 자주 헷갈리는 것]\n\n\"소다? 토닉? 진저?\" 손님이 물을 때마다 헷갈리시죠.\n3종 정확히 정리했습니다.\n\n■ 진저에일 (Ginger Ale)\n· 생강 향 · 은은한 단맛\n· 위스키 향을 부드럽게 감싸줌\n· 매장 하이볼 60~70%가 이걸로 · 초보자 안심\n\n■ 토닉워터 (Tonic W",
+      "date": "2026-08-12",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772074246_18073396052432241_2476554272537848145_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=N1e1B5450XIQ7kNvwHsKvXm&_nc_oc=AdoYgt7TEc5RoB6tKy1gG7pmAipPjyF0x3e4UuKv5PF4IrkeYVSNAd95xrM21TUfRIc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKybJOpVptj6MU_FJiqz7KQcxa6PFFtgrGod3_66dqvCNfxmawTApqd8vAYZmuiV9eXOcOlFP7AOw&oh=00_AQN6lVMBqrkPwLfcAnXNZfv-garOgdDNs9EDsvVAm59QYg&oe=6AD1F302",
+      "metrics": {
+        "views": 0,
+        "likes": 10,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "주류상식",
+        "하이볼",
+        "하이볼레시피",
+        "세왕상사",
+        "주점운영",
+        "주류도매",
+        "바운영"
+      ],
+      "fetched_at": "2026-10-12T01:43:33.173210+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18385812382207706",
+      "url": "https://www.instagram.com/reel/Db4mQeDDHKm/",
+      "title_or_caption": "20L 케그 한 통에서 500cc 40잔. 계산기로는 그렇습니다 🍺\n\n[사장님 노트 · 생맥주 원가율의 진짜 범인]\n\n현장에서 세보면 32~35잔입니다.\n사라진 8잔은 첫 잔 거품, 라인에 남는 맥주, 청소하며 버리는 양.\n온도가 안 맞으면 거품만 나와서 한 잔을 두 번 따르게 됩니다.\n\n그런데 일본 이자카야는 거품을 일부러 만듭니다.\n맥주 7 : 거품 3",
+      "date": "2026-08-11",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/772663832_1038606698918992_5832705788149762193_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=lLBOrQTjfFkQ7kNvwERdpk0&_nc_oc=Adqs3TUAsMPCh7fUgukxAlqwLEDmvjNLko3C3tSTEh5pWsEcXbk6Gi4Tvo3aZMGSh20&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIlV4JhKoqQbR4ic4akA3Xu7AkB-qHjoCYXDPk6SXqvc8n-Dgu1CQ07Jy2limpbDOjkPYhXCDfkBA&oh=00_AQOl80hIHjXgWPM8ExToB6kXMZ5M35zAPhnbgaPj6jpv9w&oe=6AD1F451",
+      "metrics": {
+        "views": 2175,
+        "likes": 21,
+        "comments": 2
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "생맥주",
+        "술집창업",
+        "자영업",
+        "주류도매"
+      ],
+      "fetched_at": "2026-10-12T01:43:33.436349+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18102251963463133",
+      "url": "https://www.instagram.com/p/Db4cV5hk-u1/",
+      "title_or_caption": "8월 15일부터 17일까지 사흘 연휴입니다.\n광복절이 토요일과 겹쳐 17일 월요일이 대체공휴일 — 8월의 유일한 연휴입니다.\n\n그런데 이번 주 술집 게시물 100건을 훑어봤더니\n연휴를 언급한 곳이 한 곳도 없었습니다.\n다들 아직 더위 대응에 머물러 있습니다.\n\n먼저 알리는 매장이 사흘을 가져갑니다.\n\"8/15~17 사흘 연휴, 저희는 정상 영업합니다\" — ",
+      "date": "2026-08-11",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772521807_18073292462432241_1228956301856755510_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ln9MLhYymT0Q7kNvwHcyZBL&_nc_oc=Ado4JDe4ICQG5OD9-6FOZFKTsSlpq3Z4hCQPJR_kgdgiHVcS5sL3IwTdiq8e7BRJF5s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLarA0ozGiOPEUXQVg6GzeUDuFZeGPdjmFBZ2Khgb_QSegVjDO70NdCXHJ4yu4ozdUWfWwydMffmQ&oh=00_AQOQhI9GDthnW9mkPQUlFPoaQ2DoLbNF7t9lTRMRonfFfw&oe=6AD223FB",
+      "metrics": {
+        "views": 0,
+        "likes": 13,
+        "comments": 1
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "주류도매",
+        "이자카야",
+        "혼술바",
+        "자영업",
+        "사장님",
+        "외식업",
+        "주점창업",
+        "광복절연휴",
+        "상권분석",
+        "세왕상사",
+        "술집사장님",
+        "요식업",
+        "하이볼",
+        "생맥주"
+      ],
+      "fetched_at": "2026-10-12T01:43:33.436403+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18454735858142038",
+      "url": "https://www.instagram.com/reel/Db1ptqBDQ0J/",
+      "title_or_caption": "올 상반기에만 치킨집 1,259곳이 새로 열렸습니다 🍗\n\n[세왕 데이터 — 2026 상반기 치킨 브랜드 신규 매장 TOP 10]\n\n식품위생업 인허가 데이터(2026년 1~6월)를 자체 집계했습니다.\n\n1위 가마치통닭 31곳\n2위 노랑통닭 30곳\n3위 처갓집양념치킨 26곳\n공동 4위 BHC · 자담치킨 각 21곳\n6위 BBQ 18곳\n공동 7위 교촌치킨 · 멕",
+      "date": "2026-08-09",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/764350740_28126324150335346_8163813545926595481_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=oH7gDjDjyaUQ7kNvwFDSF47&_nc_oc=AdpyFFzbzher6y11uAJ2nLU2FoUfpCZE92VAS1pypULusFEv5Xq3b5Kd1kNmMnPHo00&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKqmJpZ5qre6ZOZemvYU7nEBiu4piGtF2Lp1fpdfIv4xaJ2jvMzLx2laL84E6XczW-psfd3RSjxjA&oh=00_AQMu2uFXVqeKaM9nGZBBzXdF-_VrpkR_QNJyuHgOiowIag&oe=6AD21562",
+      "metrics": {
+        "views": 534,
+        "likes": 16,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "치킨창업",
+        "상권분석",
+        "치킨집",
+        "생맥주",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:33.693412+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18097561796577661",
+      "url": "https://www.instagram.com/reel/DbzHOhpCZkd/",
+      "title_or_caption": "토마토를 술에 넣는다고? 지금 SNS에서 난리 난 조합 🍅\n\n[주류 트렌드 — 토마토 하이볼]\n\n요즘 젊은 손님들 사이에 '토마토 코어' 열풍이 한창입니다.\n음료·디저트를 지나 이제는 하이볼까지 —\n토마토+소주, 토마토+위스키 조합이 SNS를 타고 퍼지면서\n편의점 신제품으로도 나왔습니다.\n\n사장님 매장용 기본 레시피:\n· 토마토 착즙(주스) 1 : 소주 1",
+      "date": "2026-08-09",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/768860162_980185748405916_1668489486629126884_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=dY-4vadG0W4Q7kNvwGiIGVc&_nc_oc=AdofS0uUB8C5P6_uSAm2YGgXRyMuc6FNwjnoReZVhFMvbmk2PThX44MuHXyhyVblGKA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLvlpb5KtkLOskvhl2A-_9nZLIl1n5F5kOWL4a2IdrAXhKtgfhwd-QVgNPK_oifiGcHLCc4p-MNGA&oh=00_AQPlz8ORjHRbYXpSiDtDXV5Lv8M1jma2Z-YTAf5larD59Q&oe=6AD20687",
+      "metrics": {
+        "views": 641,
+        "likes": 17,
+        "comments": 0
+      },
+      "category": "신제품",
+      "sub_category": null,
+      "tags": [
+        "토마토하이볼",
+        "하이볼레시피",
+        "여름신메뉴",
+        "술집사장님",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:34.004749+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18017021087716025",
+      "url": "https://www.instagram.com/reel/DbwgJjdAUaV/",
+      "title_or_caption": "도쿄에서 줄 서던 그 몬자집, 오픈 첫날 웨이팅 400팀 🍺\n\n[거래처 현장 — 츠키시마 몬자 모헤지 한국 1호점]\n\n8월 7일(금) 그랜드 오픈 첫날,\n대기 명단에만 400팀 넘게 이름을 올렸습니다.\n일본 현지에서도 웨이팅 1시간이 기본인 집 —\n낙원동에서도 첫날부터 그대로 재현됐습니다.\n\n저희는 프리오픈 때 미리 다녀왔습니다.\n1층도 2층도 철판 앞이 ",
+      "date": "2026-08-07",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/768433009_869870295989512_4096449536693392634_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=KvpRuXYKOCEQ7kNvwE79cia&_nc_oc=AdpHP0n1fh1j_cCT2_dCF7GFkembwNxixTX_IZgvCl3uFHyC2wNWptt7rwAvAGb45hQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIwe8wEhbfmcs7W0PIMZvAv9T7wyPDjJ-Tan6EEVnNBIyWRydqbnFpcX2LkLCKFa6yXZ-dOynWQ0g&oh=00_AQMcSTCR5stfxeRS7xL6hwcBwjaCfNF0sz6Dw05asDLmSQ&oe=6AD1F335",
+      "metrics": {
+        "views": 1813,
+        "likes": 26,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "모헤지",
+        "몬자야키",
+        "낙원동맛집",
+        "종로3가",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:34.344518+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18147571225520645",
+      "url": "https://www.instagram.com/p/Dbuk1lWible/",
+      "title_or_caption": "'제로'는 다 무알콜?\n\n[주류 상식 EP.01 · 매장에서 자주 헷갈리는 것]\n\n아니요. 제품마다 \"제로\"가 가리키는 대상이 다릅니다.\n\n■ 무알콜 계열 (\"제로\" = 알콜)\n· 카스 0.00 — 알콜 0.00% (리뉴얼 · 완전 무알콜)\n· 테라 제로 — 알콜 0.00% (알콜·당·칼로리 zero)\n· 하이트 0.00 — 알콜 0.00% (완전 zero",
+      "date": "2026-08-07",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/764925705_18072929597432241_7501606501140772952_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9ulYYLvVIZ8Q7kNvwHMHrFN&_nc_oc=AdoSjG5G9iEqkx3ALWHQ2z-4TVonvbimkmHINkX9HzGGPmO1cja14nmRS85FPzZIsIM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLGoF2q4JHmF2sjOAo_bhPCFmMhMK1dNX_bLwqhzbUZ_Xt3jXGZcJxs04A0a1O5Zb4X87t4pKA2sA&oh=00_AQMPq5Woyc-s59KrYue0Gdlz1I_-tgfgdv5KmQnn4fwxVQ&oe=6AD2254C",
+      "metrics": {
+        "views": 0,
+        "likes": 18,
+        "comments": 0
+      },
+      "category": "세왕소식",
+      "sub_category": null,
+      "tags": [
+        "주류상식",
+        "무알콜맥주",
+        "카스제로",
+        "테라제로",
+        "세왕상사",
+        "주점운영",
+        "주류도매"
+      ],
+      "fetched_at": "2026-10-12T01:43:34.344631+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17963582850157055",
+      "url": "https://www.instagram.com/p/Dbrfm8fk2Ht/",
+      "title_or_caption": "밤 2차, 이제 이업종과 싸웁니다.\n\n[사장님 노트 EP.19 · 2026년 8월 시장 신호]\n\n지난주 미국 타코벨이 저녁 8시~10시 '애프터 아워' 라는 이름으로\n주류 전 메뉴 1+1 을 시작했습니다.\n한국에서도 치킨·햄버거·베트남 쌀국수까지 밤 늦은 시간 주류 메뉴가 강화되고 있습니다.\n\n**우리 매장의 밤 2차 손님을 이업종이 정면으로 노리는 시대*",
+      "date": "2026-08-06",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/764855068_18072817208432241_2680588076244582475_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=u1sdao8w8jcQ7kNvwERilHD&_nc_oc=Ado0adO6HECtNf3UO22ODEjpNiu82ZE5e_60eGOnT42PGSwvOkK7fe5d2lqQ-uegaMo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJdQ4h4JmMrHuZdAfYs1CWsFeSBI-DkaDEomCgW4Biv34mm9bF5L0_aYwXTjDtia4srrMjV9HsY8Q&oh=00_AQNyuV3RRdRbXLR72lAUOWPsSN3f9odhfYR5cq2GzC424A&oe=6AD22734",
+      "metrics": {
+        "views": 0,
+        "likes": 23,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "술집운영",
+        "사장님노트",
+        "주류도매",
+        "세왕상사",
+        "밤장사"
+      ],
+      "fetched_at": "2026-10-12T01:43:34.344750+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17913184206434802",
+      "url": "https://www.instagram.com/reel/DbpAxvzjxsU/",
+      "title_or_caption": "세왕상사가 유튜브를 시작했습니다 🎬\n\n잘되는 가게 뒤에는, 보이지 않는 파트너가 있습니다.\n소주부터 맥주, 청주, 하이볼, 무알콜까지 —\n서울·경기의 술자리를 채워온 세왕상사 이야기를 담았습니다.\n\n풀버전(0:53)은 유튜브에서 보실 수 있습니다.\n▶ youtube.com/@sewangliquor\n\n세왕상사 · 서울 경기 종합주류도매 · 02-2230-53",
+      "date": "2026-08-05",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/760973563_1030901206494818_7474703627362649085_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=pD7Vve7TlHIQ7kNvwERA0eW&_nc_oc=AdoPC_l16b7jZU9Vu68kUytnVXHJhLeDjYrTKlV35XKG7N70AwmezDopLK7mNOSyIpQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLzoVt0UQQiGR55WOQRhiNj6arAL0-pW-Hk1IeYrOQ4VYz3fczVT--2wwYvNdhuBiX3p8bQGIiPmg&oh=00_AQMWAqJK3C6C_DuqzjsqN2BKQ2rqEI_eXMkmw5GP9SlM9Q&oe=6AD1F929",
+      "metrics": {
+        "views": 609,
+        "likes": 22,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "세왕상사",
+        "주류도매",
+        "술집창업",
+        "유튜브"
+      ],
+      "fetched_at": "2026-10-12T01:43:34.637737+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18099883277189836",
+      "url": "https://www.instagram.com/reel/Dbo0j21zLT1/",
+      "title_or_caption": "간판에 '혼술'을 단 가게가 반년 만에 3배가 됐습니다.\n\n2026년 1~6월, 전국에서 새로 인허가 난 매장 가운데\n상호에 '혼술'이 들어간 곳이 277곳.\n1월 22곳이던 게 6월엔 61곳이 됐습니다.\n\n재미있는 건 그 다음입니다.\n간판은 170개인데 매장은 277곳.\n170개 중 159개가 1~2곳뿐입니다.\n큰 프랜차이즈가 미는 게 아니라\n개인 사장님",
+      "date": "2026-08-05",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/763570795_2493719921100914_7751263708127186609_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-bL628GDDRUQ7kNvwH6T1of&_nc_oc=AdoTkIhf4MHGoeSBsagmkHO30mHg71fSFZDRMYlLlhMEKKRLa1KP3T7DoLeSnhYaeWM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKZ9soQ84J4Jfst3k9-DXnVy7LLqRfts-XvYJf_XdYNHYH91S_M1hl9W6iSeXrTYI7f9L79Kgaozw&oh=00_AQM_dqdLsWg2op_gBFo3hGsK4MoJc24J9oDQ8EwLQ_Tozw&oe=6AD1F87A",
+      "metrics": {
+        "views": 665,
+        "likes": 15,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "혼술바",
+        "술집창업",
+        "주류도매",
+        "세왕상사"
+      ],
+      "fetched_at": "2026-10-12T01:43:34.942129+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18086753999403043",
+      "url": "https://www.instagram.com/reel/DbmVmxTNHls/",
+      "title_or_caption": "의정부 한복판, 초록 소주병이 가득한 포차가 떴습니다.\n\n포차중문 의정부중앙점 — 그랜드 오픈\n경기 의정부시 태평로63번길 26 (의정부동)\n\n입구 현수막부터 성격이 분명합니다.\n왜 싸냐구요? 간단합니다. 사장이 덜 남기면 됩니다.\n\n청주에서 시작해 올해 가맹사업을 본격화한 수제요리 포차 프랜차이즈.\n오픈 저녁부터 홀이 가득 찼습니다.\n\n가성비로 돌아오는 ",
+      "date": "2026-08-04",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/764005737_18072623531432241_4649941621308697303_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=vpp-1nn8PBkQ7kNvwHM0vKy&_nc_oc=Adomgi5t1CO72j8Mo3i2aK6cGnoxuC6ccebSJ-EiolHXr_Ci_mkooBQtVga332TQKA0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQILpzUMb8Jc0tpO4KppsQMlUicCQsx9qSjdhcu8pAHbdpFXxKQVIcff3uRMT9EnRonfPaZn1sOTpQ&oh=00_AQMuak5adHmELwiZnOffSFM-buEyw213EPUz95lZeJ81mA&oe=6AD1F703",
+      "metrics": {
+        "views": 1881,
+        "likes": 26,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "의정부술집",
+        "포차중문",
+        "신규오픈",
+        "포차창업",
+        "주류도매"
+      ],
+      "fetched_at": "2026-10-12T01:43:35.237496+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18051287201582090",
+      "url": "https://www.instagram.com/p/DbjjNuBn4aZ/",
+      "title_or_caption": "첫 가게, 주류 리스트 어떻게 짜야 할지 막막하시죠 🍶\n\n[오픈 노트 EP.01 — 예비 사장님을 위한 시리즈를 시작합니다]\n\n10년 넘게 서울·경기 매장들 오픈 셋업을 도우며 본 것.\n잘되는 집은 주류 리스트가 단순합니다. 순서는 3단계면 됩니다.\n\nSTEP 1. 기둥부터\n소주·맥주는 어떤 컨셉이든 매출의 기둥입니다.\n생맥주는 관 설치·관리가 필요해서 \"",
+      "date": "2026-08-02",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/762292740_18072526988432241_6626280854470650157_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=a0qrFKuwpoEQ7kNvwEPZHK0&_nc_oc=AdpbAy_qRly8HX0WNCZYqStHXlU4fMP4Vc0XczhSfYCEVX_liQhPOpNZV-S428tZUkw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIneChPDRrcoiEpwQWW3pM0fozqhbunNVm5LN96tQtf8_9D4BJvaVZmtOBQEHFKAJ5Q0rKh4ncpmg&oh=00_AQPJx0AQEjY5E2Mx5GDfueHrhQcADCqIvJi3Z5Ykc7XKgQ&oe=6AD1F1E2",
+      "metrics": {
+        "views": 0,
+        "likes": 22,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "술집창업",
+        "이자카야창업",
+        "예비창업자",
+        "주류도매",
+        "오픈준비"
+      ],
+      "fetched_at": "2026-10-12T01:43:35.237548+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18170905627444855",
+      "url": "https://www.instagram.com/reel/Dbg-wx8ESsg/",
+      "title_or_caption": "강남역 한복판인데, 220석이 전부 룸입니다 🍶\n\n[거래처 현장 · 룸 이자카야 요이(YOI)]\n📍 서울 서초구 강남대로65길 10 2·3층\n\n홀 테이블이 없습니다. 두 개 층 전 좌석이 프라이빗 룸이고, 룸마다 태블릿으로 주문합니다.\n\n룸 장사는 구조가 다릅니다.\n· 문이 닫혀 있으니 체류 시간이 깁니다\n· 눈치 안 보고 \"한 잔 더\"가 나옵니다\n· 대신",
+      "date": "2026-08-01",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/761878073_1077892698523396_1627183538936086560_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=6IYpkvd3f20Q7kNvwERde2p&_nc_oc=Adqj7JLWed07BmUEyHh3g7dm1p-v8AI1EAsxNgG6rfM1DFopJX7YfAVeQLazr4iQFWA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJsWoXdFQXNqyoxjMgTGhUZ0ESSOdFt9VabkF2miYcGPNCrR_nMZ59dibNFXknv2mNyyVcF7kboDg&oh=00_AQNevZjcPDQ78NlINgjcsQD5lvjBSUaPMrvd8J6ZeZ7YJA&oe=6AD2296A",
+      "metrics": {
+        "views": 777,
+        "likes": 15,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "세왕상사",
+        "주류도매",
+        "룸이자카야",
+        "강남역술집",
+        "이자카야창업"
+      ],
+      "fetched_at": "2026-10-12T01:43:35.546279+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18129179968710125",
+      "url": "https://www.instagram.com/reel/DbecRbajecs/",
+      "title_or_caption": "부산에서 줄 서던 껍데기집이 방이동에 올라왔습니다 🔥\n\n초필살돼지구이 방이점\n서울 송파구 올림픽로32길 19-8 1층 (방이 먹자골목)\n평일 16:30~24:00 · 주말 15:30~01:00\n\n이번 주 목요일 저녁에 직접 다녀왔습니다. 사장님 관점에서 눈에 들어온 건 세 가지입니다.\n\n1️⃣ 점심을 아예 버렸습니다\n오후 4시 반 오픈, 주말은 새벽 1시 ",
+      "date": "2026-07-31",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/761462518_1331051629239909_1476856532243515154_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=YacM0Uv3VxEQ7kNvwGlUw0z&_nc_oc=AdowCF7sPsMmhQvQxPAR53fnaggtIbxnPCb71Uilx2wY1-MRdRazmgPQuFmYpkp1wdw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLsjK-0oTMbvUWshOW4sCJCMnz8XEHH5gzwe9DI5ZYf6PdP_-igO_hhQ4PkAB2m9-Tg9xk2rDyTfA&oh=00_AQMewTNZGGkluy-dip0w1_3t-i068lwK5Jsh4uZM1BRVOQ&oe=6AD1F3A7",
+      "metrics": {
+        "views": 700,
+        "likes": 17,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "방이동고기집",
+        "돼지껍데기",
+        "주류도매",
+        "무알콜맥주",
+        "심야장사"
+      ],
+      "fetched_at": "2026-10-12T01:43:35.862803+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18435225721122018",
+      "url": "https://www.instagram.com/p/DbcZOLwkQuv/",
+      "title_or_caption": "소주가 안 팔리는 게 아닙니다. 자리를 뺏긴 겁니다 🍶🥃\n\n[사장님 노트 EP.18]\n\n편의점 냉장고에서 지난 3년간 벌어진 일입니다.\n\n📊 하이볼은 3년째 세 자릿수로 컸습니다\nCU 기준 하이볼 매출 신장률\n· 2023년 +553.7%\n· 2024년 +315.2%\n· 2025년 +190%대\nGS25도 2024년 +376.7%, 2025년 +75.7%로 이",
+      "date": "2026-07-31",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/728959423_18072232247432241_8408291837486980687_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=K5RydBxXfY4Q7kNvwHbMn4n&_nc_oc=AdrXeoe31AgSP2M2Zpl0o_8v5lzushlEhhu33FQtQoLu_cgC_JeVu2xszMmf8uXELDc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQJanEqQiKf96NbxxvEdemlgJ2TEieeY06odTaAY8W7I3RS5PeEz6cZuP3aePknd5FpQk8pKbWKxSA&oh=00_AQNETVaPKRBDfHGDHLOOEGZ8HzBkQxjMmQsOAp48heZMqg&oe=6AD20871",
+      "metrics": {
+        "views": 0,
+        "likes": 16,
+        "comments": 1
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "세왕상사",
+        "주류도매",
+        "사장님노트",
+        "하이볼",
+        "소주",
+        "맥주",
+        "주점운영",
+        "음식점사장님",
+        "술집사장님",
+        "자영업",
+        "외식업",
+        "메뉴설계",
+        "주류트렌드",
+        "편의점주류",
+        "객단가",
+        "매출관리",
+        "서울주류도매",
+        "경기주류도매",
+        "술집창업",
+        "주류납품"
+      ],
+      "fetched_at": "2026-10-12T01:43:35.862869+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18125682841665563",
+      "url": "https://www.instagram.com/p/DbZY6JWFqZ1/",
+      "title_or_caption": "8월엔 대목이 두 번 옵니다. 그리고 딱 붙어 있습니다 📅🍺\n\n[시즌 캘린더 EP.03 · 8월 발주 가이드]\n\n📅 비워둘 날짜\n· 8/14 (금) 말복 — 올해는 '월복'이라 중복(7/25)과 20일이나 벌어졌습니다\n· 8/15 (토) 광복절 → 8/17 (월) 대체공휴일 = 3일 연휴\n· 8월 하순 개학 — 가족 외식 수요가 마무리되는 구간\n\n① 금요일",
+      "date": "2026-07-30",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/759716925_18072121037432241_1166484218512175132_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=l5zU8v9WbwIQ7kNvwGCBVJo&_nc_oc=AdpeeQYfvV9JD-ODrcUYvx9weqaCDlG2TfJScb5-BOZoebwfmpiYfWATzPAAJwpTzOg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIdn6ONNgCNa51XLWCJ-PiaDyGn_9V94DmK4Eyo_WUKRXmLGKuLU-FLXlpCVi5yjQzAmedAgNIcyg&oh=00_AQOv8mGGh0QWXtqcoBP1JM1XdY1JjbB-3qc7QTYU0pqY9w&oe=6AD1F3FE",
+      "metrics": {
+        "views": 0,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "세왕상사",
+        "주류도매",
+        "시즌캘린더",
+        "8월발주",
+        "말복",
+        "광복절연휴",
+        "대체공휴일",
+        "자영업",
+        "음식점사장님",
+        "술집사장님",
+        "주점운영",
+        "외식업",
+        "발주가이드",
+        "소주",
+        "생맥주",
+        "하이볼",
+        "재고관리",
+        "상권분석",
+        "서울주류도매",
+        "경기주류도매"
+      ],
+      "fetched_at": "2026-10-12T01:43:35.862904+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18124158010684363",
+      "url": "https://www.instagram.com/reel/DbXltRCjbhn/",
+      "title_or_caption": "철판에서 이걸 다지는 순간, 몬쟈가 시작됩니다 🍜🔥\n\n[핫플 오픈 EP.06 · 月島もんじゃ もへじ · 낙원동]\n\n명란 · 모찌 · 양배추.\n손님 눈앞 철판에서 반죽부터 완성까지 라이브로.\n도쿄 츠키시마 몬쟈 명가 '모헤지'가 서울에 상륙합니다.\n\n📍 서울 종로구 돈화문로11길 42 (낙원동)\n· 지하 1층 · 1층 · 2층, 3개 층 · 최대 100명대\n",
+      "date": "2026-07-29",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/759024740_2480283189116364_3336832234006918379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=JHl_1Q7y2KsQ7kNvwG4v_zf&_nc_oc=AdpyyDOqMcdLJqcqOmjnOvgG-4OpK4AtgKfj1a33Wnzb9lwQ9iQ76KDhbbF38x8ikKY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKMnsw0NGo_uw8KU4tVE91FbM9VT1oFf7gZGmjThiz82W275uLerkU2fkahrKyzG_EtEd-OlWkXwg&oh=00_AQOSv4Q9DFIKPCX2oL2LibKwvjVHz_m4xQlbCX9z5XFmug&oe=6AD21539",
+      "metrics": {
+        "views": 3205,
+        "likes": 17,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "세왕상사",
+        "핫플오픈",
+        "낙원동",
+        "몬쟈",
+        "모헤지",
+        "もへじ",
+        "츠키시마몬쟈",
+        "명태자몬쟈",
+        "철판요리",
+        "오코노미야키",
+        "낙원동맛집",
+        "종로맛집",
+        "서울맛집",
+        "돈화문로",
+        "일본이자카야",
+        "신규매장오픈",
+        "주점창업",
+        "주류도매",
+        "서울핫플",
+        "세왕거래처"
+      ],
+      "fetched_at": "2026-10-12T01:43:36.193564+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17895005202377997",
+      "url": "https://www.instagram.com/p/DbXd35glsvD/",
+      "title_or_caption": "도쿄 츠키시마 몬쟈, 서울에 상륙합니다 🍜\n\n[핫플 오픈 EP.06]\n\n月島もんじゃ もへじ (츠키시마 몬쟈 모헤지)\n· 도쿄 츠키시마 · 우에노 분점 스타일 그대로\n· 킷스이 코리아 · 대표 시마다 신\n· 2026년 8월 첫째주 서울 오픈 (예정)\n\n📍 서울 종로구 돈화문로11길 42\n· 지하 1층 · 1층 · 2층 (낙원동)\n· 3개 층 · 최대 100명",
+      "date": "2026-07-29",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/756529257_18072051608432241_2310957623564835193_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=4YlnrfFFPUUQ7kNvwGgra8x&_nc_oc=AdrCAcPCcuwDsq92P48x4AUS-ZAbrpaCZnjD-KNM1AZMc1i6ZGaGepiCh9lLdWIYt4M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIBgsDnlvZDm1SIJgefubT07RWL1aeh164HvDwFL9Nj3xWPEfRw3AIglclVSoADocXKdjJzJ4WIaw&oh=00_AQOxXFflWFfDfQeTMBmIATRx5CEFyKtCYwirASfaYSOucQ&oe=6AD22921",
+      "metrics": {
+        "views": 0,
+        "likes": 19,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "신규오픈",
+      "tags": [
+        "세왕상사",
+        "핫플오픈",
+        "낙원동",
+        "몬쟈",
+        "모헤지",
+        "もへじ",
+        "츠키시마몬쟈",
+        "月島もんじゃ",
+        "명태자몬쟈",
+        "오코노미야키",
+        "낙원동맛집",
+        "종로맛집",
+        "서울맛집",
+        "돈화문로",
+        "이자카야오픈",
+        "일본이자카야",
+        "신규매장",
+        "킷스이코리아",
+        "주점창업",
+        "서울핫플"
+      ],
+      "fetched_at": "2026-10-12T01:43:36.193621+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17901600684499496",
+      "url": "https://www.instagram.com/reel/DbWvGhIgJW4/",
+      "title_or_caption": "어제 화요일 밤 8시 45분, 을지로3가는 자리가 없었습니다.\n\n서울 밤 최저기온 26.2℃. 열대야에 시원한 것만 나갈 것 같지만, 을지 작업장(중구 충무로5길 26) 안은 뜨거운 곱창전골 앞에 만석이었습니다.\n\n사장님 눈으로 보면 이 매장의 구조가 보입니다.\n\n① 낮 1시 → 새벽 2시, 브레이크타임 없음\n점심 반주, 저녁 회식, 심야 2차. 술 피크가",
+      "date": "2026-07-28",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/758356770_1038290875817643_1662821707191740108_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=R2PVGxWBg6oQ7kNvwE82C6L&_nc_oc=Ado6dEOPV7-UvLPsUGfnBP5okZDHjNjPQaxo72SEjk8gpyhPX5ErupuO0uJn6GvUFMk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQK8rtUy6YsLXa2295qxYEDpg5Sf2RW8X6jlP5tsj9VuPLiFpIaxc7ysbxz0cRXQQTa2w64ceS_Swg&oh=00_AQPJwMbz3Mcs8sx9N9VOOG0yQd_Nszvb6TnIulAY7K0t0g&oe=6AD21E66",
+      "metrics": {
+        "views": 643,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "뜨는술집",
+      "tags": [
+        "을지로맛집",
+        "곱창전골",
+        "주류도매",
+        "심야영업",
+        "사장님노트"
+      ],
+      "fetched_at": "2026-10-12T01:43:36.511910+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "17937864288087039",
+      "url": "https://www.instagram.com/p/DbUN011k7qC/",
+      "title_or_caption": "안 마시는 손님, 그냥 물만 드시게 두시나요?\n\n무알콜 '테라 제로'가 병으로 나왔습니다. 330mL·500mL 병 2종 — 캔이 아니라 병이라, 이제 테이블에서 다른 맥주들과 똑같이 '짠'이 됩니다. 하이트진로가 음식점·주점 등 외식 채널을 겨냥해 6월 말 출시했습니다.\n\n사장님이 챙길 포인트 세 가지.\n① 리얼 제로 — 알코올은 물론 칼로리·당류·감미료",
+      "date": "2026-07-28",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/756437428_18071933588432241_4334075159272742327_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=A6jCzdYGr58Q7kNvwHPyRys&_nc_oc=AdqJxIUOaozMj_9i783cSTI1kSG6ZXa7EAB1BOGZqHhJnL0ghxfr-vB4_K4cXqB2NBQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQKy5PZqLthOi1k22Hdld1SWUwOaOJdcw4MGYJamPYEd4MIXAk-Z4zHUQxt8xkJOkv5yqmsev5eKKw&oh=00_AQOWlC6C6cvkRAiwPPoNh3UULgne4yYiT1WnRFjdtuf62A&oe=6AD1F662",
+      "metrics": {
+        "views": 0,
+        "likes": 14,
+        "comments": 0
+      },
+      "category": "거래처케이스",
+      "sub_category": "잘되는업장",
+      "tags": [
+        "무알콜맥주",
+        "테라제로",
+        "주류도매",
+        "외식업사장님",
+        "무알콜"
+      ],
+      "fetched_at": "2026-10-12T01:43:36.511988+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18121734019692926",
+      "url": "https://www.instagram.com/reel/DbRpq0RlSKo/",
+      "title_or_caption": "캐나다에서 1위 하던 하이볼이 이번 주 한국에 옵니다 🍋\n\n[제품 스포트라이트 · 뉴트럴 NÜTRL]\n\n오비맥주가 캐나다 보드카 하이볼 1위 브랜드 '뉴트럴'을 국내에 들여옵니다.\n\n· 제로슈거 레몬 보드카 하이볼 · 7도\n· 473mL·330mL 캔 2종\n· 7월 말부터 전국 편의점·대형마트 순차 판매\n\n사장님, 편의점 신상은 그냥 뉴스가 아닙니다.\n손님",
+      "date": "2026-07-27",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/756661970_2097089304496506_8699947932518271041_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=PQSbWxXhAksQ7kNvwHklhPK&_nc_oc=Adr6Nh2BQsieAUMIhy4DUngZLH-Iosh0qC1UdgX8IP7Qz-fVKE8LH9qKxC_rEqQH88c&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQIXQDWO43rn6WtAunTq-7JWHf5AmIglvpJ5iTna-d9S4RS4Bx_3L5tURL8fGuga5ZhI44SGyCNWdg&oh=00_AQOUjqUvEknn3Nl0IlTyinqcV0LotZAPnFkgPobZjcQ-Pg&oe=6AD228CF",
+      "metrics": {
+        "views": 494,
+        "likes": 10,
+        "comments": 0
+      },
+      "category": "신제품",
+      "sub_category": null,
+      "tags": [
+        "뉴트럴",
+        "하이볼",
+        "RTD주류",
+        "주류도매",
+        "자영업자"
+      ],
+      "fetched_at": "2026-10-12T01:43:36.790775+00:00"
+    },
+    {
+      "platform": "instagram",
+      "post_id": "18611101273026741",
+      "url": "https://www.instagram.com/reel/DbPKwwuFdU6/",
+      "title_or_caption": "\"소주 안 마신다\"던 젠지, 사실은 '새로'에 지갑을 엽니다 🍶\n\n서울·경기 주류 도매 세왕상사입니다. 제로슈거 소주 '새로'가 출시 3년 만에 누적 8억 병을 넘겼습니다. 새로 오미자는 한 달 만에 200만 병. 지난해 20대 주점 소비는 20.9% 줄었지만(NH농협은행 트렌드 보고서), 제로슈거·과일맛 저도주는 오히려 성장 중이에요.\n\n젠지는 술을 끊은",
+      "date": "2026-07-26",
+      "thumbnail": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/757545445_2226922734795384_3154999993173529862_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mlHDbHONkx8Q7kNvwHeOHJW&_nc_oc=Adpzig7xL-ZawnA783ag4xt0zs1EDn78XC2aL8Y7T9jWxW23OV1LZD3rk-JK3vV-2qI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=odacvd3OzTeh7Dxx5TqwHw&_nc_tpa=Q5bMBQLUvvJ-BWAw7Bfyzy4clzpIpyFLkqEAkWpQTrzBDrTS_eo0-DiFk2UpAqmoKqyybN_ME5wcqUynEg&oh=00_AQOHbbTu8DlXWpwVrFJtz2Qw7JMHwgJhdrqiIl57nJRRgQ&oe=6AD226EC",
+      "metrics": {
+        "views": 596,
+        "likes": 13,
+        "comments": 0
+      },
+      "category": "신제품",
+      "sub_category": null,
+      "tags": [
+        "세왕상사",
+        "주류도매",
+        "주류유통",
+        "소주",
+        "새로",
+        "제로슈거소주",
+        "과일소주",
+        "저도주",
+        "술트렌드",
+        "주류트렌드",
+        "음식점사장님",
+        "바사장님",
+        "호텔주류",
+        "서울주류도매",
+        "경기주류도매",
+        "주류납품",
+        "술도매",
+        "도매사",
+        "자영업",
+        "소주냉장고"
+      ],
+      "fetched_at": "2026-10-12T01:43:37.115378+00:00"
+    }
+  ]
 }
