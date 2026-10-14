@@ -22,7 +22,7 @@ export function PostCard({ p }: { p: Post }) {
         {p.title_or_caption}
       </div>
       <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 6, display: "flex", gap: 10 }}>
-        <span>👁 {p.metrics.views.toLocaleString()}</span>
+        <span title={p.metrics.views === null ? "조회수가 수집되지 않았거나 확인되지 않았습니다." : "조회수"}>👁 {p.metrics.views === null ? "조회수 확인 불가" : p.metrics.views.toLocaleString()}</span>
         <span>♥ {p.metrics.likes.toLocaleString()}</span>
         <span>💬 {p.metrics.comments.toLocaleString()}</span>
       </div>

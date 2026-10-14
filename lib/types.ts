@@ -24,7 +24,7 @@ export interface Post {
   date: string; // YYYY-MM-DD
   thumbnail: string | null;
   metrics: {
-    views: number;
+    views: number | null; // null = 미수집 또는 조회 실패, 0 = 확인된 조회수
     likes: number;
     comments: number;
   };

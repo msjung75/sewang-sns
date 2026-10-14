@@ -35,9 +35,11 @@ export function HomeDashboard({ posts, fetched_at, summary }: { posts: Post[]; f
       <section style={grid4}>
         <Kpi label="총 포스트" value={posts.length} />
         <Kpi label="이번 주 신규" value={thisWeek.length} />
-        <Kpi label="누적 조회수" value={totalViews.toLocaleString()} />
+        <Kpi label="수집된 조회수 합계" value={posts.some(p => p.metrics.views !== null) ? totalViews.toLocaleString() : "확인 불가"} />
         <Kpi label="활성 플랫폼" value={new Set(posts.map(p => p.platform)).size} />
       </section>
+
+      <p style={{ fontSize: 12, color: "var(--muted)", marginTop: 12 }}>조회수 합계는 확인 가능한 게시물만 포함합니다. 조회수 확인 불가 항목은 합계에서 제외합니다.</p>
 
       <section style={{ marginTop: 24 }}>
         <h2 style={h2}>카테고리</h2>

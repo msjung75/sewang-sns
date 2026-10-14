@@ -154,12 +154,14 @@ def fetch_instagram():
             caption = m.get("caption","") or ""
             tags = [t.lstrip("#") for t in re.findall(r"#\S+", caption)]
             cat, sub = categorize(caption, tags)
-            views = 0
-            if m.get("media_type") in ("VIDEO","REELS"):
-                try:
-                    ins = json.loads(get(f"{base}/{m['id']}/insights?metric=views&access_token={IG_TOKEN}", 10))
-                    views = int(ins.get("data",[{}])[0].get("values",[{}])[0].get("value", 0) or 0)
-                except Exception: pass
+            views = None
+            try:
+                ins = json.loads(get(f"{base}/{m['id']}/insights?metric=views&access_token={IG_TOKEN}", 10))
+                metric = next((x for x in ins.get("data", []) if x.get("name") == "views"), {})
+                value = (metric.get("values") or [{}])[0].get("value")
+                if isinstance(value, (int, float)) and not isinstance(value, bool) and value >= 0:
+                    views = int(value)
+            except Exception: pass
             out.append({"platform":"instagram","post_id":m["id"],"url":m.get("permalink",""),
                         "title_or_caption":caption[:200],"date":(m.get("timestamp") or "")[:10],
                         "thumbnail":m.get("thumbnail_url") or m.get("media_url"),

@@ -26,10 +26,12 @@ export function PlatformPage({ posts, platform }: { posts: Post[]; platform: Pla
 
   const filtered = useMemo(() => {
     const xs = cat === "전체" ? platformPosts : platformPosts.filter(p => p.category === cat);
-    return [...xs].sort((a, b) => sort === "date" ? b.date.localeCompare(a.date) : (b.metrics[sort] || 0) - (a.metrics[sort] || 0));
+    return [...xs].sort((a, b) => sort === "date" ? b.date.localeCompare(a.date) : (b.metrics[sort] ?? -1) - (a.metrics[sort] ?? -1));
   }, [platformPosts, cat, sort]);
 
-  const totalViews = platformPosts.reduce((s, p) => s + p.metrics.views, 0);
+  const collectedViews = platformPosts.filter(p => p.metrics.views !== null);
+  const totalViews = collectedViews.reduce((s, p) => s + (p.metrics.views ?? 0), 0);
+  const missingViews = platformPosts.length - collectedViews.length;
   const totalLikes = platformPosts.reduce((s, p) => s + p.metrics.likes, 0);
   const totalComments = platformPosts.reduce((s, p) => s + p.metrics.comments, 0);
 
@@ -42,10 +44,15 @@ export function PlatformPage({ posts, platform }: { posts: Post[]; platform: Pla
 
       <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 12 }}>
         <Kpi label="포스트 수" value={platformPosts.length} />
-        <Kpi label="조회수" value={totalViews.toLocaleString()} />
+        <Kpi label={missingViews ? "수집된 조회수 합계" : "조회수"} value={collectedViews.length ? totalViews.toLocaleString() : "확인 불가"} />
         <Kpi label="좋아요" value={totalLikes.toLocaleString()} />
         <Kpi label="댓글" value={totalComments.toLocaleString()} />
       </section>
+
+      {missingViews > 0 && <p style={{ fontSize: 12, color: "var(--muted)", marginTop: 12, lineHeight: 1.6 }}>
+        조회수 확인 가능 {collectedViews.length}개 · 확인 불가 {missingViews}개. 합계는 확인 가능한 게시물만 포함합니다.
+        {platform === "instagram" && " 일반 게시물 등 조회수가 수집되지 않은 항목은 0이 아닌 ‘확인 불가’로 표시합니다."}
+      </p>}
 
       <section style={{ marginTop: 24 }}>
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 12 }}>

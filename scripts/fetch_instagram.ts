@@ -19,14 +19,15 @@ async function fetchPage(url: string): Promise<{ data: any[]; next?: string }> {
   return { data: j.data ?? [], next: j.paging?.next };
 }
 
-async function fetchInsights(mediaId: string): Promise<number> {
+async function fetchInsights(mediaId: string): Promise<number | null> {
   try {
     const url = `${BASE}/${mediaId}/insights?metric=views&access_token=${TOKEN}`;
     const r = await fetch(url);
-    if (!r.ok) return 0;
+    if (!r.ok) return null;
     const j: any = await r.json();
-    return Number(j?.data?.[0]?.values?.[0]?.value ?? 0);
-  } catch { return 0; }
+    const value = j?.data?.find((metric: any) => metric.name === "views")?.values?.[0]?.value;
+    return typeof value === "number" && Number.isFinite(value) && value >= 0 ? value : null;
+  } catch { return null; }
 }
 
 function parseTags(caption: string): string[] {
@@ -46,7 +47,7 @@ export async function fetchInstagram(limit = 100): Promise<Post[]> {
       const caption = String(m.caption ?? "");
       const tags = parseTags(caption);
       const { category, sub_category } = categorize(caption, tags);
-      const views = m.media_type === "VIDEO" || m.media_type === "REELS" ? await fetchInsights(m.id) : 0;
+      const views = await fetchInsights(m.id);
       results.push({
         platform: "instagram",
         post_id: m.id,
