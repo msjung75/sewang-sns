@@ -1,0 +1,5 @@
+export type SourceReview={evidence_id:string;summary_ko:string;key_points:string[];domestic_implications:string;cautions:string;read_scope:'full_text'|'excerpt'|'metadata';checked_at:string};
+export function KoreanSourceReview({review,foreign=false,title}:{review?:SourceReview;foreign?:boolean;title?:string}){
+ if(!review)return foreign?<section aria-label="한국어 상세 해설"><h5>한국어 상세 해설 · 원문 확인 대기</h5><p>현재 수집 요약만 확보했습니다. 이 자료를 선택하고 심층 분석을 요청하면 한국어 상세 내용·핵심 요점·국내 적용 의견을 준비합니다.</p></section>:null;
+ return <section aria-label="한국어 상세 해설"><h5>한국어 상세 내용</h5>{title&&<p><strong>{title}</strong></p>}<p style={{whiteSpace:'pre-wrap'}}>{review.summary_ko}</p><h5>핵심 요점</h5><ul>{review.key_points.map((p,i)=><li key={i}>{p}</li>)}</ul><h5>국내 거래처 적용 · AI 해석</h5><p>{review.domestic_implications}</p><h5>반대 근거·적용 한계</h5><p>{review.cautions}</p><p className="ai-muted">확인 범위: {({full_text:'원문 본문 확인',excerpt:'본문 일부 확인',metadata:'제목·검색 요약만 확인'})[review.read_scope]} · 확인 {new Date(review.checked_at).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}</p><p className="ai-muted">원문 사실의 한국어 요약과 AI의 국내 적용 의견을 구분합니다. 전체 원문 번역은 아닙니다.</p></section>;
+}

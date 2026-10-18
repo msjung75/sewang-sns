@@ -1,8 +1,9 @@
+import {approvalOrigin} from './approval-origin';
 import { createHash, createHmac, randomBytes, timingSafeEqual, scrypt } from "node:crypto";
 import { NextRequest } from "next/server";
 export const COOKIE="sewang_editorial_session";
 const ttl=8*3600;
-const ORIGIN="https://sewang-ai-queue-staging.msjung75.workers.dev";
+const ORIGIN=approvalOrigin();
 export type AuthConfig={password_hash:string|null;password_salt:string|null;version:number};
 export function configured(){return Boolean(process.env.AI_APPROVAL_PASSWORD_HASH&&process.env.AI_APPROVAL_SESSION_SECRET&&process.env.AI_CONTROL_TOKEN);}
 function equal(a:string,b:string){return a.length===b.length&&timingSafeEqual(Buffer.from(a),Buffer.from(b));}

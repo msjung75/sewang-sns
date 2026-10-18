@@ -22,3 +22,12 @@ test('owner topic proposal reaches fixed workflow endpoint without exposing cred
  global.fetch=async(input,init)=>{if(String(input).endsWith('/auth'))return Response.json({password_hash:null,password_salt:null,version:0});assert.equal(String(input),'https://sewang-ai-queue-staging.msjung75.workers.dev/v1/admin/editorial/research/workflow');assert.equal(init?.method,'POST');forwarded=JSON.parse(String(init?.body));return Response.json({id:payload.request_id,kind:payload.kind});};t.after(()=>{global.fetch=original;});
  const response=await POST(request('POST','research/workflow',payload),{params:{path:['research','workflow']}});assert.equal(response.status,200);assert.deepEqual(forwarded,payload);assert.ok(!(await response.text()).includes(process.env.AI_CONTROL_TOKEN!));
 });
+test('adoption binds publication-history review and strips browser-only fields before forwarding',async t=>{
+ const original=global.fetch;let writes=0,forwarded:Record<string,unknown>|undefined;
+ const topic={id:'evidence-review',title:'와인',summary:'',origin:'evidence',revision:1,plan:1,snapshot_hash:'0'.repeat(64)};
+ global.fetch=async(input,init)=>{if(String(input).endsWith('/auth'))return Response.json({password_hash:null,password_salt:null,version:0});if(init?.method==='POST'){writes++;forwarded=JSON.parse(String(init.body));return Response.json({state:'select'});}return Response.json({topics:[topic],tasks:[]});};t.after(()=>{global.fetch=original;});
+ const payload={kind:'adopt',topic_id:topic.id,expected_revision:1,expected_plan:1,note:'차별점 설명',history_version:'stale',duplicate_reviewed:true};
+ let r=await POST(request('POST','research/workflow',payload),{params:{path:['research','workflow']}});assert.equal(r.status,409);assert.equal(writes,0);
+ const {loadPublicationHistory}=await import('../lib/loadPublicationHistory');const {candidatePublicationCheck}=await import('../lib/review-publication-check');const history=await loadPublicationHistory(),check=await candidatePublicationCheck(topic,topic.snapshot_hash,history.posts);
+ r=await POST(request('POST','research/workflow',{...payload,history_version:check.history_version}),{params:{path:['research','workflow']}});assert.equal(r.status,200);assert.equal(writes,1);assert.equal(forwarded?.duplicate_reviewed,undefined);assert.equal(forwarded?.history_version,undefined);
+});
