@@ -3,6 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const LINKS = [
+  { href: "/ops", label: "AI 진행·주제·승인" },
+  { href: "/content-ops", label: "SNS 제작 운영보드" },
   { href: "/", label: "홈" },
   { href: "/instagram", label: "📱 Instagram" },
   { href: "/youtube", label: "▶️ YouTube" },
