@@ -54,13 +54,13 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
  const next=own.find(t=>t.status!=='done');
  const task=own.find(t=>t.id===activeTask)||next||own.at(-1);
  const missing=(task?.criteria||[]).filter(c=>!c.done);
- const canAdvance=task&&['awaiting_review','blocked'].includes(task.status)&&Boolean(task.result)&&!task.report_stale&&!picked?.needs_review;
+ const canAdvance=task&&task.status==='awaiting_review'&&Boolean(task.result)&&!task.report_stale&&!picked?.needs_review;
  const canAdopt=picked?.origin==='evidence'&&picked.state!=='select'&&!['hold','exclude'].includes(picked.state)&&['research','analysis'].every(stage=>own.some(t=>t.stage===stage&&t.status==='done'));
  const linked=own.find(t=>t.report_id);
  return <section id="editorial-flow" className={`ai-panel ${styles.panel}`} aria-labelledby={`${uid}-heading`} aria-busy={busy}>
-  <div className={styles.header}><div><p className="ai-kicker">주제별 작업실 · 실제 결과를 확인하고 다음 단계로</p><h2 id={`${uid}-heading`}>조사·제작 진행 상황</h2></div><button type="button" className="ai-secondary" disabled={busy} onClick={()=>void load()}>작업실 새로 확인</button></div>
+  <div className={styles.header}><div><p className="ai-kicker">결과와 한계를 읽고 진행 여부를 결정하세요</p><h2 id={`${uid}-heading`}>조사 결과와 다음 결정</h2></div><button type="button" className="ai-secondary" disabled={busy} onClick={()=>void load()}>작업실 새로 확인</button></div>
   {error&&<p className="ai-error" role="alert">{error}</p>}{notice&&<p className="ai-notice" role="status">{notice}</p>}
-  <label htmlFor={`${uid}-topic`}>현재 작업할 주제<select id={`${uid}-topic`} value={picked?.id||''} onChange={e=>{setActiveTopic(e.target.value);setActiveTask('');onTopic?.(e.target.value);}}>{topics.map(t=><option key={t.id} value={t.id}>{t.title} · 자료 {t.evidence?.length||0}건 · {states[t.state]||t.state}</option>)}</select></label>
+  <details><summary>다른 주제 결과 열기</summary><label htmlFor={`${uid}-topic`}>현재 작업할 주제<select id={`${uid}-topic`} value={picked?.id||''} onChange={e=>{setActiveTopic(e.target.value);setActiveTask('');onTopic?.(e.target.value);}}>{topics.map(t=><option key={t.id} value={t.id}>{t.title} · 자료 {t.evidence?.length||0}건 · {states[t.state]||t.state}</option>)}</select></label></details>
   {!board&&!error&&<p role="status">선택한 주제와 작업 기록을 불러오고 있습니다…</p>}
   {board&&!picked&&<p>{activeTopic?'선택한 작업실을 불러오고 있습니다. ':''}아직 표시할 작업이 없습니다. 자료 선택 화면에서 기사를 고르고 조사 시작을 눌러주세요.</p>}
   {discovery&&<article className={styles.topic}><h3>키워드·새 주제 조사 요청</h3><p>{taskStates[discovery.status]||discovery.status}</p><p style={{whiteSpace:'pre-wrap'}}>{discovery.instruction}</p><h4>조사 결과</h4><p style={{whiteSpace:'pre-wrap'}}>{discovery.result||'아직 조사 결과가 등록되지 않았습니다. 접수와 완료는 다릅니다.'}</p><p>근거가 확보된 후보를 자료 선택 화면에서 검토하고 결정한 뒤 원고 제작으로 진행합니다.</p></article>}
@@ -68,7 +68,7 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
    <span className={styles.badge}>{picked.origin==='evidence'?'직접 선택한 자료':'주제 후보'} · {states[picked.state]||picked.state}</span><h3>{picked.title}</h3>
    <p>선택 자료 {picked.evidence?.length||0}건 · 결과 확인 완료 {own.filter(t=>t.status==='done').length}/{own.length}단계</p>
    {picked.needs_review&&<p className="ai-error">근거가 바뀌었습니다. 새 자료를 다시 검토한 뒤 진행해야 합니다.</p>}
-   <nav className={styles.taskTabs} aria-label="주제 세부 단계">{own.map(t=><button type="button" key={t.id} className="ai-secondary" aria-current={task?.id===t.id?'step':undefined} onClick={()=>setActiveTask(t.id)}><span>{t.status==='done'?'✓':t.status==='awaiting_review'?'확인 필요':'○'}</span><strong>{stageNames[t.stage]||stages[t.stage]}</strong><small>{taskStates[t.status]||t.status}</small></button>)}</nav>
+   <details><summary>전체 제작 단계 보기</summary><nav className={styles.taskTabs} aria-label="주제 세부 단계">{own.map(t=><button type="button" key={t.id} className="ai-secondary" aria-current={task?.id===t.id?'step':undefined} onClick={()=>setActiveTask(t.id)}><span>{t.status==='done'?'✓':t.status==='awaiting_review'?'확인 필요':'○'}</span><strong>{stageNames[t.stage]||stages[t.stage]}</strong><small>{taskStates[t.status]||t.status}</small></button>)}</nav></details>
    {task&&<section id={`task-${task.id}`} className={styles.currentTask} aria-label="현재 단계 결과" data-state={task.status}>
     <div className={styles.header}><h3>{stageNames[task.stage]||task.stage}</h3><span className={styles.state}>{taskStates[task.status]||task.status}</span></div>
     <p className="ai-muted">담당 {task.owner} · 마지막 상태 변경 {time(task.updated_at)}</p>
@@ -77,7 +77,7 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
     {task.source_reviews?.map(r=><details key={r.evidence_id}><summary>{picked.evidence?.find(e=>e.id===r.evidence_id)?.title||'선택 자료'} · 한국어 상세 해설</summary><KoreanSourceReview review={r}/></details>)}
     {task.report_stale&&<p className="ai-error">검토 후 원고가 변경됐습니다. 아래 보완 요청으로 최신 버전을 다시 확인하세요.</p>}
     {task.result&&<details><summary>확인 항목 · {(task.criteria||[]).filter(c=>c.done).length}/{(task.criteria||[]).length}개</summary><ul className={styles.checks}>{(task.criteria||[]).map(c=><li key={c.id}>{c.done?'✓ 확인함':'○ 미확인'} · {c.label}</li>)}</ul></details>}
-    {canAdvance&&<div className={styles.decisionBox}><h4>결과를 읽었다면 다음 단계로</h4>{(missing.length>0||task.status==='blocked')&&<p className="ai-notice">아직 확인하지 못한 항목이 있습니다. 이 상태로 진행하려는 이유를 적거나, 아래에서 보완을 요청하세요.</p>}
+    {canAdvance&&<div className={styles.decisionBox}><h4>이 내용으로 계속 진행할까요?</h4>{(missing.length>0||task.status==='blocked')&&<p className="ai-notice">아직 확인하지 못한 항목이 있습니다. 이 상태로 진행하려는 이유를 적거나, 아래에서 보완을 요청하세요.</p>}
      <label htmlFor={`${uid}-gate`}>{missing.length||task.status==='blocked'?'미확인 사항을 남기고 진행할 이유 · 5자 이상':'다음 단계 진행 의견 · 선택 사항'}<textarea id={`${uid}-gate`} value={gateNotes[task.id]||''} maxLength={2000} disabled={busy} onChange={e=>setGateNotes(v=>({...v,[task.id]:e.target.value}))}/></label>
      <button type="button" disabled={busy||Boolean(error)||Boolean((missing.length||task.status==='blocked')&&(gateNotes[task.id]||'').trim().length<5)} onClick={async()=>{if(await send({kind:'advance',task_id:task.id,expected_version:task.version,note:gateNotes[task.id]||''})){setActiveTask('');setNotice(task.stage==='analysis'&&picked.state!=='select'?'분석 확인을 마쳤습니다. 아래에서 구성안을 원고에 반영할지 결정하세요.':'확인 완료를 기록했습니다. 다음 단계 현황을 아래에서 볼 수 있습니다.');}}}>{advanceLabels[task.stage]||'결과 확인 완료 · 다음 단계로'}</button>
     </div>}
