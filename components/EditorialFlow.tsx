@@ -64,7 +64,7 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
   {error&&<p className="ai-error" role="alert">{error}</p>}{notice&&<p className="ai-notice" role="status">{notice}</p>}
   <details><summary>다른 주제 결과 열기</summary><label htmlFor={`${uid}-topic`}>현재 작업할 주제<select id={`${uid}-topic`} value={picked?.id||''} onChange={e=>{setActiveTopic(e.target.value);setActiveTask('');onTopic?.(e.target.value);}}>{topics.map(t=><option key={t.id} value={t.id}>{t.title} · 자료 {t.evidence?.length||0}건 · {states[t.state]||t.state}</option>)}</select></label></details>
   {!board&&!error&&<p role="status">선택한 주제와 작업 기록을 불러오고 있습니다…</p>}
-  {board&&!picked&&<p>{activeTopic?'선택한 작업실을 불러오고 있습니다. ':''}아직 표시할 작업이 없습니다. 자료 선택 화면에서 기사를 고르고 조사 시작을 눌러주세요.</p>}
+  {board&&!picked&&!discovery&&<p>{activeTopic?'선택한 작업실을 불러오고 있습니다. ':''}아직 표시할 작업이 없습니다. 자료 선택 화면에서 기사를 고르고 조사 시작을 눌러주세요.</p>}
   {discovery&&<article className={styles.topic}><h3>키워드·새 주제 조사 요청</h3><TaskActivity task={discovery}/><RecoveryRequest task={discovery} onChange={onChange}/><p>{taskStates[discovery.status]||discovery.status}</p><p style={{whiteSpace:'pre-wrap'}}>{discovery.instruction}</p><h4>조사 결과</h4><p style={{whiteSpace:'pre-wrap'}}>{discovery.result||'아직 조사 결과가 등록되지 않았습니다. 접수와 완료는 다릅니다.'}</p><p>조사 결과는 검토용 제안입니다. 근거와 한계를 확인하고 채택할 주제를 결정한 뒤 원고 제작으로 진행합니다.</p></article>}
   {!discovery&&picked&&<article className={styles.topic}>
    <span className={styles.badge}>{picked.origin==='evidence'?'직접 선택한 자료':'주제 후보'} · {states[picked.state]||picked.state}</span><h3>{picked.title}</h3>
