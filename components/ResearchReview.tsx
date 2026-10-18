@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import styles from "./ResearchReview.module.css";
-import {KoreanSourceReview,type SourceReview} from "./KoreanSourceReview";
+import {ArticleLibrary} from "./ArticleLibrary";
+import {type SourceReview} from "./KoreanSourceReview";
 
 type Evidence = {
   id: string; title: string; url: string; published_at: string; collected_at: string;
@@ -21,14 +22,6 @@ type DuplicateCheck = {
 type Snapshot = { content_hash: string; collected_at: string; evidence: Evidence[]; candidates: Candidate[] };
 type DecisionAction = "select" | "research" | "hold" | "keep" | "exclude";
 const decisionLabels: Record<DecisionAction, string> = { select: "이번 호에 선정", research: "근거 더 조사", hold: "다음 호로 보류", keep: "좋은 주제 유지", exclude: "후보에서 제외" };
-const sourceLabels: Record<string, string> = {
-  "youtube.sometrend": "YouTube · 썸트렌드 수집", "sometrend.social": "썸트렌드 · 블로그",
-  "apify.dataset": "Apify · 공개 게시물", "news.search": "공개 뉴스", "public_news": "공개 뉴스",
-};
-const verificationLabels: Record<string, string> = {
-  UNVERIFIED: "미검증 · 사실 확인 필요", VERIFIED: "검증 완료 표시 · 근거 확인", PARTIAL: "일부 검증",
-  NEEDS_REVIEW: "검토 필요", REJECTED: "검증 반려",
-};
 function object(value: unknown): Record<string, unknown> {
   return value && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : {};
 }
@@ -72,9 +65,6 @@ function sourceUrl(value: string): string | undefined {
     return ["https:", "http:"].includes(url.protocol) && !url.username && !url.password ? url.href : undefined;
   } catch { return undefined; }
 }
-function duplicateKey(value: string): string {
-  try { const url = new URL(value); url.hash = ""; return url.href; } catch { return value; }
-}
 function at(value: string): string {
   if (!value) return "미확인";
   if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value + " (시각 미제공)";
@@ -101,15 +91,10 @@ export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey
   const [notice, setNotice] = useState("");
   const [notes, setNotes] = useState<Record<string, string>>({});
   const [decisions, setDecisions] = useState<Record<string, DecisionAction>>({});
-  const [evidenceOpen, setEvidenceOpen] = useState(false);
-  const [filter,setFilter]=useState("all");
-  const [query,setQuery]=useState("");
-  useEffect(()=>{if(!view?.nonce)return;setFilter(view.kind);setQuery("");setEvidenceOpen(true);requestAnimationFrame(()=>document.getElementById("research-evidence")?.scrollIntoView({behavior:"smooth"}));},[view]);
   useEffect(()=>{if(snapshot)onCounts?.(Object.fromEntries(Object.keys(filters).map(key=>[key,snapshot.evidence.filter(item=>inFilter(item,key)).length])));},[snapshot,onCounts]);
-  const [selectedEvidence,setSelectedEvidence]=useState<string[]>([]);
-  const [selectionNote,setSelectionNote]=useState("");
   const [sourceReviews,setSourceReviews]=useState<Record<string,SourceReview>>({});
-  const selectionRequest=useRef<{key:string;id:string}|null>(null);
+  const [libraryView,setLibraryView]=useState(view);
+  useEffect(()=>setLibraryView(view),[view]);
   const snapshotVersion=useRef("");
   const [duplicateReviewed, setDuplicateReviewed] = useState<Record<string, boolean>>({});
 
@@ -125,7 +110,7 @@ export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey
       if (incoming === null) { setSnapshot(null); setDecisions({}); return; }
       const parsed = parseSnapshot(incoming);
       if (!parsed) throw new Error("research_unavailable");
-      if(snapshotVersion.current&&snapshotVersion.current!==parsed.content_hash){setSelectedEvidence([]);selectionRequest.current=null;setNotice("자료가 갱신되어 선택을 해제했습니다. 최신 내용을 확인하고 다시 선택하세요.");}
+      if(snapshotVersion.current&&snapshotVersion.current!==parsed.content_hash){setNotice("새 수집 자료를 반영했습니다. 이번 호 후보함은 유지됩니다.");}
       snapshotVersion.current=parsed.content_hash;
       setSnapshot(parsed);
       const flow=object(object(data).workflow),reviews:Record<string,SourceReview>={};
@@ -188,25 +173,7 @@ export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey
     finally { setBusy(null); }
   }
 
-  async function requestEvidence(mode:'include'|'analyze'){
-    if(!snapshot||busy||loading||selectedEvidence.length<1||selectedEvidence.length>10)return;
-    const evidence_ids=[...selectedEvidence].sort(),key=JSON.stringify([snapshot.content_hash,evidence_ids,mode,selectionNote]);
-    if(selectionRequest.current?.key!==key)selectionRequest.current={key,id:crypto.randomUUID()};
-    setBusy('evidence-request');setError('');setNotice('');
-    try{
-      const r=await fetch('/api/ai-center/research/workflow',{method:'POST',cache:'no-store',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({kind:'evidence',request_id:selectionRequest.current.id,mode,expected_hash:snapshot.content_hash,evidence_ids,text:selectionNote})});
-      if(!r.ok){const data=await r.json().catch(()=>({}));throw new Error(r.status===409?'자료가 갱신되었거나 요청 내용이 바뀌었습니다. 최신 자료를 확인하세요.':data.error||'요청을 저장하지 못했습니다. 다시 시도하세요.');}
-      selectionRequest.current=null;setSelectedEvidence([]);setSelectionNote('');onChange?.();
-      setNotice('선택 자료를 보관하고 조사·분석 대기열에 등록했습니다. 위 주제함에서 한국어 조사 결과와 포함·조건부 포함·보류 의견을 확인하세요. 원고에는 아직 반영하지 않았습니다.');
-      document.getElementById('editorial-flow')?.scrollIntoView({behavior:'smooth'});
-    }catch(e){setError(e instanceof Error?e.message:'요청 실패');}finally{setBusy(null);}
-  }
-
   const evidenceById = new Map(snapshot?.evidence.map(item => [item.id, item]) || []);
-  const duplicateCounts = new Map<string, number>();
-  for (const item of snapshot?.evidence || []) {
-    if (item.url) duplicateCounts.set(duplicateKey(item.url), (duplicateCounts.get(duplicateKey(item.url)) || 0) + 1);
-  }
   return <section className="ai-panel" aria-labelledby={`${panelId}-heading`} aria-busy={loading || Boolean(busy)}>
     <div className={styles.heading}><div><p className="ai-kicker">주제별 근거 검토</p><h2 id={`${panelId}-heading`}>주제의 근거를 보고 유지·제외·선정하기</h2></div>
       <button type="button" className="ai-secondary" disabled={loading || Boolean(busy)} onClick={() => void load()}>최신 자료 확인</button></div>
@@ -219,11 +186,12 @@ export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey
       <p className="ai-muted">자료 수집 시각 {at(snapshot.collected_at)} · 근거 {snapshot.evidence.length}건 · 주제 후보 {snapshot.candidates.length}건 · 한국 시간</p>
       <section className={styles.global} aria-label="글로벌 조사">
         <h3>글로벌 사례 · 일본 / 미국 / 유럽</h3>
-        <p>매일 08시 이후 현지어 공개 뉴스 수집을 시도하고, 15분 작업 실행에서 공식 원문·업계 자료로 보강합니다. Mac과 네트워크 연결이 필요합니다. 지역별 건수를 누르면 원문·게시일·확인 범위·국내 적용 시사점을 볼 수 있습니다.</p>
-        <div className="ai-actions">{["japan","us","europe"].map(kind=><button key={kind} type="button" className="ai-secondary" onClick={()=>{setFilter(kind);setQuery("");setEvidenceOpen(true);document.getElementById("research-evidence")?.scrollIntoView({behavior:"smooth"});}}>{filters[kind]} {snapshot.evidence.filter(item=>inFilter(item,kind)).length}건 · 사례 보기</button>)}</div>
+        <p>매일 08시 이후 현지어 공개 뉴스 수집을 시도하고, 15분 작업 실행에서 공식 원문·업계 자료로 보강합니다. Mac과 네트워크 연결이 필요합니다. 지역을 누르면 원문·게시일·확인 범위·국내 적용 시사점을 볼 수 있습니다.</p>
+        <div className="ai-actions">{["japan","us","europe"].map(kind=><button key={kind} type="button" className="ai-secondary" onClick={()=>{setLibraryView(v=>({kind,nonce:(v?.nonce||0)+1}));document.getElementById("research-evidence")?.scrollIntoView({behavior:"smooth"});}}>{filters[kind]} 사례 보기</button>)}</div>
         <p className="ai-muted">유럽은 우선 영국·독일·프랑스를 조사합니다. 검색 지역은 사례 발생 국가의 확정이 아니며, 한 국가의 결과를 유럽 전체로 일반화하지 않습니다. 0건은 미수집·미확인 상태입니다.</p>
       </section>
-      <h3>AI가 정리한 주제 후보</h3>
+      <ArticleLibrary articles={snapshot.evidence} reviews={sourceReviews} view={libraryView} onChange={onChange}/>
+      <details><summary>AI가 정리한 주제 후보 ({snapshot.candidates.length}개)</summary>
       {snapshot.candidates.every(candidate=>decisions[candidate.id]==="exclude") && <p className="ai-muted">표시할 주제 후보가 없습니다. 제외한 주제는 위 제외함에서 복원할 수 있으며, 아래 수집 자료도 확인할 수 있습니다.</p>}
       <div className={styles.candidates}>{snapshot.candidates.filter(candidate=>decisions[candidate.id]!=="exclude").map(candidate => <article id={`topic-${candidate.id}`} className={styles.card} key={candidate.id}>
         <h4>{candidate.title || "제목 미확인"}</h4><p>{candidate.summary}</p>
@@ -231,7 +199,7 @@ export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey
         <h5>AI 추천 이유 · 대표 선택과 별개</h5><TextList values={candidate.recommendation} empty="아직 추천 이유가 없습니다."/>
         <h5>근거 자료</h5>{candidate.evidence_ids.length ? <ul className={styles.notes}>{candidate.evidence_ids.map((id, index) => {
           const item = evidenceById.get(id);
-          return <li key={`${id}-${index}`}>{item ? <a href={`#${panelId}-evidence-${encodeURIComponent(id)}`} onClick={() => {setFilter("all");setQuery("");setEvidenceOpen(true);}}>{item.title || "제목 미확인"}</a> : "이번 자료에서 해당 참조 근거를 확인하지 못했습니다."}</li>;
+          return <li key={`${id}-${index}`}>{item ? <a href="#research-evidence" onClick={() => {window.dispatchEvent(new CustomEvent("sewang-open-evidence",{detail:id}));}}>{item.title || "제목 미확인"}</a> : "이번 자료에서 해당 참조 근거를 확인하지 못했습니다."}</li>;
         })}</ul> : <p className="ai-muted">연결된 근거가 없습니다.</p>}
         <h5>반대 근거·다른 설명</h5><TextList values={candidate.counter_evidence} empty="현재 조사 범위에서 미확인입니다. 반대 근거가 없다는 뜻은 아닙니다."/>
         <h5>불확실성·추가 확인</h5><TextList values={candidate.uncertainties} empty="불확실성이 아직 정리되지 않았습니다. 검증 완료를 뜻하지 않습니다."/>
@@ -252,33 +220,8 @@ export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey
         {decisions[candidate.id] && <p className={styles.decision}>대표 기록: {decisionLabels[decisions[candidate.id]]}</p>}
         <div className="ai-actions">{(["keep", "exclude", "research", "hold", "select"] as const).map(action => <button key={action} type="button" className={action === "select" ? undefined : "ai-secondary"} disabled={loading || Boolean(busy) || !snapshot.content_hash || (action === "select" && (Boolean(error) || candidate.duplicate_check.status === "unavailable" || (candidate.duplicate_check.requires_review && (!duplicateReviewed[candidate.id] || !(notes[candidate.id] || "").trim()))))} onClick={() => void decide(candidate, action)}>{busy === candidate.id ? "저장 중…" : decisionLabels[action]}</button>)}</div>
         {!snapshot.content_hash && <p className="ai-muted">자료 버전을 확인하지 못해 선택을 저장할 수 없습니다.</p>}
-      </article>)}</div>
-      <details id="research-evidence" open={evidenceOpen} onToggle={event => setEvidenceOpen(event.currentTarget.open)}><summary>수집 근거 내용 보기 ({snapshot.evidence.length}건)</summary>
-        <p className="ai-muted">소수 SNS 게시물·언급량·조회수는 시장 전체 매출이나 수요를 뜻하지 않습니다. 중복 URL은 독립 근거 여러 건으로 세지 않으며 게시일과 수집일을 구분해 확인하세요.</p>
-        <div className="ai-actions" aria-label="자료 범위">{Object.entries(filters).map(([kind,label])=><button key={kind} type="button" className="ai-secondary" aria-pressed={filter===kind} onClick={()=>setFilter(kind)}>{label} {snapshot.evidence.filter(item=>inFilter(item,kind)).length}건</button>)}</div>
-        <label>제목·내용·출처 검색<input value={query} onChange={event=>setQuery(event.target.value)} placeholder="키워드로 자료 찾기"/></label>
-        <p role="status">{filters[filter]} · {snapshot.evidence.filter(item=>inFilter(item,filter)&&[item.title,item.summary,item.source_type].join(" ").toLowerCase().includes(query.toLowerCase())).length}건 표시</p>
-        <section className={styles.selection} aria-label="선택 자료 검토 요청">
-          <h3>마음에 드는 자료를 골라 정보지에 활용하기</h3>
-          <p>국내외 자료를 최대 10건 선택하세요. 검색·지역을 바꿔도 선택은 유지됩니다. 선택은 검증 완료나 최종 반영 승인이 아닙니다.</p>
-          <p role="status">선택 {selectedEvidence.length}건 · 화면 밖 선택도 포함</p>
-          {selectedEvidence.length>0&&<ul>{selectedEvidence.map(id=><li key={id}>{evidenceById.get(id)?.title}<button type="button" className="ai-secondary" disabled={Boolean(busy)} aria-label={`${evidenceById.get(id)?.title} 선택 해제`} onClick={()=>setSelectedEvidence(v=>v.filter(x=>x!==id))}>해제</button></li>)}</ul>}
-          <label>검토할 질문·정보지에 활용하고 싶은 방향 (선택)<textarea value={selectionNote} maxLength={2000} disabled={Boolean(busy)} onChange={e=>setSelectionNote(e.target.value)} placeholder="예: 이 일본 사례를 국내 음식점에도 적용할 수 있는지, 반대 사례와 비용·운영 한계도 비교해줘."/></label>
-          <div className="ai-actions"><button type="button" disabled={Boolean(busy)||loading||!selectedEvidence.length} onClick={()=>void requestEvidence('include')}>선택 자료 정보지 반영 검토</button><button type="button" className="ai-secondary" disabled={Boolean(busy)||loading||!selectedEvidence.length} onClick={()=>void requestEvidence('analyze')}>선택 자료 심층 분석</button><button type="button" className="ai-secondary" disabled={Boolean(busy)||!selectedEvidence.length} onClick={()=>setSelectedEvidence([])}>선택 모두 해제</button></div>
-          <p className="ai-muted">조사 결과 → 대표 확인 → 포함 여부 분석 → 대표가 원고 반영 결정 순서로 진행합니다. 실제 발행은 별도 승인입니다.</p>
-        </section>
-        <div className={styles.evidence}>{snapshot.evidence.filter(item=>inFilter(item,filter)&&[item.title,item.summary,item.source_type].join(" ").toLowerCase().includes(query.toLowerCase())).map(item => <article id={`${panelId}-evidence-${encodeURIComponent(item.id)}`} className={styles.card} key={item.id}>
-          <label className={styles.checkbox}><input type="checkbox" checked={selectedEvidence.includes(item.id)} disabled={Boolean(busy)||loading||(!selectedEvidence.includes(item.id)&&selectedEvidence.length>=10)} onChange={e=>setSelectedEvidence(v=>e.target.checked?[...v,item.id]:v.filter(id=>id!==item.id))}/><span>이 자료 선택 · {item.title}</span></label>
-          <p className="ai-kicker">{sourceLabels[item.source_type] || item.source_type || "출처 유형 미확인"}</p>
-          <h4>{sourceUrl(item.url) ? <a href={sourceUrl(item.url)} target="_blank" rel="noopener noreferrer">{item.title || "원문 확인"} ↗</a> : item.title || "제목 미확인"}</h4>
-          <p className={styles.verification}>{verificationLabels[item.verification.toUpperCase()] || item.verification || "검증 상태 미확인"}</p>
-          <p className="ai-muted">게시 {at(item.published_at)}<br/>수집 {at(item.collected_at)}</p><p>{item.summary}</p>
-          {(duplicateCounts.get(duplicateKey(item.url)) || 0) > 1 && <p className="ai-muted">같은 URL 자료가 {duplicateCounts.get(duplicateKey(item.url))}건 있습니다. 중복 가능성이 있습니다.</p>}
-          <KoreanSourceReview review={sourceReviews[item.id]} title={item.title} foreign={item.source_type.startsWith('해외 사례')}/>
-          <h5>자료의 한계</h5><TextList values={item.limitations} empty="한계가 기록되지 않았습니다. 사실 확인과 출처 품질 점검이 필요합니다."/>
-          {!sourceUrl(item.url) && <p className="ai-muted">안전하게 열 수 있는 원문 URL을 확인하지 못했습니다.</p>}
-        </article>)}</div>
-      </details>
+      </article>)}</div></details>
+
     </>}
   </section>;
 }

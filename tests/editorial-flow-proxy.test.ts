@@ -31,3 +31,11 @@ test('adoption binds publication-history review and strips browser-only fields b
  const {loadPublicationHistory}=await import('../lib/loadPublicationHistory');const {candidatePublicationCheck}=await import('../lib/review-publication-check');const history=await loadPublicationHistory(),check=await candidatePublicationCheck(topic,topic.snapshot_hash,history.posts);
  r=await POST(request('POST','research/workflow',{...payload,history_version:check.history_version}),{params:{path:['research','workflow']}});assert.equal(r.status,200);assert.equal(writes,1);assert.equal(forwarded?.duplicate_reviewed,undefined);assert.equal(forwarded?.history_version,undefined);
 });
+test('reading library is private and basket uses owner endpoint without exposing note-writing route',async t=>{
+ const original=global.fetch;const paths:string[]=[];
+ global.fetch=async(input)=>{const url=String(input);if(url.endsWith('/auth'))return Response.json({password_hash:null,password_salt:null,version:0});paths.push(url);return Response.json({notes:{},basket:{revision:0,items:[]}});};t.after(()=>{global.fetch=original;});
+ assert.equal((await GET(request('GET','research/reading',undefined,false),{params:{path:['research','reading']}})).status,401);
+ assert.equal((await POST(request('POST','research/reading',{entries:[]}),{params:{path:['research','reading']}})).status,404);
+ assert.equal((await POST(request('POST','research/basket',{action:'add'},true,'https://other.example'),{params:{path:['research','basket']}})).status,403);
+ const r=await POST(request('POST','research/basket',{expected_revision:0,action:'add',evidence_id:'s1',value:''}),{params:{path:['research','basket']}});assert.equal(r.status,200);assert.ok(paths.every(p=>p==='https://sewang-ai-queue-staging.msjung75.workers.dev/v1/admin/editorial/research/basket'));assert.ok(!(await r.text()).includes(process.env.AI_CONTROL_TOKEN!));
+});
