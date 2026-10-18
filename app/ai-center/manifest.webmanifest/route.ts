@@ -1,0 +1,2 @@
+import {NextResponse} from 'next/server';
+export function GET(){return NextResponse.json({id:'/ai-center',name:'세왕 AI 관리센터',short_name:'세왕 AI',lang:'ko',start_url:'/ai-center?source=installed',scope:'/ai-center',display:'standalone',background_color:'#0b1019',theme_color:'#102b2a',icons:[{src:'/ai-center/icon-192.png',sizes:'192x192',type:'image/png',purpose:'any'},{src:'/ai-center/icon-512.png',sizes:'512x512',type:'image/png',purpose:'any maskable'}]},{headers:{'Content-Type':'application/manifest+json','Cache-Control':'public, max-age=3600'}});}

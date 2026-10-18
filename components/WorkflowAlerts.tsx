@@ -19,7 +19,7 @@ export function WorkflowAlerts({board,checkedAt,error,onNavigate}:{board:IssueBo
  {toast&&<div className={styles.warning} role="alert"><strong>새 상태 · {toast.title}</strong><p>{toast.detail}</p><button type="button" className="ai-secondary" onClick={()=>{onNavigate({view:'workflow',topicId:toast.topicId,taskId:toast.taskId});setToast(null);}}>결과·작업 확인 →</button><button type="button" className="ai-secondary" onClick={()=>setToast(null)}>알림 닫기</button></div>}
  {message&&<p role="status">{message}</p>}{error&&<p className="ai-error" role="alert">{error} 요청을 다시 만들지 말고 ‘진행 현황 새로 확인’을 눌러주세요. 로그인이 만료됐다면 페이지를 새로고침해 로그인하세요.</p>}
  {warnings.length>0&&<p className={styles.warning} role="status">확인이 필요한 작업 {warnings.length}건 · {warnings[0].title}. 알림함에서 사유를 확인하세요.</p>}
- <p className={styles.hint}>화면 알림은 자동 저장됩니다. 시스템 알림은 브라우저가 지원하고 이 화면이 열려 있어야 합니다. 화면을 닫은 상태의 푸시·카카오 알림은 아직 연결되지 않았습니다.</p>
+ <p className={styles.hint}>화면 알림은 자동 저장됩니다. 시스템 알림은 브라우저가 지원하고 이 화면이 열려 있어야 합니다. 화면을 닫아도 받을 휴대폰 푸시는 위의 ‘휴대폰 앱’에서 별도로 등록하세요. 카카오 알림은 연결하지 않았습니다.</p>
  {open&&<><button type="button" className="ai-secondary" onClick={readAll}>모두 읽음</button><ol className={styles.list}>{events.length?events.map(e=><li key={e.key} data-kind={e.kind}><strong>{e.read?'':'● '}{e.title}</strong><time>{new Date(e.at).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}</time><p>{e.detail}</p><button type="button" className="ai-secondary" onClick={()=>onNavigate({view:'workflow',topicId:e.topicId,taskId:e.taskId})}>해당 작업 보기 →</button></li>):<li>새 상태 기록을 기다리고 있습니다.</li>}</ol></>}
  </section>;
 }
