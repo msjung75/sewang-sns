@@ -175,22 +175,22 @@ export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey
 
   const evidenceById = new Map(snapshot?.evidence.map(item => [item.id, item]) || []);
   return <section className="ai-panel" aria-labelledby={`${panelId}-heading`} aria-busy={loading || Boolean(busy)}>
-    <div className={styles.heading}><div><p className="ai-kicker">주제별 근거 검토</p><h2 id={`${panelId}-heading`}>주제의 근거를 보고 유지·제외·선정하기</h2></div>
+    <div className={styles.heading}><div><p className="ai-kicker">주제별 근거 검토</p><h2 id={`${panelId}-heading`}>정보지에 쓸 자료 고르기</h2></div>
       <button type="button" className="ai-secondary" disabled={loading || Boolean(busy)} onClick={() => void load()}>최신 자료 확인</button></div>
-    <p>수집 자료를 토대로 후보를 비교하고 다룰 방향을 선택합니다. AI 추천은 검토 의견이며 대표님의 선택과 구분해 기록합니다.</p>
-    <p className="ai-muted">주제 선택은 원고 승인·번역 승인·발송 예약이 아닙니다. 가져오신 주제는 위 주제함에서 제목만 추가하면 조사 담당에게 전달됩니다.</p>
+    <p>관심 기사를 체크하세요. 선택 후 위쪽의 <strong>조사 시작</strong> 버튼을 누르면 다음 단계로 이어집니다.</p>
+
     {error && <p className="ai-error" role="alert">{error}</p>}{notice && <p className="ai-notice" role="status">{notice}</p>}
     {loading && <p role="status">조사 자료를 확인하고 있습니다…</p>}
     {!loading && !snapshot && !error && <p className="ai-muted">아직 가져온 조사 자료가 없습니다. 자료가 수신되면 근거와 후보를 표시합니다.</p>}
     {snapshot && <>
       <p className="ai-muted">자료 수집 시각 {at(snapshot.collected_at)} · 근거 {snapshot.evidence.length}건 · 주제 후보 {snapshot.candidates.length}건 · 한국 시간</p>
-      <section className={styles.global} aria-label="글로벌 조사">
+      <ArticleLibrary articles={snapshot.evidence} reviews={sourceReviews} view={libraryView} onChange={onChange}/>
+      <details className={styles.global}><summary>해외 사례 국가별 보기</summary>
         <h3>글로벌 사례 · 일본 / 미국 / 유럽</h3>
         <p>매일 08시 이후 현지어 공개 뉴스 수집을 시도하고, 15분 작업 실행에서 공식 원문·업계 자료로 보강합니다. Mac과 네트워크 연결이 필요합니다. 지역을 누르면 원문·게시일·확인 범위·국내 적용 시사점을 볼 수 있습니다.</p>
         <div className="ai-actions">{["japan","us","europe"].map(kind=><button key={kind} type="button" className="ai-secondary" onClick={()=>{setLibraryView(v=>({kind,nonce:(v?.nonce||0)+1}));document.getElementById("research-evidence")?.scrollIntoView({behavior:"smooth"});}}>{filters[kind]} 사례 보기</button>)}</div>
         <p className="ai-muted">유럽은 우선 영국·독일·프랑스를 조사합니다. 검색 지역은 사례 발생 국가의 확정이 아니며, 한 국가의 결과를 유럽 전체로 일반화하지 않습니다. 0건은 미수집·미확인 상태입니다.</p>
-      </section>
-      <ArticleLibrary articles={snapshot.evidence} reviews={sourceReviews} view={libraryView} onChange={onChange}/>
+      </details>
       <details><summary>AI가 정리한 주제 후보 ({snapshot.candidates.length}개)</summary>
       {snapshot.candidates.every(candidate=>decisions[candidate.id]==="exclude") && <p className="ai-muted">표시할 주제 후보가 없습니다. 제외한 주제는 위 제외함에서 복원할 수 있으며, 아래 수집 자료도 확인할 수 있습니다.</p>}
       <div className={styles.candidates}>{snapshot.candidates.filter(candidate=>decisions[candidate.id]!=="exclude").map(candidate => <article id={`topic-${candidate.id}`} className={styles.card} key={candidate.id}>

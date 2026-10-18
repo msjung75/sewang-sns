@@ -1,3 +1,4 @@
+import {observedTopics} from '../../../../lib/keyword-signals';
 import {approvalOrigin} from '../../../../lib/approval-origin';
 import { NextRequest,NextResponse } from 'next/server';
 import { authorized,sameOrigin } from '../../../../lib/approval-auth';
@@ -10,7 +11,7 @@ async function proxy(req:NextRequest,{params}:{params:{path?:string[]}}) {
  if(!await authorized(req))return NextResponse.json({error:'대표 로그인 후 사용할 수 있습니다.'},{status:401});
  if(req.method!=='GET'&&!sameOrigin(req))return NextResponse.json({error:'허용되지 않은 요청'},{status:403});
  const route=(params.path||[]).join('/');
- if(!(route===''&&req.method==='GET')&&!(route==='research'&&req.method==='GET')&&!(route==='research/reading'&&req.method==='GET')&&!(route==='research/basket'&&req.method==='POST')&&!(route==='research/workflow'&&['GET','POST'].includes(req.method))&&!(route==='research/decision'&&req.method==='POST')&&!(route==='reports'&&req.method==='POST')&&!(/^[A-Za-z0-9_-]{1,80}\/(decision|translations|schedule|receipt|cancel)$/.test(route)&&!route.startsWith('research/')&&req.method==='POST'))return NextResponse.json({error:'허용되지 않은 경로'},{status:404});
+ if(!(route===''&&req.method==='GET')&&!(route==='research'&&req.method==='GET')&&!(route==='research/signals'&&req.method==='GET')&&!(route==='research/reading'&&req.method==='GET')&&!(route==='research/basket'&&req.method==='POST')&&!(route==='research/workflow'&&['GET','POST'].includes(req.method))&&!(route==='research/decision'&&req.method==='POST')&&!(route==='reports'&&req.method==='POST')&&!(/^[A-Za-z0-9_-]{1,80}\/(decision|translations|schedule|receipt|cancel)$/.test(route)&&!route.startsWith('research/')&&req.method==='POST'))return NextResponse.json({error:'허용되지 않은 경로'},{status:404});
  let body=req.method==='GET'?undefined:await req.text();
  if(body&&Buffer.byteLength(body)>180000)return NextResponse.json({error:'입력 길이 초과'},{status:413});
  try{
@@ -39,6 +40,11 @@ async function proxy(req:NextRequest,{params}:{params:{path?:string[]}}) {
     if(check.requires_review&&(input.duplicate_reviewed!==true||typeof input.note!=='string'||input.note.trim().length<5))return NextResponse.json({error:'기존 글을 확인하고 차별점을 5자 이상 적어주세요.'},{status:400});
     body=JSON.stringify({kind:'adopt',topic_id:input.topic_id,expected_revision:input.expected_revision,expected_plan:input.expected_plan,note:input.note});
    }
+  }
+  if(route==='research/signals'){
+   const [metrics,sources]=await Promise.all([upstream(route),upstream('research')]);
+   if(!metrics.ok||!sources.ok)throw new Error('signals_unavailable');const data=await metrics.json(),research=await sources.json();
+   return NextResponse.json({...data,observations:observedTopics(research.snapshot?.evidence||[]),observation_as_of:research.snapshot?.collected_at||null},{headers:{'Cache-Control':'no-store'}});
   }
   const response=await upstream(route,req.method,body);const data=await response.json();
   if(response.ok&&route==='research'&&data.snapshot){const history=await loadPublicationHistory();data.snapshot.candidates=await Promise.all(data.snapshot.candidates.map(async(c:{id:string;title:string;summary:string})=>({...c,duplicate_check:await candidatePublicationCheck(c,data.snapshot.content_hash,history.posts)})));data.publication_coverage=history.coverage;const flow=await upstream('research/workflow');if(!flow.ok)throw new Error('workflow_unavailable');data.workflow=await flow.json();}

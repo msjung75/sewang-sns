@@ -19,11 +19,12 @@ function link(url:string){try{const u=new URL(url);return /^https?:$/.test(u.pro
 export function ArticleLibrary({articles,reviews,view,onChange}:{articles:Article[];reviews:Record<string,SourceReview>;view?:{kind:string;nonce:number};onChange?:()=>void}){
  const [notes,setNotes]=useState<Record<string,Reading>>({}),[basket,setBasket]=useState<Basket>(emptyBasket),[loaded,setLoaded]=useState(false);
  const [tab,setTab]=useState('ready'),[range,setRange]=useState('all'),[query,setQuery]=useState(''),[page,setPage]=useState(1),[busy,setBusy]=useState(false),[error,setError]=useState(''),[notice,setNotice]=useState('');
- const [editingNote,setEditingNote]=useState('');const composeRef=useRef<{key:string;id:string}|null>(null);
+ const [editingNote,setEditingNote]=useState('');const noteDirty=useRef(false);const composeRef=useRef<{key:string;id:string}|null>(null);
+ const [submission,setSubmission]=useState<{revision:number;topic_id:string}|null>(null);
  const [focusId,setFocusId]=useState('');
- const load=useCallback(async(signal?:AbortSignal)=>{try{const r=await fetch('/api/ai-center/research/reading',{credentials:'same-origin',cache:'no-store',signal});if(!r.ok)throw Error();const d=await r.json();if(signal?.aborted)return;setNotes(d.notes||{});setBasket(d.basket);setEditingNote(old=>old||d.basket.note||'');setLoaded(true);}catch{if(!signal?.aborted)setError('한국어 검토함·후보함을 불러오지 못했습니다. 다시 확인하세요.');}},[]);
+ const load=useCallback(async(signal?:AbortSignal)=>{try{const r=await fetch('/api/ai-center/research/reading',{credentials:'same-origin',cache:'no-store',signal});if(!r.ok)throw Error();const d=await r.json();if(signal?.aborted)return;setNotes(d.notes||{});setBasket(d.basket);setSubmission(d.submission||null);if(!noteDirty.current)setEditingNote(d.basket.note||'');setLoaded(true);}catch{if(!signal?.aborted)setError('한국어 검토함·후보함을 불러오지 못했습니다. 다시 확인하세요.');}},[]);
  useEffect(()=>{const c=new AbortController();void load(c.signal);const t=setInterval(()=>void load(c.signal),60000);return()=>{c.abort();clearInterval(t);};},[load]);
- useEffect(()=>{if(view?.nonce){setRange(view.kind);setTab('all');setQuery('');setPage(1);}},[view]);
+ useEffect(()=>{if(view?.nonce){setRange(view.kind==='basket'?'all':view.kind);setTab(view.kind==='basket'?'basket':'all');setQuery('');setPage(1);}},[view]);
  useEffect(()=>{const listener=(event:Event)=>{const id=(event as CustomEvent<string>).detail;setFocusId(id);setTab('all');setRange('all');setQuery('');setPage(Math.floor(Math.max(0,articles.findIndex(a=>a.id===id))/10)+1);};window.addEventListener('sewang-open-evidence',listener);return()=>window.removeEventListener('sewang-open-evidence',listener);},[articles]);
  const review=(a:Article):Reading|undefined=>notes[a.id]||(reviews[a.id]?{...reviews[a.id],title_ko:/[가-힣]/.test(a.title)?a.title:'한국어 제목 정리 중',case_country:'확인 중',source_language:'확인 중',failure_reason:''}:undefined);
  const ready=(a:Article)=>{const r=review(a);return r?.read_scope==='full_text'&&r.title_ko!=='한국어 제목 정리 중';};
@@ -32,17 +33,23 @@ export function ArticleLibrary({articles,reviews,view,onChange}:{articles:Articl
  const pages=Math.max(1,Math.ceil(filtered.length/10)),current=Math.min(page,pages),rows=filtered.slice((current-1)*10,current*10);
  async function mutate(action:string,evidence_id='',value=''){
   if(busy||!loaded)return;setBusy(true);setError('');setNotice('');
-  try{const r=await fetch('/api/ai-center/research/basket',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({expected_revision:basket.revision,action,evidence_id,value})});if(!r.ok)throw Error(r.status===409?'후보함이 다른 화면에서 바뀌었습니다. 새 내용을 불러왔으니 확인 후 다시 처리하세요.':'후보함을 저장하지 못했습니다.');setBasket(await r.json());setNotice('후보함에 저장했습니다. 다시 접속해도 유지됩니다.');}
+  try{const r=await fetch('/api/ai-center/research/basket',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({expected_revision:basket.revision,action,evidence_id,value})});if(!r.ok)throw Error(r.status===409?'후보함이 다른 화면에서 바뀌었습니다. 새 내용을 불러왔으니 확인 후 다시 처리하세요.':'후보함을 저장하지 못했습니다.');setBasket(await r.json());if(action==='note'&&!evidence_id)noteDirty.current=false;setSubmission(null);onChange?.();setNotice('후보함에 저장했습니다. 다시 접속해도 유지됩니다.');}
   catch(e){setError(e instanceof Error?e.message:'저장 실패');await load();}finally{setBusy(false);}
  }
  async function compose(mode:'include'|'analyze'){
   if(busy||!loaded||!basket.items.length)return;
-  if(editingNote!==basket.note){setError('구성 메모를 먼저 저장한 뒤 요청하세요.');setTab('basket');return;}
-  const key=JSON.stringify([basket.revision,mode]);if(composeRef.current?.key!==key)composeRef.current={key,id:crypto.randomUUID()};
+  if(submission?.revision===basket.revision&&editingNote===basket.note){window.dispatchEvent(new CustomEvent('sewang-request-created',{detail:{topicId:submission.topic_id}}));return;}
   setBusy(true);setError('');setNotice('');
-  try{const r=await fetch('/api/ai-center/research/basket',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({kind:'compose',request_id:composeRef.current.id,expected_revision:basket.revision,mode})});if(!r.ok){const d=await r.json().catch(()=>({}));throw Error(r.status===409?'후보함 상태가 바뀌었습니다. 다시 확인하세요.':d.error||'검토 요청을 저장하지 못했습니다.');}composeRef.current=null;setNotice(mode==='include'?'선택 순서와 메모를 전달했습니다. 우선 원문 검토와 정보지 구성안을 준비하고, 대표님 확인 후 원고 작성으로 연결합니다.':'후보함 자료의 한국어 원문 검토를 우선 요청했습니다. 진행판에서 결과를 확인하세요.');onChange?.();}
-  catch(e){setError(e instanceof Error?e.message:'요청 실패');await load();}finally{setBusy(false);}
+  try{
+   let currentBasket=basket;
+   if(editingNote!==basket.note){const saved=await fetch('/api/ai-center/research/basket',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({expected_revision:basket.revision,action:'note',evidence_id:'',value:editingNote})});if(!saved.ok)throw Error('구성 메모를 저장하지 못했습니다. 최신 후보함을 확인하세요.');currentBasket=await saved.json();setBasket(currentBasket);noteDirty.current=false;}
+   const key=JSON.stringify([currentBasket.revision,mode]);if(composeRef.current?.key!==key)composeRef.current={key,id:crypto.randomUUID()};
+   const r=await fetch('/api/ai-center/research/basket',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify({kind:'compose',request_id:composeRef.current.id,expected_revision:currentBasket.revision,mode})});
+   const result=await r.json();if(!r.ok)throw Error(r.status===409?'후보함이 바뀌었습니다. 최신 자료를 확인하고 다시 요청하세요.':result.error||'조사 요청을 저장하지 못했습니다.');
+   setSubmission({revision:currentBasket.revision,topic_id:result.topic_id});composeRef.current=null;window.dispatchEvent(new CustomEvent('sewang-request-created',{detail:{topicId:result.topic_id}}));setNotice('조사 요청을 접수했습니다. 주제별 작업실에서 실제 진행 상황과 다음 행동을 확인하세요.');onChange?.();
+  }catch(e){setError(e instanceof Error?e.message:'요청 실패');await load();}finally{setBusy(false);}
  }
+
  function chooseTab(value:string){setTab(value);setPage(1);setRange('all');setQuery('');}
  return <section id="research-evidence" className={styles.library} aria-label="기사 검토와 이번 호 후보함">
   <div className={styles.heading}><div><h3>한국어 기사 검토함</h3><p className="ai-muted">짧게 비교하고, 필요한 기사를 이번 호 후보함에 담으세요.</p></div><button type="button" className="ai-secondary" disabled={busy} onClick={()=>void load()}>검토함 새로 확인</button></div>
@@ -53,7 +60,7 @@ export function ArticleLibrary({articles,reviews,view,onChange}:{articles:Articl
   <div className="ai-actions" aria-label="사례 국가">{Object.entries(ranges).map(([key,label])=><button key={key} type="button" className="ai-secondary" aria-pressed={range===key} onClick={()=>{setRange(key);setPage(1);}}>{label}</button>)}</div>
   <p className="ai-muted">지역 필터는 확인된 사례 국가 기준입니다. 검색 국가만 알려진 자료는 전체에서 볼 수 있습니다.</p>
   <label>기사 검색<input value={query} onChange={e=>{setQuery(e.target.value);setPage(1);}} placeholder="한국어 제목·요약·출처 검색"/></label>
-  {tab==='basket'&&<section className={styles.selection} aria-label="정보지 구성 메모"><h4>이번 호 정보지 구성</h4><p>최대 10건 · 위에서 아래 순서로 전달합니다. 수집일이 바뀌어도 담은 자료는 보관합니다.</p><label>구성 방향·연결할 주제<textarea maxLength={2000} value={editingNote} onChange={e=>setEditingNote(e.target.value)} placeholder="예: 일본 사례를 먼저 소개하고, 국내 음식점에서 시험할 방법으로 마무리"/></label><button type="button" disabled={busy||editingNote===basket.note} onClick={()=>void mutate('note','',editingNote)}>구성 메모 저장</button><div className="ai-actions"><button type="button" disabled={busy||!loaded||!basket.items.length} onClick={()=>void compose('include')}>선택 기사로 정보지 구성안 만들기</button><button type="button" className="ai-secondary" disabled={busy||!loaded||!basket.items.length} onClick={()=>void compose('analyze')}>선택 기사 우선 검토</button></div></section>}
+  {tab==='basket'&&<section className={styles.selection} aria-label="정보지 구성 메모"><h4>이번 호 정보지 구성</h4><p>최대 10건 · 위에서 아래 순서로 전달합니다. 수집일이 바뀌어도 담은 자료는 보관합니다.</p><label>구성 방향·연결할 주제<textarea maxLength={2000} value={editingNote} onChange={e=>{noteDirty.current=true;setEditingNote(e.target.value);}} placeholder="예: 일본 사례를 먼저 소개하고, 국내 음식점에서 시험할 방법으로 마무리"/></label><button type="button" disabled={busy||editingNote===basket.note} onClick={()=>void mutate('note','',editingNote)}>구성 메모 저장</button><div className="ai-actions"><button type="button" disabled={busy||!loaded||!basket.items.length} onClick={()=>void compose('include')}>{submission?.revision===basket.revision?'접수된 작업실 열기':'선택 자료로 조사·구성안 요청'}</button><button type="button" className="ai-secondary" disabled={busy||!loaded||!basket.items.length} onClick={()=>void compose('analyze')}>선택 기사 우선 검토</button></div></section>}
   <p role="status">{filtered.length?`${filtered.length}건 중 ${(current-1)*10+1}~${Math.min(current*10,filtered.length)}건`:'표시할 기사 0건'} · {current}/{pages}페이지</p>
   {!filtered.length&&<p>{tab==='ready'?'한국어 원문 검토가 완료된 자료를 준비 중입니다. 수집·검토 중 탭에서 관심 기사를 담으면 우선 검토를 요청할 수 있습니다.':'현재 조건에 맞는 기사가 없습니다.'}</p>}
   <div className={styles.evidence}>{rows.map(a=>{const r=review(a),selected=basket.items.some(i=>i.evidence.id===a.id),item=basket.items.find(i=>i.evidence.id===a.id),label=r?.title_ko||(/[가-힣]/.test(a.title)?a.title:'한국어 제목 정리 중'),position=basket.items.findIndex(i=>i.evidence.id===a.id);
@@ -68,6 +75,6 @@ export function ArticleLibrary({articles,reviews,view,onChange}:{articles:Articl
    </article>;
   })}</div>
   <nav className={styles.pagination} aria-label="기사 페이지"><button type="button" className="ai-secondary" disabled={current===1} onClick={()=>{setPage(current-1);document.getElementById('research-evidence')?.scrollIntoView();}}>이전</button><span>{current} / {pages} · {current===pages?'마지막 페이지':'페이지당 10건'}</span><button type="button" className="ai-secondary" disabled={current===pages} onClick={()=>{setPage(current+1);document.getElementById('research-evidence')?.scrollIntoView();}}>다음</button></nav>
-  <aside className={styles.basketBar} aria-label="고정 후보함"><strong>이번 호 후보 {basket.items.length}/10건</strong><button type="button" disabled={!loaded} onClick={()=>{chooseTab('basket');document.getElementById('research-evidence')?.scrollIntoView({behavior:'smooth'});}}>모아보기</button><small>선택과 메모는 서버에 저장됩니다.</small></aside>
+  <aside className={styles.basketBar} aria-label="고정 후보함"><strong>선택한 자료 {basket.items.length}/10건</strong><button type="button" disabled={busy||!loaded||!basket.items.length} onClick={()=>void compose('include')}>{submission?.revision===basket.revision?'접수된 작업실 열기 →':'이 자료로 조사 시작 →'}</button><button type="button" disabled={!loaded} onClick={()=>{chooseTab('basket');document.getElementById('research-evidence')?.scrollIntoView({behavior:'smooth'});}}>모아보기</button><small>체크는 자료 보관입니다. ‘조사 시작’을 눌러야 작업이 접수됩니다.</small></aside>
  </section>;
 }

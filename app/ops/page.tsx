@@ -1,3 +1,2 @@
-import { ApprovalCenter } from "../../components/ApprovalCenter";
-export const dynamic="force-dynamic";
-export default function OpsPage() {return <ApprovalCenter/>;}
+import {redirect} from 'next/navigation';
+export default function OpsPage(){redirect('/ai-center');}
