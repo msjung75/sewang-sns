@@ -2,6 +2,9 @@
 import { FormEvent,useEffect,useRef,useState } from "react";
 import {PartialDraftEditor} from "./PartialDraftEditor";
 import { PasswordSettings } from "./PasswordSettings";
+import {type IssueTopic} from "../lib/editorial-guidance";
+import {IssueNavigator,type DeskView,type DeskTarget} from "./IssueNavigator";
+import {KeywordSignals} from "./KeywordSignals";
 import {EditorialFlow} from "./EditorialFlow";
 import { ResearchReview } from "./ResearchReview";
 import { PublicationHistory } from "./PublicationHistory";
@@ -11,14 +14,24 @@ type Progress={updated_at?:string;worker?:{state:string;at:string};news?:{date:s
 const statusNames:Record<string,string>={DRAFT:"원고 검토",REJECTED:"수정 요청",IN_REVIEW:"원고 검토",PENDING_APPROVAL:"대표 승인 대기",CHANGES_REQUESTED:"수정 요청",TRANSLATION_PENDING:"영·일·중 번역 대기",READY_TO_SCHEDULE:"번역 완료 · 발송 검토",HANDOFF_READY:"카카오 예약 준비 완료",SCHEDULED:"카카오 실제 예약 확인",CANCELLED:"보류",CANCELLATION_REQUIRED:"카카오 예약 취소 확인 필요"};
 const empty={id:"",week:"",title:"",body:"",ai_topic:"",user_topic:"",editorial_direction:"",source_urls:"",evidence_for:"",evidence_against:"",uncertainties:""};
 function nextWednesday(){const d=new Date();const kst=new Date(d.getTime()+9*3600000);let days=(3-kst.getUTCDay()+7)%7;if(!days&&kst.getUTCHours()>=10)days=7;kst.setUTCDate(kst.getUTCDate()+days);return kst.toISOString().slice(0,10)+"T10:00:00+09:00";}
-export function ApprovalCenter(){
+export function ApprovalCenter({initialView='overview',initialTopicId}:{initialView?:DeskView;initialTopicId?:string}){
  const [auth,setAuth]=useState(false),[checked,setChecked]=useState(false),[configured,setConfigured]=useState(true),[reports,setReports]=useState<Report[]>([]),[progress,setProgress]=useState<Progress>({});
  const [busy,setBusy]=useState(false),[error,setError]=useState(""),[notice,setNotice]=useState(""),[selected,setSelected]=useState<Report|null>(null),[form,setForm]=useState(empty),[password,setPassword]=useState(""),[note,setNote]=useState("");
  const [showEditor,setShowEditor]=useState(false);
+ const [deskTopics,setDeskTopics]=useState<IssueTopic[]>([]);
+ const [deskView,setDeskView]=useState<DeskView>(initialView);
+ const [deskTarget,setDeskTarget]=useState<DeskTarget>({view:initialView,topicId:initialTopicId});
+ function navigateDesk(target:DeskTarget){
+  setDeskView(target.view);setDeskTarget(target);
+  if(target.view==='articles')setEvidenceView(v=>({kind:target.basket?'basket':'all',nonce:v.nonce+1}));
+  if(target.reportId){const report=reports.find(r=>r.id===target.reportId);if(report)choose(report);}
+ }
+ useEffect(()=>{const listener=(e:Event)=>{const detail=(e as CustomEvent<{topicId:string}>).detail;if(detail?.topicId){setDeskTarget({view:'workflow',topicId:detail.topicId});setDeskView('workflow');setFlowRevision(v=>v+1);}};window.addEventListener('sewang-request-created',listener);return()=>window.removeEventListener('sewang-request-created',listener);},[]);
+ useEffect(()=>{if(deskView!=='overview')requestAnimationFrame(()=>document.getElementById('desk-'+deskView)?.scrollIntoView({behavior:'smooth'}));},[deskView,deskTarget]);
  const [evidenceView,setEvidenceView]=useState<{kind:string;nonce:number}>({kind:"all",nonce:0});
  const [sourceCounts,setSourceCounts]=useState<Record<string,number>>({});
  const [pendingOnly,setPendingOnly]=useState(false);
- function openEvidence(kind:string){setEvidenceView(v=>({kind,nonce:v.nonce+1}));}
+ function openEvidence(kind:string){setDeskView('articles');setEvidenceView(v=>({kind,nonce:v.nonce+1}));}
  const pendingReports=reports.filter(r=>["DRAFT","IN_REVIEW","PENDING_APPROVAL","CHANGES_REQUESTED","REJECTED"].includes(r.status));
  const [revisionStage,setRevisionStage]=useState("draft");
  const revisionRequest=useRef<{key:string;id:string}|null>(null);
@@ -48,16 +61,16 @@ export function ApprovalCenter(){
  const dirty=Boolean(selected&&(form.title!==selected.title||form.body!==selected.body||form.week!==selected.week||form.ai_topic!==(selected.ai_topic||"")||form.user_topic!==(selected.user_topic||"")||form.editorial_direction!==(selected.editorial_direction||"")||form.source_urls!==selected.source_urls.join("\n")||["evidence_for","evidence_against","uncertainties"].some(k=>form[k as "evidence_for"]!==(selected.comparison?.[k as "evidence_for"]||[]).join("\n"))));
 
  if(!checked)return <main className="ai-main"><p>승인센터 연결 확인 중…</p></main>;
- return <main className="ai-main"><header className="ai-header"><div><p className="ai-kicker">세왕상사 · 대표 검토실</p><h1>세왕 리포트 · 주제와 제작 진행</h1><p>주제 유지·제외 → 추가 발굴 → 이번 호 선정 → 담당별 제작 → 대표 승인</p></div>{auth&&<button onClick={()=>action(async()=>{await fetch("/api/ai-center/session",{method:"DELETE"});setAuth(false);setReports([]);setProgress({});setSelected(null);setForm(empty);setShowEditor(false);})}>로그아웃</button>}</header>
- {auth&&<PasswordSettings/>}
+ return <div className="ai-app-shell"><aside className="ai-app-sidebar"><a className="ai-app-brand" href="/ai-center">SEWANG <span>AI 관리센터</span></a><p className="ai-app-subtitle">조사부터 대표 결정까지</p><nav aria-label="AI 관리센터 메뉴">{([['overview','대시보드'],['articles','자료 선택'],['signals','키워드·주제 발견'],['reports','원고 검토'],['history','발행 이력']] as [DeskView,string][]).map(([key,label])=><button type="button" key={key} aria-current={deskView===key?'page':undefined} onClick={()=>navigateDesk({view:key})}>{label}</button>)}</nav>{auth&&<div className="ai-app-topic-list"><h2>주제별 작업실</h2>{deskTopics.filter(t=>!['hold','exclude'].includes(t.state)).map(t=><button type="button" key={t.id} aria-current={deskView==='workflow'&&deskTarget.topicId===t.id?'page':undefined} onClick={()=>navigateDesk({view:'workflow',topicId:t.id})}><span className="ai-app-dot"/><span>{t.title}<small className="ai-app-topic-count">자료 {t.evidence?.length||0}건</small></span></button>)}<button type="button" onClick={()=>navigateDesk({view:'workflow'})}>전체 주제·요청 보기</button></div>}<a className="ai-app-back" href="/">SNS 대시보드로 돌아가기 ↗</a></aside><main className="ai-main ai-app-main"><header className="ai-header"><div><p className="ai-kicker">세왕상사 · 대표 검토실</p><h1>{deskView==='overview'?'정보지 제작 대시보드':deskView==='workflow'?'주제별 작업실':deskView==='articles'?'자료 선택':deskView==='signals'?'키워드·주제 발견':deskView==='history'?'발행 이력':'원고 검토'}</h1><p>자료를 고르고, 결과를 확인하고, 다음 단계로 진행하세요.</p></div>{auth&&<button onClick={()=>action(async()=>{await fetch("/api/ai-center/session",{method:"DELETE"});setAuth(false);setReports([]);setProgress({});setSelected(null);setForm(empty);setShowEditor(false);})}>로그아웃</button>}</header>
+
  {error&&<p className="ai-error" role="alert">{error}</p>}{notice&&<p className="ai-notice" role="status">{notice}</p>}
  {!auth?<section className="ai-panel ai-login"><h2>대표 승인자 로그인</h2><p>수집 현황과 미발행 원고는 승인자에게만 표시합니다.</p>{!configured&&<p role="alert">운영 연결 전입니다. 승인자 인증과 서버 설정을 먼저 완료해야 합니다.</p>}<form onSubmit={login}><label>승인자 암호<input type="password" autoComplete="current-password" value={password} onChange={e=>setPassword(e.target.value)} required/></label><button disabled={busy||!configured}>로그인</button></form></section>:<>
- <section className="ai-stats" aria-label="실제 수집 진행 현황"><article><span>Mac Worker</span><strong>{progress.worker?.state||"확인 대기"}</strong><small>{progress.worker?.at?new Date(progress.worker.at).toLocaleString("ko-KR",{timeZone:"Asia/Seoul"}):"상태 미수신"}</small></article><article><span>공개 뉴스 · 검토함</span><button className="ai-secondary" onClick={()=>openEvidence("news")} disabled={sourceCounts.news===undefined}>{sourceCounts.news??"…"}건 · 내용 보기</button><small>국내·해외 뉴스 · 중복 URL 제거</small></article><article><span>연결 도구 · 검토함</span><button className="ai-secondary" onClick={()=>openEvidence("connectors")} disabled={sourceCounts.connectors===undefined}>{sourceCounts.connectors??"…"}건 · 내용 보기</button><small>YouTube·썸트렌드·Apify</small></article><article><span>대표 검토·승인 대기</span><button className="ai-secondary" onClick={()=>{setPendingOnly(true);document.getElementById("report-workspace")?.scrollIntoView({behavior:"smooth"});}}>{pendingReports.length}건 · 원고 보기</button><small>수정 요청 원고 포함</small></article></section>
- <p className="ai-muted">마지막 수신 {progress.updated_at?new Date(progress.updated_at).toLocaleString("ko-KR",{timeZone:"Asia/Seoul"}):"없음"}. 표시 시각이 오래되면 현재 실행 여부를 다시 확인하세요. 수집 건수는 검증 완료나 시장 규모를 뜻하지 않습니다.</p>
- <EditorialFlow refreshKey={flowRevision} onChange={refreshFlow}/>
- <ResearchReview refreshKey={flowRevision} onChange={refreshFlow} view={evidenceView} onCounts={setSourceCounts}/>
- <PublicationHistory/>
- <section className="ai-panel"><h2>중립적으로 수집하고, 대표님이 발행 방향을 결정합니다</h2><div className="ai-columns"><div><h3>수집·판단 담당</h3><p>출처·게시일·반대 근거를 함께 확인합니다. AI 제안과 대표 주제 모두 같은 기준으로 검토하고 사실과 추론을 구분합니다.</p></div><div><h3>제작·게시 담당</h3><p>선택한 방향으로 원고·디자인을 만들고, 승인된 원문만 영어·일본어·중국어로 번역합니다. 예약 준비와 실제 예약 결과를 따로 기록합니다.</p></div></div></section>
+ <IssueNavigator refreshKey={flowRevision} reports={reports} view={deskView} onNavigate={navigateDesk} onChange={refreshFlow} onTopics={setDeskTopics} focusTopicId={deskTarget.topicId}/>
+ <div id="desk-articles" hidden={deskView!=='articles'}><ResearchReview refreshKey={flowRevision} onChange={refreshFlow} view={evidenceView} onCounts={setSourceCounts}/></div>
+ <div id="desk-workflow" hidden={deskView!=='workflow'}><EditorialFlow refreshKey={flowRevision} onChange={refreshFlow} focusTopicId={deskTarget.topicId} focusTaskId={deskTarget.taskId} onTopic={id=>navigateDesk({view:'workflow',topicId:id})} onReport={id=>navigateDesk({view:'reports',reportId:id})}/></div>
+ <div id="desk-signals" hidden={deskView!=='signals'}><KeywordSignals onChange={refreshFlow} active={deskView==='signals'}/></div>
+ <div id="desk-history" hidden={deskView!=='history'}><PublicationHistory/></div>
+ <div id="desk-reports" hidden={deskView!=='reports'}>
  <div id="report-workspace" className="ai-workspace"><section className="ai-panel"><h2>{pendingOnly?"검토·승인 대기 원고":"검토할 원고"}</h2><button className="ai-secondary" onClick={()=>setPendingOnly(v=>!v)}>{pendingOnly?"전체 원고 보기":"대기 원고만 보기"}</button>{pendingOnly&&pendingReports.length===0&&<p>검토·승인 대기 원고가 없습니다.</p>}<button disabled={busy} onClick={()=>{setSelected(null);setForm(empty);setShowEditor(true);}}>직접 원고 등록 (선택 사항)</button>{reports.length===0?<p className="ai-muted">아직 검토 등록된 원고가 없습니다. 위에서 주제를 선택하면 검토 원고를 준비합니다.</p>:<ul className="ai-list">{(pendingOnly?pendingReports:reports).map(r=><li key={r.id}><button className="ai-report" onClick={()=>choose(r)}><span>{r.week}</span><strong>{r.title}</strong><small>{statusNames[r.status]||r.status}</small></button></li>)}</ul>}</section>
  <section className="ai-panel">{!showEditor?<><h2>원고 제작·검토 대기</h2><p>위에서 주제를 선택하면 AI가 근거를 보강해 검토 원고를 준비합니다. 원고가 등록되면 왼쪽 목록에서 확인하세요.</p><p className="ai-muted">주제 선택만으로 원문 승인이나 발송 예약이 이루어지지 않습니다. 직접 원고 등록은 선택 사항입니다.</p></>:<><h2>{selected?"선택한 원고 검토":"미발행 원고 등록 (선택 사항)"}</h2><form onSubmit={save}><div className="ai-columns"><label>원고 식별자<input required pattern="[A-Za-z0-9_-]{1,80}" disabled={Boolean(selected)} value={form.id} onChange={e=>setForm({...form,id:e.target.value})} placeholder="2026-W43"/></label><label>발행 주차<input required value={form.week} onChange={e=>setForm({...form,week:e.target.value})} placeholder="2026-W43"/></label></div><div className="ai-columns"><label>AI 제안 주제<textarea value={form.ai_topic} onChange={e=>setForm({...form,ai_topic:e.target.value})} maxLength={500}/></label><label>대표님이 생각하는 주제 (선택 사항)<textarea value={form.user_topic} onChange={e=>setForm({...form,user_topic:e.target.value})} maxLength={500}/></label></div>
  <p className="ai-muted">비교 기준: 근거의 질·최신성·주류 거래처 관련성·반대 근거·확인되지 않은 점. 대표님의 선호 자체를 시장의 사실로 기록하지 않습니다.</p>
@@ -68,6 +81,8 @@ export function ApprovalCenter(){
  {selected.status==="HANDOFF_READY"&&<p role="status">카카오 관리자센터 실제 예약 대기입니다. 대상·금액 승인과 예약 ID 확인이 필요합니다.</p>}
  {selected.status==="SCHEDULED"&&<p>실제 예약 확인: {selected.reservation?.reservation_id||selected.reservation_id||"상세 이력 확인"} · {selected.reservation?.scheduled_at||selected.scheduled_at||selected.handoff?.scheduled_at}</p>}
  </section>}
- </>}</section></div><footer className="ai-panel"><strong>개발·검토 환경</strong><p>운영 SNS 게시물과 기존 발송은 변경하지 않습니다. 카카오 발송은 건당 과금이며, 최종 본문·대상·예상금액 승인 후 예약합니다.</p></footer></>}
- </main>;
+ </>}</section></div></div><details><summary>수집 연결 상태·전체 건수</summary> <section className="ai-stats" aria-label="실제 수집 진행 현황"><article><span>Mac Worker</span><strong>{progress.worker?.state||"확인 대기"}</strong><small>{progress.worker?.at?new Date(progress.worker.at).toLocaleString("ko-KR",{timeZone:"Asia/Seoul"}):"상태 미수신"}</small></article><article><span>공개 뉴스 · 검토함</span><button className="ai-secondary" onClick={()=>openEvidence("news")} disabled={sourceCounts.news===undefined}>{sourceCounts.news??"…"}건 · 내용 보기</button><small>국내·해외 뉴스 · 중복 URL 제거</small></article><article><span>연결 도구 · 검토함</span><button className="ai-secondary" onClick={()=>openEvidence("connectors")} disabled={sourceCounts.connectors===undefined}>{sourceCounts.connectors??"…"}건 · 내용 보기</button><small>YouTube·썸트렌드·Apify</small></article><article><span>대표 검토·승인 대기</span><button className="ai-secondary" onClick={()=>{setPendingOnly(true);setDeskView("reports");document.getElementById("report-workspace")?.scrollIntoView({behavior:"smooth"});}}>{pendingReports.length}건 · 원고 보기</button><small>수정 요청 원고 포함</small></article></section>
+ <p className="ai-muted">마지막 수신 {progress.updated_at?new Date(progress.updated_at).toLocaleString("ko-KR",{timeZone:"Asia/Seoul"}):"없음"}. 표시 시각이 오래되면 현재 실행 여부를 다시 확인하세요. 수집 건수는 검증 완료나 시장 규모를 뜻하지 않습니다.</p>
+</details> {auth&&<details><summary>로그인·비밀번호 설정</summary><PasswordSettings/></details>}<footer className="ai-panel"><strong>최종 발행 안내</strong><p>운영 SNS 게시물과 기존 발송은 변경하지 않습니다. 카카오 발송은 건당 과금이며, 최종 본문·대상·예상금액 승인 후 예약합니다.</p></footer></>}
+ </main></div>;
 }

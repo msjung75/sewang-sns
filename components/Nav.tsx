@@ -3,7 +3,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const LINKS = [
-  { href: "/ops", label: "AI 진행·주제·승인" },
   { href: "/content-ops", label: "SNS 제작 운영보드" },
   { href: "/", label: "홈" },
   { href: "/instagram", label: "📱 Instagram" },
@@ -14,6 +13,7 @@ const LINKS = [
 
 export function Nav() {
   const path = usePathname();
+  if(path.startsWith("/ai-center")||path==="/ops")return null;
   return (
     <nav style={{ display: "flex", gap: 8, padding: "16px 20px", borderBottom: "1px solid #1e2638", overflowX: "auto", background: "#0b0f17", position: "sticky", top: 0, zIndex: 10 }}>
       <Link href="/" style={{ fontWeight: 700, color: "var(--fg)", textDecoration: "none", marginRight: 20 }}>세왕 SNS</Link>
