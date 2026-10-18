@@ -8,7 +8,8 @@
   "git": {
     "deploymentEnabled": {
       "feature/ai-editorial-approval": false,
-      "feature/approval-password-settings": false
+      "feature/approval-password-settings": false,
+      "feature/publication-history-review": false
     }
   }
 }

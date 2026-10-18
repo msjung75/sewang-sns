@@ -1,0 +1,27 @@
+{
+  "snapshot_hash": "b0e70b0693e23635429c003aee80ec6d0d3cfeac7fae0f28ec5ce5e4ba01e01b",
+  "candidates": {
+    "pairing": [
+      {
+        "url": "https://blog.naver.com/sewang88/224441914032",
+        "reason": "의미·논지 대조: 10/14 글의 안주와 추천 주류 연결·첫 잔 선택과 이번 음식/이용 장면별 주류 구성 후보가 겹칩니다."
+      },
+      {
+        "url": "https://www.instagram.com/p/DczYXP7E4c3/",
+        "reason": "의미·논지 대조: 9/2 메뉴판 점검 글도 안주 옆에 주류를 배치하는 실행안을 다뤘습니다."
+      }
+    ],
+    "low-alcohol": [
+      {
+        "url": "https://blog.naver.com/sewang88/224428326203",
+        "reason": "의미·논지 대조: 술 안 마시는 일행의 음료 메뉴를 이미 다뤄, 저도수/무알코올 후보를 같은 관점으로 반복할 위험이 있습니다."
+      }
+    ],
+    "channel": [
+      {
+        "url": "https://blog.naver.com/sewang88/224417118762",
+        "reason": "의미·논지 대조: 전국 기사와 세왕 내부 장부를 구분해 해석한 기존 글과 지표/채널 차이를 비교하는 논지가 일부 겹칩니다."
+      }
+    ]
+  }
+}
