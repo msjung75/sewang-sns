@@ -13,6 +13,7 @@ function time(at:string|null){if(!at)return '아직 수신 없음';const d=new D
 export function EditorialFlow({refreshKey,onChange}:{refreshKey:number;onChange:()=>void}){
  const uid=useId();
  const [board,setBoard]=useState<Board|null>(null),[filter,setFilter]=useState('active'),[error,setError]=useState(''),[notice,setNotice]=useState('');
+ const [notes,setNotes]=useState<Record<string,string>>({});
  const [busy,setBusy]=useState(false),[title,setTitle]=useState(''),[query,setQuery]=useState(''),[pending,setPending]=useState<{kind:string;request_id:string;text:string}|null>(null);
  const load=useCallback(async(signal?:AbortSignal)=>{
   try{const r=await fetch('/api/ai-center/research/workflow',{cache:'no-store',credentials:'same-origin',signal});if(!r.ok)throw new Error();const data=await r.json();if(!Array.isArray(data.topics)||!Array.isArray(data.tasks))throw new Error();if(!signal?.aborted){setBoard(data);setError('');}}
@@ -48,11 +49,12 @@ export function EditorialFlow({refreshKey,onChange}:{refreshKey:number;onChange:
   {board&&!shown.length&&<p className="ai-muted">이 분류에 주제가 없습니다. 가져온 주제를 추가하거나 새 주제 발굴을 요청하세요.</p>}
   <div className={styles.topics}>{shown.map(t=>{
    const own=tasks.filter(task=>task.topic_id===t.id&&task.status!=='cancelled'),next=own.find(task=>['queued','running','blocked'].includes(task.status));
-   return <article key={t.id} className={styles.topic}><div className={styles.header}><div><span className={styles.badge}>{t.origin==='owner'?'대표 제안':'AI 조사 후보'} · {states[t.state]||t.state}</span><h4>{t.title}</h4></div>{t.in_snapshot&&<a href={`#topic-${t.id}`}>근거·중복 검토 후 이번 호 선정 ↓</a>}</div>
+   return <article key={t.id} className={styles.topic}><div className={styles.header}><div><span className={styles.badge}>{t.origin==='owner'?'대표 제안':'AI 조사 후보'} · {states[t.state]||t.state}</span><h4>{t.title}</h4></div>{t.in_snapshot&&t.state!=='exclude'&&<a href={`#topic-${t.id}`}>근거·중복 검토 후 이번 호 선정 ↓</a>}</div>
     {t.note&&<p>대표 의견: {t.note}</p>}{t.needs_review&&<p className="ai-notice">새 자료가 들어왔습니다. 기존 결정은 보존했으며, 아래 근거를 확인하고 유지·선정을 다시 기록해 주세요.</p>}
     <p><strong>다음 작업</strong> {next?`${next.owner} · ${stages[next.stage]} · ${taskStates[next.status]}`:t.state==='exclude'?'제외 이유와 이력 보관':t.state==='hold'?'다음 호 후보로 보관':t.needs_review?'새 근거 검토':own.some(task=>task.stage==='review'&&task.status==='done')?'아래 원고에서 대표 최종 검토':own.some(task=>task.stage==='analysis'&&task.status==='done')?'분석 결과 확인 후 이번 호 선정':'근거를 확인하고 유지·제외·조사 결정'}</p>
     {own.length>0&&<ol className={styles.handoffs}>{own.map(task=><li key={task.id} data-state={task.status}><strong>{stages[task.stage]}</strong><small>{taskStates[task.status]}</small>{task.result&&<details><summary>담당 결과</summary><p>{task.result}</p>{task.report_id&&<a href="#report-workspace">연결 원고 {task.report_id} · {task.report_status||'상태 확인 필요'} ↓</a>}</details>}</li>)}</ol>}
-    <div className="ai-actions">{(['keep','research','hold','exclude'] as const).filter(a=>a!==t.state||t.needs_review).map(action=><button key={action} className="ai-secondary" disabled={busy||Boolean(error)} onClick={()=>void send({kind:'decision',topic_id:t.id,action,note:t.note||'',expected_revision:t.revision})}>{({keep:'유지',research:'더 조사',hold:'다음 호 보류',exclude:'제외'})[action]}</button>)}</div>
+    <label htmlFor={`${uid}-note-${t.id}`}>유지·제외·추가 조사 의견 (선택 사항)<textarea id={`${uid}-note-${t.id}`} maxLength={1000} value={notes[t.id]??t.note??''} onChange={e=>setNotes(v=>({...v,[t.id]:e.target.value}))} disabled={busy}/></label>
+    <div className="ai-actions">{(['keep','research','hold','exclude'] as const).filter(a=>a!==t.state||t.needs_review).map(action=><button key={action} className="ai-secondary" disabled={busy||Boolean(error)} onClick={()=>void send({kind:'decision',topic_id:t.id,action,note:notes[t.id]??t.note??'',expected_revision:t.revision})}>{({keep:'유지',research:'더 조사',hold:'다음 호 보류',exclude:'제외'})[action]}</button>)}</div>
    </article>;
   })}</div>
   <details className={styles.queue}><summary>새 주제 발굴·전체 담당 대기열 ({activeTasks.length}건)</summary><p className="ai-muted">요청 등록과 실제 실행을 구분합니다. 작업을 맡은 시각과 결과가 수신돼야 진행·완료로 표시합니다. 자동 확인은 기존 15분 주기이며 Mac·앱·네트워크가 필요합니다.</p>

@@ -154,7 +154,7 @@ export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onCha
       }
       setDecisions(previous => ({ ...previous, [candidate.id]: action }));
       onChange?.();
-      setNotice(`「${candidate.title}」의 ${decisionLabels[action]}을 기록했습니다. ${["hold","exclude"].includes(action) ? "진행 중인 후속 작업을 멈추고 결정 이력을 보관합니다." : "담당별 작업 대기열에 연결했습니다. 위 진행판에서 결과를 확인하세요."} 원고 승인이나 발송 예약은 수행하지 않았습니다.`);
+      setNotice(`「${candidate.title}」의 ${decisionLabels[action]} 처리를 기록했습니다. ${["hold","exclude"].includes(action) ? "진행 중인 후속 작업을 멈추고 결정 이력을 보관합니다." : "담당별 작업 대기열에 연결했습니다. 위 진행판에서 결과를 확인하세요."} 원고 승인이나 발송 예약은 수행하지 않았습니다.`);
     } catch { setError("연결을 확인한 뒤 다시 시도하세요."); }
     finally { setBusy(null); }
   }
@@ -175,7 +175,7 @@ export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onCha
     {snapshot && <>
       <p className="ai-muted">자료 수집 시각 {at(snapshot.collected_at)} · 근거 {snapshot.evidence.length}건 · 주제 후보 {snapshot.candidates.length}건 · 한국 시간</p>
       <h3>AI가 정리한 주제 후보</h3>
-      {!snapshot.candidates.length && <p className="ai-muted">아직 주제 후보가 없습니다. 아래 수집 자료는 확인할 수 있습니다.</p>}
+      {snapshot.candidates.every(candidate=>decisions[candidate.id]==="exclude") && <p className="ai-muted">표시할 주제 후보가 없습니다. 제외한 주제는 위 제외함에서 복원할 수 있으며, 아래 수집 자료도 확인할 수 있습니다.</p>}
       <div className={styles.candidates}>{snapshot.candidates.filter(candidate=>decisions[candidate.id]!=="exclude").map(candidate => <article id={`topic-${candidate.id}`} className={styles.card} key={candidate.id}>
         <h4>{candidate.title || "제목 미확인"}</h4><p>{candidate.summary}</p>
         <h5>거래처 관련성</h5><TextList values={candidate.relevance} empty="관련성이 아직 정리되지 않았습니다."/>
