@@ -1,7 +1,7 @@
 export type IssueEvidence={id:string;title:string;url?:string};
 export type IssueBasket={revision:number;items:{evidence:IssueEvidence;note?:string}[];note:string;updated_at:string|null};
-export type IssueTopic={id:string;title:string;origin:string;state:string;note:string;revision:number;plan:number;needs_review:boolean;evidence?:IssueEvidence[];created_at?:string;updated_at:string;progress?:{completed:number;total:number;percent:number}};
-export type IssueTask={id:string;topic_id:string|null;stage:string;status:string;plan:number;version:number;result:string;instruction?:string;updated_at:string;report_id:string|null;report_stale?:boolean};
+export type IssueTopic={id:string;title:string;origin:string;state:string;note:string;revision:number;plan:number;needs_review:boolean;summary?:string;candidate?:{recommendation?:string;uncertainties?:string[]}|null;evidence?:IssueEvidence[];created_at?:string;updated_at:string;progress?:{completed:number;total:number;percent:number}};
+export type IssueTask={id:string;topic_id:string|null;stage:string;status:string;plan:number;version:number;result:string;instruction?:string;updated_at:string;report_id:string|null;report_stale?:boolean;current_report_hash?:string|null};
 export type IssueBoard={topics:IssueTopic[];tasks:IssueTask[];updated_at:string|null};
 export type IssueReport={id:string;title:string;status:string};
 export const stageNames:Record<string,string>={research:'근거 조사',analysis:'정보지 구성·분석',draft:'원고 작성',design:'디자인',review:'최종 검토'};
