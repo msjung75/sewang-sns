@@ -1,9 +1,11 @@
 "use client";
 import {FormEvent,useCallback,useEffect,useId,useRef,useState} from 'react';
 import styles from './EditorialFlow.module.css';
+import {KoreanSourceReview,type SourceReview} from './KoreanSourceReview';
 
-type Topic={id:string;title:string;summary:string;origin:string;state:string;revision:number;note:string;needs_review:boolean;updated_at:string;candidate:unknown;in_snapshot:boolean;plan:number;progress?:{completed:number;total:number;percent:number;awaiting_review:number}};
-type Task={id:string;topic_id:string|null;stage:string;owner:string;status:string;result:string;instruction?:string;updated_at:string;report_id:string|null;report_status:string|null;plan:number;version:number;report_hash?:string|null;current_report_hash?:string|null;report_stale?:boolean;criteria?:{id:string;label:string;done:boolean}[];owner_note?:string};
+type DuplicateCheck={status:string;requires_review:boolean;history_version:string;matches:{post:{url:string;title_or_caption:string};reason:string|string[]}[]};
+type Topic={evidence?:{id:string;title:string;url:string}[];review_mode?:string;duplicate_check?:DuplicateCheck;id:string;title:string;summary:string;origin:string;state:string;revision:number;note:string;needs_review:boolean;updated_at:string;candidate:unknown;in_snapshot:boolean;plan:number;progress?:{completed:number;total:number;percent:number;awaiting_review:number}};
+type Task={source_reviews?:SourceReview[];id:string;topic_id:string|null;stage:string;owner:string;status:string;result:string;instruction?:string;updated_at:string;report_id:string|null;report_status:string|null;plan:number;version:number;report_hash?:string|null;current_report_hash?:string|null;report_stale?:boolean;criteria?:{id:string;label:string;done:boolean}[];owner_note?:string};
 type Board={topics:Topic[];tasks:Task[];updated_at:string|null};
 const states:Record<string,string>={candidate:'검토할 후보',keep:'유지',select:'이번 호 선정',research:'추가 조사',hold:'다음 호 보류',exclude:'제외'};
 const stages:Record<string,string>={discover:'새 주제 발굴',research:'근거 조사',analysis:'비교·분석',draft:'원고 작성',design:'디자인',review:'최종 검수'};
@@ -15,6 +17,7 @@ export function EditorialFlow({refreshKey,onChange}:{refreshKey:number;onChange:
  const reworkRequest=useRef<{key:string;id:string}|null>(null);
  const [board,setBoard]=useState<Board|null>(null),[filter,setFilter]=useState('active'),[error,setError]=useState(''),[notice,setNotice]=useState('');
  const [gateNotes,setGateNotes]=useState<Record<string,string>>({}),[reworkNotes,setReworkNotes]=useState<Record<string,string>>({}),[reworkStages,setReworkStages]=useState<Record<string,string>>({});
+ const [adoptReviewed,setAdoptReviewed]=useState<Record<string,boolean>>({});
  const [notes,setNotes]=useState<Record<string,string>>({});
  const [busy,setBusy]=useState(false),[title,setTitle]=useState(''),[query,setQuery]=useState(''),[pending,setPending]=useState<{kind:string;request_id:string;text:string}|null>(null);
  const load=useCallback(async(signal?:AbortSignal)=>{
@@ -61,7 +64,8 @@ export function EditorialFlow({refreshKey,onChange}:{refreshKey:number;onChange:
    const own=tasks.filter(task=>task.topic_id===t.id&&task.status!=='cancelled'&&task.plan===t.plan),next=own.find(task=>['awaiting_review','queued','running','blocked'].includes(task.status));
    const progress=t.progress||{completed:own.filter(task=>task.status==='done').length,total:own.length,percent:own.length?Math.round(own.filter(task=>task.status==='done').length/own.length*100):0,awaiting_review:0};
    const history=tasks.filter(task=>task.topic_id===t.id&&task.plan!==t.plan);
-   return <article key={t.id} className={styles.topic}><div className={styles.header}><div><span className={styles.badge}>{t.origin==='owner'?'대표 제안':t.origin==='revision'?'원고 보완':'AI 조사 후보'} · {states[t.state]||t.state}</span><h4>{t.title}</h4></div>{t.in_snapshot&&t.state!=='exclude'&&<a href={`#topic-${t.id}`}>근거·중복 검토 후 이번 호 선정 ↓</a>}</div>
+   return <article key={t.id} className={styles.topic}><div className={styles.header}><div><span className={styles.badge}>{t.origin==='evidence'?'대표 선택 자료':t.origin==='owner'?'대표 제안':t.origin==='revision'?'원고 보완':'AI 조사 후보'} · {states[t.state]||t.state}</span><h4>{t.title}</h4></div>{t.in_snapshot&&t.state!=='exclude'&&<a href={`#topic-${t.id}`}>근거·중복 검토 후 이번 호 선정 ↓</a>}</div>
+    {t.origin==='evidence'&&<details open><summary>선택 자료 {t.evidence?.length||0}건 · {t.review_mode==='include'?'정보지 반영 검토':'심층 분석'}</summary>{t.evidence?.map(e=><p key={e.id}>{/^https?:\/\//.test(e.url)?<a href={e.url} target="_blank" rel="noopener noreferrer">{e.title} ↗</a>:e.title}</p>)}<p className="ai-muted">선택 당시의 자료와 검증 상태를 보관했습니다. AI의 포함 권고를 확인한 뒤 원고 반영을 결정하세요.</p></details>}
     {t.note&&<p>대표 의견: {t.note}</p>}{t.needs_review&&<p className="ai-notice">새 자료가 들어왔습니다. 기존 결정은 보존했으며, 아래 근거를 확인하고 유지·선정을 다시 기록해 주세요.</p>}
     {progress.total>0&&<div className={styles.progress}><label htmlFor={`${uid}-progress-${t.id}`}>제작 진행 {progress.percent}% · 완료 {progress.completed}/{progress.total}단계</label><progress id={`${uid}-progress-${t.id}`} value={progress.percent} max={100}/><p className="ai-muted">완료된 단계 수의 비율입니다. 자료의 신뢰도나 경과 시간을 뜻하지 않습니다. 담당 결과를 확인한 뒤 대표님이 다음 단계로 넘깁니다.</p></div>}
     <p><strong>다음 작업</strong> {next?`${next.owner} · ${stages[next.stage]} · ${taskStates[next.status]}`:t.state==='exclude'?'제외 이유와 이력 보관':t.state==='hold'?'다음 호 후보로 보관':t.needs_review?'새 근거 검토':own.some(task=>task.stage==='review'&&task.status==='done')?'아래 원고에서 대표 최종 검토':own.some(task=>task.stage==='analysis'&&task.status==='done')?'분석 결과 확인 후 이번 호 선정':'근거를 확인하고 유지·제외·조사 결정'}</p>
@@ -71,6 +75,7 @@ export function EditorialFlow({refreshKey,onChange}:{refreshKey:number;onChange:
       <p className="ai-muted">확인 {criteria.filter(c=>c.done).length}/{criteria.length}항목</p>
       {criteria.length>0&&<ul className={styles.checks}>{criteria.map(c=><li key={c.id}>{c.done?'✓':'○'} {c.label}</li>)}</ul>}
       {task.result&&<details open={task.status==='awaiting_review'||task.status==='blocked'}><summary>담당 결과</summary><p>{task.result}</p>{task.report_id&&<a href="#report-workspace">연결 원고 {task.report_id} · {task.report_status||'상태 확인 필요'} ↓</a>}</details>}
+      {task.source_reviews?.map(r=><KoreanSourceReview key={r.evidence_id} review={r} title={t.evidence?.find(e=>e.id===r.evidence_id)?.title}/>)}
       {task.report_stale&&<p className="ai-error">원고가 바뀌었습니다. 새 버전을 검토하거나 아래에서 보완을 요청하세요.</p>}
       {canAdvance&&<><label htmlFor={`${uid}-gate-${task.id}`}>{missing.length||task.status==='blocked'?'미확인 항목을 남기고 진행할 이유 · 5자 이상':'다음 단계 진행 의견 (선택)'}<textarea id={`${uid}-gate-${task.id}`} value={gateNotes[task.id]||''} maxLength={2000} disabled={busy} onChange={e=>setGateNotes(v=>({...v,[task.id]:e.target.value}))}/></label>
        <button type="button" disabled={busy||Boolean(error)||Boolean((missing.length||task.status==='blocked')&&(gateNotes[task.id]||'').trim().length<5)} onClick={async()=>{if(await send({kind:'advance',task_id:task.id,expected_version:task.version,note:gateNotes[task.id]||''}))setNotice(task.stage==='review'?'제작 검토를 마쳤습니다. 아래 원고에서 최종 내용을 확인하고 원문을 승인하세요.':'대표 확인을 기록하고 다음 담당의 작업을 열었습니다.');}}>{task.stage==='review'?'제작 검토 마침 · 원고 승인으로':'이 결과로 다음 단계 진행'}</button>
@@ -80,6 +85,13 @@ export function EditorialFlow({refreshKey,onChange}:{refreshKey:number;onChange:
       {task.owner_note&&<p>대표 진행 의견: {task.owner_note}</p>}
      </li>;
     })}</ol>}
+    {t.origin==='evidence'&&t.state!=='select'&&!['exclude','hold'].includes(t.state)&&<section aria-label="선택 자료 원고 반영 결정"><h5>분석 의견 확인 후 정보지에 넣기</h5>
+      <p>조사와 분석 결과를 각각 확인·완료한 뒤 원고 작성을 요청할 수 있습니다. 원고 승인과 발행 승인은 별도입니다.</p>
+      <p>{t.duplicate_check?.status==='unavailable'?'중복 검사 연결 확인이 필요합니다.':t.duplicate_check?.requires_review?'유사한 기존 게시물이 있습니다. 차별점을 아래 의견에 적어주세요.':'현재 가져온 이력에서 중복 후보가 검출되지 않았습니다. 전체 본문·영상 검증은 별도입니다.'}</p>
+      {t.duplicate_check?.matches.map((m,i)=><p key={i}><a href={m.post.url} target="_blank" rel="noopener noreferrer">{m.post.title_or_caption}</a> · {Array.isArray(m.reason)?m.reason.join(' · '):m.reason}</p>)}
+      {t.duplicate_check?.requires_review&&<label><input type="checkbox" checked={adoptReviewed[t.id]===true} disabled={busy} onChange={e=>setAdoptReviewed(v=>({...v,[t.id]:e.target.checked}))}/> 기존 게시물을 확인하고 아래 의견에 차별점을 적었습니다</label>}
+      <button type="button" disabled={busy||Boolean(error)||!t.duplicate_check||t.duplicate_check.status==='unavailable'||!['research','analysis'].every(stage=>own.some(task=>task.stage===stage&&task.status==='done'))||Boolean(t.duplicate_check.requires_review&&(!adoptReviewed[t.id]||(notes[t.id]??t.note??'').trim().length<5))} onClick={async()=>{if(await send({kind:'adopt',topic_id:t.id,expected_revision:t.revision,expected_plan:t.plan,note:notes[t.id]??t.note??'',duplicate_reviewed:adoptReviewed[t.id]===true,history_version:t.duplicate_check?.history_version}))setNotice('대표님의 원고 반영 결정을 기록했습니다. 선택 자료와 조사·분석 결과를 작가에게 전달했습니다.');}}>분석 확인 · 이번 호 원고 작성 요청</button>
+    </section>}
     {own.length>0&&!['hold','exclude'].includes(t.state)&&<details className={styles.rework}><summary>부족한 단계 보완·수정 요청</summary><label htmlFor={`${uid}-stage-${t.id}`}>다시 시작할 단계<select id={`${uid}-stage-${t.id}`} value={reworkStages[t.id]||(own.some(task=>task.report_id)?'draft':'research')} disabled={busy} onChange={e=>setReworkStages(v=>({...v,[t.id]:e.target.value}))}>{Object.entries(stages).filter(([stage])=>stage!=='discover').map(([stage,label])=><option key={stage} value={stage}>{label}</option>)}</select></label><label htmlFor={`${uid}-rework-${t.id}`}>수정·추가할 부분과 유지할 부분<textarea id={`${uid}-rework-${t.id}`} value={reworkNotes[t.id]||''} onChange={e=>setReworkNotes(v=>({...v,[t.id]:e.target.value}))} maxLength={2000} disabled={busy} placeholder="예: 수치의 원문만 추가 확인하고, 현재 정리한 사례는 유지해줘."/></label><button type="button" className="ai-secondary" disabled={busy||Boolean(error)||!reworkNotes[t.id]?.trim()} onClick={()=>void rework(t,own)}>이 단계부터 보완 요청</button><p className="ai-muted">요청한 단계와 이후 작업만 다시 엽니다. 기존 결과는 이력에 남고 원고는 보완 전까지 보존됩니다.</p></details>}
     {history.length>0&&<details><summary>이전 작업 이력 {history.length}건</summary>{history.slice(-20).map(task=><p key={task.id}><strong>{stages[task.stage]} · {taskStates[task.status]}</strong><br/>{task.result||'저장된 결과 없음'}</p>)}</details>}
     <label htmlFor={`${uid}-note-${t.id}`}>유지·제외·추가 조사 의견 (선택 사항)<textarea id={`${uid}-note-${t.id}`} maxLength={1000} value={notes[t.id]??t.note??''} onChange={e=>setNotes(v=>({...v,[t.id]:e.target.value}))} disabled={busy}/></label>
