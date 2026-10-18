@@ -1,4 +1,5 @@
 "use client";
+import {TaskActivity} from "./TaskActivity";
 import {FormEvent,useCallback,useEffect,useId,useRef,useState} from 'react';
 import styles from './EditorialFlow.module.css';
 import {advanceLabels,stageNames} from '../lib/editorial-guidance';
@@ -73,7 +74,7 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
     <div className={styles.header}><h3>{stageNames[task.stage]||task.stage}</h3><span className={styles.state}>{taskStates[task.status]||task.status}</span></div>
     <p className="ai-muted">담당 {task.owner} · 마지막 상태 변경 {time(task.updated_at)}</p>
     {['queued','running','waiting'].includes(task.status)&&<div className={styles.waiting}><strong>{task.status==='queued'?'요청은 접수됐으며, 아직 담당 작업 시작 전입니다.':task.status==='running'?'담당자가 작업 중입니다. 결과가 등록되면 확인 버튼이 나타납니다.':'앞 단계의 결과를 대표님이 확인하면 이 단계가 열립니다.'}</strong><p>같은 요청을 반복할 필요가 없습니다. 기다리는 동안 다른 자료와 키워드를 살펴볼 수 있습니다.</p><p className="ai-muted">예정 시간이 아닌 실제 시작·결과 기록을 기준으로 표시합니다. 자동 확인은 기존 15분 주기이며 Mac·앱·네트워크 연결이 필요합니다.</p></div>}
-    {task.result&&<div className={styles.result}><h4>담당자가 준비한 결과</h4><p>{task.result}</p>{task.report_id&&<button type="button" className="ai-secondary" onClick={()=>onReport?.(task.report_id!)}>연결 원고 열기 · {task.report_status||'상태 확인'}</button>}</div>}
+    <TaskActivity task={task}/>{task.result&&<div className={styles.result}><h4>담당자가 준비한 결과</h4><p>{task.result}</p>{task.report_id&&<button type="button" className="ai-secondary" onClick={()=>onReport?.(task.report_id!)}>연결 원고 열기 · {task.report_status||'상태 확인'}</button>}</div>}
     {task.source_reviews?.map(r=><details key={r.evidence_id}><summary>{picked.evidence?.find(e=>e.id===r.evidence_id)?.title||'선택 자료'} · 한국어 상세 해설</summary><KoreanSourceReview review={r}/></details>)}
     {task.report_stale&&<p className="ai-error">검토 후 원고가 변경됐습니다. 아래 보완 요청으로 최신 버전을 다시 확인하세요.</p>}
     {task.result&&<details><summary>확인 항목 · {(task.criteria||[]).filter(c=>c.done).length}/{(task.criteria||[]).length}개</summary><ul className={styles.checks}>{(task.criteria||[]).map(c=><li key={c.id}>{c.done?'✓ 확인함':'○ 미확인'} · {c.label}</li>)}</ul></details>}
