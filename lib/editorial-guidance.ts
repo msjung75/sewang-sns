@@ -1,12 +1,17 @@
 export type IssueEvidence={id:string;title:string;url?:string};
 export type IssueBasket={revision:number;items:{evidence:IssueEvidence;note?:string}[];note:string;updated_at:string|null};
 export type IssueTopic={id:string;title:string;origin:string;state:string;note:string;revision:number;plan:number;needs_review:boolean;evidence?:IssueEvidence[];created_at?:string;updated_at:string;progress?:{completed:number;total:number;percent:number}};
-export type IssueTask={id:string;topic_id:string|null;stage:string;status:string;plan:number;version:number;result:string;updated_at:string;report_id:string|null;report_stale?:boolean};
+export type IssueTask={id:string;topic_id:string|null;stage:string;status:string;plan:number;version:number;result:string;instruction?:string;updated_at:string;report_id:string|null;report_stale?:boolean};
 export type IssueBoard={topics:IssueTopic[];tasks:IssueTask[];updated_at:string|null};
 export type IssueReport={id:string;title:string;status:string};
 export const stageNames:Record<string,string>={research:'근거 조사',analysis:'정보지 구성·분석',draft:'원고 작성',design:'디자인',review:'최종 검토'};
 export const advanceLabels:Record<string,string>={research:'조사 확인 완료 · 구성·분석으로',analysis:'분석 확인 완료',draft:'원고 확인 완료 · 디자인으로',design:'디자인 확인 완료 · 최종 검토로',review:'최종 검토 완료 · 원문 승인으로'};
 export function currentTasks(board:IssueBoard,topic:IssueTopic){return board.tasks.filter(t=>t.topic_id===topic.id&&t.plan===topic.plan&&t.status!=='cancelled');}
+export function issueScope(board:IssueBoard,basket:IssueBasket){
+ const topics=board.topics.filter(t=>(t.origin!=='evidence'||t.note.startsWith('키워드·주제 발견 요청:'))&&['keep','select','research'].includes(t.state));
+ const sources=new Set([...topics.flatMap(t=>(t.evidence||[]).map(e=>e.id)),...basket.items.map(i=>i.evidence.id)]);
+ return {topics,aiCount:topics.filter(t=>t.origin==='ai').length,keywordCount:topics.filter(t=>t.origin==='evidence').length,ownerCount:topics.filter(t=>t.origin==='owner').length,articles:basket.items,total:topics.length+basket.items.length,uniqueSources:sources.size};
+}
 export function matchingTopic(board:IssueBoard,basket:IssueBasket){
  const ids=basket.items.map(i=>i.evidence.id);
  return board.topics.filter(t=>t.origin==='evidence'&&!['exclude','hold'].includes(t.state)&&ids.length>0&&JSON.stringify((t.evidence||[]).map(e=>e.id))===JSON.stringify(ids)).sort((a,b)=>(b.created_at||b.updated_at).localeCompare(a.created_at||a.updated_at))[0];
