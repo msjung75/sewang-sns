@@ -1,4 +1,5 @@
 "use client";
+import {RecoveryRequest} from "./RecoveryRequest";
 import {TaskActivity} from "./TaskActivity";
 import {FormEvent,useCallback,useEffect,useId,useRef,useState} from 'react';
 import styles from './EditorialFlow.module.css';
@@ -64,7 +65,7 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
   <details><summary>다른 주제 결과 열기</summary><label htmlFor={`${uid}-topic`}>현재 작업할 주제<select id={`${uid}-topic`} value={picked?.id||''} onChange={e=>{setActiveTopic(e.target.value);setActiveTask('');onTopic?.(e.target.value);}}>{topics.map(t=><option key={t.id} value={t.id}>{t.title} · 자료 {t.evidence?.length||0}건 · {states[t.state]||t.state}</option>)}</select></label></details>
   {!board&&!error&&<p role="status">선택한 주제와 작업 기록을 불러오고 있습니다…</p>}
   {board&&!picked&&<p>{activeTopic?'선택한 작업실을 불러오고 있습니다. ':''}아직 표시할 작업이 없습니다. 자료 선택 화면에서 기사를 고르고 조사 시작을 눌러주세요.</p>}
-  {discovery&&<article className={styles.topic}><h3>키워드·새 주제 조사 요청</h3><p>{taskStates[discovery.status]||discovery.status}</p><p style={{whiteSpace:'pre-wrap'}}>{discovery.instruction}</p><h4>조사 결과</h4><p style={{whiteSpace:'pre-wrap'}}>{discovery.result||'아직 조사 결과가 등록되지 않았습니다. 접수와 완료는 다릅니다.'}</p><p>근거가 확보된 후보를 자료 선택 화면에서 검토하고 결정한 뒤 원고 제작으로 진행합니다.</p></article>}
+  {discovery&&<article className={styles.topic}><h3>키워드·새 주제 조사 요청</h3><TaskActivity task={discovery}/><RecoveryRequest task={discovery} onChange={onChange}/><p>{taskStates[discovery.status]||discovery.status}</p><p style={{whiteSpace:'pre-wrap'}}>{discovery.instruction}</p><h4>조사 결과</h4><p style={{whiteSpace:'pre-wrap'}}>{discovery.result||'아직 조사 결과가 등록되지 않았습니다. 접수와 완료는 다릅니다.'}</p><p>조사 결과는 검토용 제안입니다. 근거와 한계를 확인하고 채택할 주제를 결정한 뒤 원고 제작으로 진행합니다.</p></article>}
   {!discovery&&picked&&<article className={styles.topic}>
    <span className={styles.badge}>{picked.origin==='evidence'?'직접 선택한 자료':'주제 후보'} · {states[picked.state]||picked.state}</span><h3>{picked.title}</h3>
    <p>선택 자료 {picked.evidence?.length||0}건 · 결과 확인 완료 {own.filter(t=>t.status==='done').length}/{own.length}단계</p>
@@ -74,7 +75,7 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
     <div className={styles.header}><h3>{stageNames[task.stage]||task.stage}</h3><span className={styles.state}>{taskStates[task.status]||task.status}</span></div>
     <p className="ai-muted">담당 {task.owner} · 마지막 상태 변경 {time(task.updated_at)}</p>
     {['queued','running','waiting'].includes(task.status)&&<div className={styles.waiting}><strong>{task.status==='queued'?'요청은 접수됐으며, 아직 담당 작업 시작 전입니다.':task.status==='running'?'담당자가 작업 중입니다. 결과가 등록되면 확인 버튼이 나타납니다.':'앞 단계의 결과를 대표님이 확인하면 이 단계가 열립니다.'}</strong><p>같은 요청을 반복할 필요가 없습니다. 기다리는 동안 다른 자료와 키워드를 살펴볼 수 있습니다.</p><p className="ai-muted">예정 시간이 아닌 실제 시작·결과 기록을 기준으로 표시합니다. 자동 확인은 기존 15분 주기이며 Mac·앱·네트워크 연결이 필요합니다.</p></div>}
-    <TaskActivity task={task}/>{task.result&&<div className={styles.result}><h4>담당자가 준비한 결과</h4><p>{task.result}</p>{task.report_id&&<button type="button" className="ai-secondary" onClick={()=>onReport?.(task.report_id!)}>연결 원고 열기 · {task.report_status||'상태 확인'}</button>}</div>}
+    <TaskActivity task={task}/><RecoveryRequest task={task} onChange={onChange}/>{task.result&&<div className={styles.result}><h4>담당자가 준비한 결과</h4><p>{task.result}</p>{task.report_id&&<button type="button" className="ai-secondary" onClick={()=>onReport?.(task.report_id!)}>연결 원고 열기 · {task.report_status||'상태 확인'}</button>}</div>}
     {task.source_reviews?.map(r=><details key={r.evidence_id}><summary>{picked.evidence?.find(e=>e.id===r.evidence_id)?.title||'선택 자료'} · 한국어 상세 해설</summary><KoreanSourceReview review={r}/></details>)}
     {task.report_stale&&<p className="ai-error">검토 후 원고가 변경됐습니다. 아래 보완 요청으로 최신 버전을 다시 확인하세요.</p>}
     {task.result&&<details><summary>확인 항목 · {(task.criteria||[]).filter(c=>c.done).length}/{(task.criteria||[]).length}개</summary><ul className={styles.checks}>{(task.criteria||[]).map(c=><li key={c.id}>{c.done?'✓ 확인함':'○ 미확인'} · {c.label}</li>)}</ul></details>}
