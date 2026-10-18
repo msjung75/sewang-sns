@@ -1,5 +1,13 @@
 {
   "crons": [
-    { "path": "/api/fetch/all", "schedule": "0 18 * * *" }
-  ]
+    {
+      "path": "/api/fetch/all",
+      "schedule": "0 18 * * *"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "feature/ai-editorial-approval": false
+    }
+  }
 }

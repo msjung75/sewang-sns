@@ -1,0 +1,11 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {createHash} from "node:crypto";
+import {NextRequest} from "next/server";
+import {configured,validPassword,session,authorized,sameOrigin,COOKIE} from "../lib/approval-auth";
+process.env.AI_APPROVAL_PASSWORD_HASH=createHash("sha256").update("synthetic-test-password").digest("hex");
+process.env.AI_APPROVAL_SESSION_SECRET="synthetic-session-signing-secret-only";
+process.env.AI_CONTROL_TOKEN="synthetic-test-control-only";
+test("missing config fails closed",()=>{const token=process.env.AI_CONTROL_TOKEN;delete process.env.AI_CONTROL_TOKEN;assert.equal(configured(),false);assert.equal(authorized(new NextRequest("http://localhost/api/ai-center")),false);process.env.AI_CONTROL_TOKEN=token;});
+test("password digest and signed expiring sessions reject tampering",()=>{assert.equal(validPassword("wrong"),false);assert.equal(validPassword("synthetic-test-password"),true);const signed=session();const req=(s:string)=>new NextRequest("http://localhost/api/ai-center",{headers:{cookie:`${COOKIE}=${s}`}});assert.equal(authorized(req(signed)),true);assert.equal(authorized(req(signed.slice(0,-1)+"x")),false);assert.equal(authorized(req("1.a.b")),false);});
+test("write origin must match and cross-site requests are rejected",()=>{assert.equal(sameOrigin(new NextRequest("https://example.com/api/ai-center",{headers:{origin:"https://evil.example"}})),false);assert.equal(sameOrigin(new NextRequest("https://example.com/api/ai-center",{headers:{origin:"https://example.com","sec-fetch-site":"cross-site"}})),false);assert.equal(sameOrigin(new NextRequest("https://example.com/api/ai-center",{headers:{origin:"https://example.com"}})),true);});
