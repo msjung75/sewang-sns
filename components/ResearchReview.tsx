@@ -84,7 +84,14 @@ function TextList({ values, empty }: { values: string[]; empty: string }) {
   return values.length ? <ul className={styles.notes}>{values.map((value, index) => <li key={index}>{value}</li>)}</ul> : <p className="ai-muted">{empty}</p>;
 }
 
-export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onChange?:()=>void}) {
+const filters:Record<string,string>={all:"전체",news:"공개 뉴스",connectors:"연결 도구",japan:"일본",us:"미국",europe:"유럽"};
+function inFilter(item:Evidence,kind:string){
+ const source=item.source_type;
+ const connector=/YouTube|썸트렌드|Apify|youtube|sometrend|apify/i.test(source);
+ return kind==="all" || (kind==="connectors"&&connector) || (kind==="news"&&/뉴스|news|^해외 사례/i.test(source)&&!connector) ||
+ (kind==="japan"&&source.startsWith("해외 사례 · 일본")) || (kind==="us"&&source.startsWith("해외 사례 · 미국")) || (kind==="europe"&&source.startsWith("해외 사례 · 유럽"));
+}
+export function ResearchReview({refreshKey=0,onChange,view,onCounts}:{refreshKey?:number;onChange?:()=>void;view?:{kind:string;nonce:number};onCounts?:(counts:Record<string,number>)=>void}) {
   const panelId = useId();
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
   const [loading, setLoading] = useState(true);
@@ -94,6 +101,10 @@ export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onCha
   const [notes, setNotes] = useState<Record<string, string>>({});
   const [decisions, setDecisions] = useState<Record<string, DecisionAction>>({});
   const [evidenceOpen, setEvidenceOpen] = useState(false);
+  const [filter,setFilter]=useState("all");
+  const [query,setQuery]=useState("");
+  useEffect(()=>{if(!view?.nonce)return;setFilter(view.kind);setQuery("");setEvidenceOpen(true);requestAnimationFrame(()=>document.getElementById("research-evidence")?.scrollIntoView({behavior:"smooth"}));},[view]);
+  useEffect(()=>{if(snapshot)onCounts?.(Object.fromEntries(Object.keys(filters).map(key=>[key,snapshot.evidence.filter(item=>inFilter(item,key)).length])));},[snapshot,onCounts]);
   const [duplicateReviewed, setDuplicateReviewed] = useState<Record<string, boolean>>({});
 
   const load = useCallback(async (signal?: AbortSignal) => {
@@ -130,7 +141,8 @@ export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onCha
   useEffect(() => {
     const controller = new AbortController();
     void load(controller.signal);
-    return () => controller.abort();
+    const timer=setInterval(()=>void load(controller.signal),60000);
+    return () => {controller.abort();clearInterval(timer);};
   }, [load,refreshKey]);
 
   async function decide(candidate: Candidate, action: DecisionAction) {
@@ -174,6 +186,12 @@ export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onCha
     {!loading && !snapshot && !error && <p className="ai-muted">아직 가져온 조사 자료가 없습니다. 자료가 수신되면 근거와 후보를 표시합니다.</p>}
     {snapshot && <>
       <p className="ai-muted">자료 수집 시각 {at(snapshot.collected_at)} · 근거 {snapshot.evidence.length}건 · 주제 후보 {snapshot.candidates.length}건 · 한국 시간</p>
+      <section className={styles.global} aria-label="글로벌 조사">
+        <h3>글로벌 사례 · 일본 / 미국 / 유럽</h3>
+        <p>매일 08시 이후 현지어 공개 뉴스 수집을 시도하고, 15분 작업 실행에서 공식 원문·업계 자료로 보강합니다. Mac과 네트워크 연결이 필요합니다. 지역별 건수를 누르면 원문·게시일·확인 범위·국내 적용 시사점을 볼 수 있습니다.</p>
+        <div className="ai-actions">{["japan","us","europe"].map(kind=><button key={kind} type="button" className="ai-secondary" onClick={()=>{setFilter(kind);setQuery("");setEvidenceOpen(true);document.getElementById("research-evidence")?.scrollIntoView({behavior:"smooth"});}}>{filters[kind]} {snapshot.evidence.filter(item=>inFilter(item,kind)).length}건 · 사례 보기</button>)}</div>
+        <p className="ai-muted">유럽은 우선 영국·독일·프랑스를 조사합니다. 검색 지역은 사례 발생 국가의 확정이 아니며, 한 국가의 결과를 유럽 전체로 일반화하지 않습니다. 0건은 미수집·미확인 상태입니다.</p>
+      </section>
       <h3>AI가 정리한 주제 후보</h3>
       {snapshot.candidates.every(candidate=>decisions[candidate.id]==="exclude") && <p className="ai-muted">표시할 주제 후보가 없습니다. 제외한 주제는 위 제외함에서 복원할 수 있으며, 아래 수집 자료도 확인할 수 있습니다.</p>}
       <div className={styles.candidates}>{snapshot.candidates.filter(candidate=>decisions[candidate.id]!=="exclude").map(candidate => <article id={`topic-${candidate.id}`} className={styles.card} key={candidate.id}>
@@ -182,7 +200,7 @@ export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onCha
         <h5>AI 추천 이유 · 대표 선택과 별개</h5><TextList values={candidate.recommendation} empty="아직 추천 이유가 없습니다."/>
         <h5>근거 자료</h5>{candidate.evidence_ids.length ? <ul className={styles.notes}>{candidate.evidence_ids.map((id, index) => {
           const item = evidenceById.get(id);
-          return <li key={`${id}-${index}`}>{item ? <a href={`#${panelId}-evidence-${encodeURIComponent(id)}`} onClick={() => setEvidenceOpen(true)}>{item.title || "제목 미확인"}</a> : "이번 자료에서 해당 참조 근거를 확인하지 못했습니다."}</li>;
+          return <li key={`${id}-${index}`}>{item ? <a href={`#${panelId}-evidence-${encodeURIComponent(id)}`} onClick={() => {setFilter("all");setQuery("");setEvidenceOpen(true);}}>{item.title || "제목 미확인"}</a> : "이번 자료에서 해당 참조 근거를 확인하지 못했습니다."}</li>;
         })}</ul> : <p className="ai-muted">연결된 근거가 없습니다.</p>}
         <h5>반대 근거·다른 설명</h5><TextList values={candidate.counter_evidence} empty="현재 조사 범위에서 미확인입니다. 반대 근거가 없다는 뜻은 아닙니다."/>
         <h5>불확실성·추가 확인</h5><TextList values={candidate.uncertainties} empty="불확실성이 아직 정리되지 않았습니다. 검증 완료를 뜻하지 않습니다."/>
@@ -204,9 +222,12 @@ export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onCha
         <div className="ai-actions">{(["keep", "exclude", "research", "hold", "select"] as const).map(action => <button key={action} type="button" className={action === "select" ? undefined : "ai-secondary"} disabled={loading || Boolean(busy) || !snapshot.content_hash || (action === "select" && (Boolean(error) || candidate.duplicate_check.status === "unavailable" || (candidate.duplicate_check.requires_review && (!duplicateReviewed[candidate.id] || !(notes[candidate.id] || "").trim()))))} onClick={() => void decide(candidate, action)}>{busy === candidate.id ? "저장 중…" : decisionLabels[action]}</button>)}</div>
         {!snapshot.content_hash && <p className="ai-muted">자료 버전을 확인하지 못해 선택을 저장할 수 없습니다.</p>}
       </article>)}</div>
-      <details open={evidenceOpen} onToggle={event => setEvidenceOpen(event.currentTarget.open)}><summary>수집 근거 전체 확인 ({snapshot.evidence.length}건)</summary>
+      <details id="research-evidence" open={evidenceOpen} onToggle={event => setEvidenceOpen(event.currentTarget.open)}><summary>수집 근거 내용 보기 ({snapshot.evidence.length}건)</summary>
         <p className="ai-muted">소수 SNS 게시물·언급량·조회수는 시장 전체 매출이나 수요를 뜻하지 않습니다. 중복 URL은 독립 근거 여러 건으로 세지 않으며 게시일과 수집일을 구분해 확인하세요.</p>
-        <div className={styles.evidence}>{snapshot.evidence.map(item => <article id={`${panelId}-evidence-${encodeURIComponent(item.id)}`} className={styles.card} key={item.id}>
+        <div className="ai-actions" aria-label="자료 범위">{Object.entries(filters).map(([kind,label])=><button key={kind} type="button" className="ai-secondary" aria-pressed={filter===kind} onClick={()=>setFilter(kind)}>{label} {snapshot.evidence.filter(item=>inFilter(item,kind)).length}건</button>)}</div>
+        <label>제목·내용·출처 검색<input value={query} onChange={event=>setQuery(event.target.value)} placeholder="키워드로 자료 찾기"/></label>
+        <p role="status">{filters[filter]} · {snapshot.evidence.filter(item=>inFilter(item,filter)&&[item.title,item.summary,item.source_type].join(" ").toLowerCase().includes(query.toLowerCase())).length}건 표시</p>
+        <div className={styles.evidence}>{snapshot.evidence.filter(item=>inFilter(item,filter)&&[item.title,item.summary,item.source_type].join(" ").toLowerCase().includes(query.toLowerCase())).map(item => <article id={`${panelId}-evidence-${encodeURIComponent(item.id)}`} className={styles.card} key={item.id}>
           <p className="ai-kicker">{sourceLabels[item.source_type] || item.source_type || "출처 유형 미확인"}</p>
           <h4>{sourceUrl(item.url) ? <a href={sourceUrl(item.url)} target="_blank" rel="noopener noreferrer">{item.title || "원문 확인"} ↗</a> : item.title || "제목 미확인"}</h4>
           <p className={styles.verification}>{verificationLabels[item.verification.toUpperCase()] || item.verification || "검증 상태 미확인"}</p>
