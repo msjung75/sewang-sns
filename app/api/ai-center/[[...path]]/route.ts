@@ -9,7 +9,7 @@ async function proxy(req:NextRequest,{params}:{params:{path?:string[]}}) {
  if(!await authorized(req))return NextResponse.json({error:'대표 로그인 후 사용할 수 있습니다.'},{status:401});
  if(req.method!=='GET'&&!sameOrigin(req))return NextResponse.json({error:'허용되지 않은 요청'},{status:403});
  const route=(params.path||[]).join('/');
- if(!(route===''&&req.method==='GET')&&!(route==='research'&&req.method==='GET')&&!(route==='research/decision'&&req.method==='POST')&&!(route==='reports'&&req.method==='POST')&&!(/^[A-Za-z0-9_-]{1,80}\/(decision|translations|schedule|receipt|cancel)$/.test(route)&&!route.startsWith('research/')&&req.method==='POST'))return NextResponse.json({error:'허용되지 않은 경로'},{status:404});
+ if(!(route===''&&req.method==='GET')&&!(route==='research'&&req.method==='GET')&&!(route==='research/workflow'&&['GET','POST'].includes(req.method))&&!(route==='research/decision'&&req.method==='POST')&&!(route==='reports'&&req.method==='POST')&&!(/^[A-Za-z0-9_-]{1,80}\/(decision|translations|schedule|receipt|cancel)$/.test(route)&&!route.startsWith('research/')&&req.method==='POST'))return NextResponse.json({error:'허용되지 않은 경로'},{status:404});
  let body=req.method==='GET'?undefined:await req.text();
  if(body&&Buffer.byteLength(body)>180000)return NextResponse.json({error:'입력 길이 초과'},{status:413});
  try{
@@ -28,7 +28,7 @@ async function proxy(req:NextRequest,{params}:{params:{path?:string[]}}) {
    body=JSON.stringify({candidate_id:input.candidate_id,action:input.action,expected_hash:input.expected_hash,note:input.note});
   }
   const response=await upstream(route,req.method,body);const data=await response.json();
-  if(response.ok&&route==='research'&&data.snapshot){const history=await loadPublicationHistory();data.snapshot.candidates=await Promise.all(data.snapshot.candidates.map(async(c:{id:string;title:string;summary:string})=>({...c,duplicate_check:await candidatePublicationCheck(c,data.snapshot.content_hash,history.posts)})));data.publication_coverage=history.coverage;}
+  if(response.ok&&route==='research'&&data.snapshot){const history=await loadPublicationHistory();data.snapshot.candidates=await Promise.all(data.snapshot.candidates.map(async(c:{id:string;title:string;summary:string})=>({...c,duplicate_check:await candidatePublicationCheck(c,data.snapshot.content_hash,history.posts)})));data.publication_coverage=history.coverage;const flow=await upstream('research/workflow');if(!flow.ok)throw new Error('workflow_unavailable');data.workflow=await flow.json();}
   return NextResponse.json(data,{status:response.status,headers:{'Cache-Control':'no-store'}});
  }catch{return NextResponse.json({error:'승인 서버 또는 게시 이력 연결을 확인하세요. 요청 결과를 재조회한 후 다시 처리하세요.'},{status:502});}
 }
