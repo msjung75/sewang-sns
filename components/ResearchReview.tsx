@@ -18,8 +18,8 @@ type DuplicateCheck = {
   method: string; limitations: string[]; history_version: string;
 };
 type Snapshot = { content_hash: string; collected_at: string; evidence: Evidence[]; candidates: Candidate[] };
-type DecisionAction = "select" | "research" | "hold";
-const decisionLabels: Record<DecisionAction, string> = { select: "대표 주제 선택", research: "추가 조사 요청", hold: "보류" };
+type DecisionAction = "select" | "research" | "hold" | "keep" | "exclude";
+const decisionLabels: Record<DecisionAction, string> = { select: "이번 호에 선정", research: "근거 더 조사", hold: "다음 호로 보류", keep: "좋은 주제 유지", exclude: "후보에서 제외" };
 const sourceLabels: Record<string, string> = {
   "youtube.sometrend": "YouTube · 썸트렌드 수집", "sometrend.social": "썸트렌드 · 블로그",
   "apify.dataset": "Apify · 공개 게시물", "news.search": "공개 뉴스", "public_news": "공개 뉴스",
@@ -84,7 +84,7 @@ function TextList({ values, empty }: { values: string[]; empty: string }) {
   return values.length ? <ul className={styles.notes}>{values.map((value, index) => <li key={index}>{value}</li>)}</ul> : <p className="ai-muted">{empty}</p>;
 }
 
-export function ResearchReview() {
+export function ResearchReview({refreshKey=0,onChange}:{refreshKey?:number;onChange?:()=>void}) {
   const panelId = useId();
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
   const [loading, setLoading] = useState(true);
@@ -115,10 +115,12 @@ export function ResearchReview() {
       if (Array.isArray(rows)) for (const item of rows.slice(0, 100)) {
         const row = object(item);
         if (row.expected_hash === parsed.content_hash && typeof row.candidate_id === "string" &&
-            (row.action === "select" || row.action === "research" || row.action === "hold")) {
-          saved[row.candidate_id] = row.action;
+            (["select","research","hold","keep","exclude"].includes(String(row.action)))) {
+          saved[row.candidate_id] = row.action as DecisionAction;
         }
       }
+      const topics=object(object(data).workflow).topics;
+      if(Array.isArray(topics))for(const item of topics){const row=object(item);if(typeof row.id==='string'&&['select','research','hold','keep','exclude'].includes(String(row.state)))saved[row.id]=row.state as DecisionAction;}
       setDecisions(saved);
     } catch {
       if (!signal?.aborted) setError("조사 자료를 불러오지 못했습니다. 연결과 로그인 상태를 확인하세요.");
@@ -129,7 +131,7 @@ export function ResearchReview() {
     const controller = new AbortController();
     void load(controller.signal);
     return () => controller.abort();
-  }, [load]);
+  }, [load,refreshKey]);
 
   async function decide(candidate: Candidate, action: DecisionAction) {
     if (!snapshot?.content_hash || busy || loading) return;
@@ -151,7 +153,8 @@ export function ResearchReview() {
         return;
       }
       setDecisions(previous => ({ ...previous, [candidate.id]: action }));
-      setNotice(`「${candidate.title}」의 ${decisionLabels[action]}을 기록했습니다. ${action === "hold" ? "후보를 보류했습니다." : "검토 작업 대기 상태이며 후속 작업은 15분 주기로 확인합니다."} 원고 승인이나 발송 예약은 수행하지 않았습니다.`);
+      onChange?.();
+      setNotice(`「${candidate.title}」의 ${decisionLabels[action]} 처리를 기록했습니다. ${["hold","exclude"].includes(action) ? "진행 중인 후속 작업을 멈추고 결정 이력을 보관합니다." : "담당별 작업 대기열에 연결했습니다. 위 진행판에서 결과를 확인하세요."} 원고 승인이나 발송 예약은 수행하지 않았습니다.`);
     } catch { setError("연결을 확인한 뒤 다시 시도하세요."); }
     finally { setBusy(null); }
   }
@@ -162,18 +165,18 @@ export function ResearchReview() {
     if (item.url) duplicateCounts.set(duplicateKey(item.url), (duplicateCounts.get(duplicateKey(item.url)) || 0) + 1);
   }
   return <section className="ai-panel" aria-labelledby={`${panelId}-heading`} aria-busy={loading || Boolean(busy)}>
-    <div className={styles.heading}><div><p className="ai-kicker">조사 → 대표 방향 선택</p><h2 id={`${panelId}-heading`}>조사 근거와 이번 주 주제 후보</h2></div>
+    <div className={styles.heading}><div><p className="ai-kicker">주제별 근거 검토</p><h2 id={`${panelId}-heading`}>주제의 근거를 보고 유지·제외·선정하기</h2></div>
       <button type="button" className="ai-secondary" disabled={loading || Boolean(busy)} onClick={() => void load()}>최신 자료 확인</button></div>
     <p>수집 자료를 토대로 후보를 비교하고 다룰 방향을 선택합니다. AI 추천은 검토 의견이며 대표님의 선택과 구분해 기록합니다.</p>
-    <p className="ai-muted">주제 선택은 원고 승인·번역 승인·발송 예약이 아닙니다. 대표님의 주제 입력은 선택 사항이며, 아래 원고 작성란에서 제안할 수 있습니다.</p>
+    <p className="ai-muted">주제 선택은 원고 승인·번역 승인·발송 예약이 아닙니다. 가져오신 주제는 위 주제함에서 제목만 추가하면 조사 담당에게 전달됩니다.</p>
     {error && <p className="ai-error" role="alert">{error}</p>}{notice && <p className="ai-notice" role="status">{notice}</p>}
     {loading && <p role="status">조사 자료를 확인하고 있습니다…</p>}
     {!loading && !snapshot && !error && <p className="ai-muted">아직 가져온 조사 자료가 없습니다. 자료가 수신되면 근거와 후보를 표시합니다.</p>}
     {snapshot && <>
       <p className="ai-muted">자료 수집 시각 {at(snapshot.collected_at)} · 근거 {snapshot.evidence.length}건 · 주제 후보 {snapshot.candidates.length}건 · 한국 시간</p>
       <h3>AI가 정리한 주제 후보</h3>
-      {!snapshot.candidates.length && <p className="ai-muted">아직 주제 후보가 없습니다. 아래 수집 자료는 확인할 수 있습니다.</p>}
-      <div className={styles.candidates}>{snapshot.candidates.map(candidate => <article className={styles.card} key={candidate.id}>
+      {snapshot.candidates.every(candidate=>decisions[candidate.id]==="exclude") && <p className="ai-muted">표시할 주제 후보가 없습니다. 제외한 주제는 위 제외함에서 복원할 수 있으며, 아래 수집 자료도 확인할 수 있습니다.</p>}
+      <div className={styles.candidates}>{snapshot.candidates.filter(candidate=>decisions[candidate.id]!=="exclude").map(candidate => <article id={`topic-${candidate.id}`} className={styles.card} key={candidate.id}>
         <h4>{candidate.title || "제목 미확인"}</h4><p>{candidate.summary}</p>
         <h5>거래처 관련성</h5><TextList values={candidate.relevance} empty="관련성이 아직 정리되지 않았습니다."/>
         <h5>AI 추천 이유 · 대표 선택과 별개</h5><TextList values={candidate.recommendation} empty="아직 추천 이유가 없습니다."/>
@@ -198,7 +201,7 @@ export function ResearchReview() {
         </section>
         <label htmlFor={`${panelId}-note-${candidate.id}`}>{candidate.duplicate_check.requires_review ? "선택 시 차별점·다시 다룰 이유 필수 · 추가 조사·보류 의견은 선택 사항" : "선택·추가 조사·보류 의견 (선택 사항)"}<textarea id={`${panelId}-note-${candidate.id}`} maxLength={1000} disabled={Boolean(busy)} value={notes[candidate.id] || ""} onChange={event => setNotes(previous => ({ ...previous, [candidate.id]: event.target.value }))}/></label>
         {decisions[candidate.id] && <p className={styles.decision}>대표 기록: {decisionLabels[decisions[candidate.id]]}</p>}
-        <div className="ai-actions">{(["select", "research", "hold"] as const).map(action => <button key={action} type="button" className={action === "select" ? undefined : "ai-secondary"} disabled={loading || Boolean(busy) || !snapshot.content_hash || (action === "select" && (Boolean(error) || candidate.duplicate_check.status === "unavailable" || (candidate.duplicate_check.requires_review && (!duplicateReviewed[candidate.id] || !(notes[candidate.id] || "").trim()))))} onClick={() => void decide(candidate, action)}>{busy === candidate.id ? "저장 중…" : decisionLabels[action]}</button>)}</div>
+        <div className="ai-actions">{(["keep", "exclude", "research", "hold", "select"] as const).map(action => <button key={action} type="button" className={action === "select" ? undefined : "ai-secondary"} disabled={loading || Boolean(busy) || !snapshot.content_hash || (action === "select" && (Boolean(error) || candidate.duplicate_check.status === "unavailable" || (candidate.duplicate_check.requires_review && (!duplicateReviewed[candidate.id] || !(notes[candidate.id] || "").trim()))))} onClick={() => void decide(candidate, action)}>{busy === candidate.id ? "저장 중…" : decisionLabels[action]}</button>)}</div>
         {!snapshot.content_hash && <p className="ai-muted">자료 버전을 확인하지 못해 선택을 저장할 수 없습니다.</p>}
       </article>)}</div>
       <details open={evidenceOpen} onToggle={event => setEvidenceOpen(event.currentTarget.open)}><summary>수집 근거 전체 확인 ({snapshot.evidence.length}건)</summary>
