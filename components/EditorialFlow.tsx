@@ -48,6 +48,7 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
   if(ok){reworkRequest.current=null;setReworkNotes(v=>({...v,[topic.id]:''}));setNotice('요청한 단계부터 보완 작업을 등록했습니다. 기존 결과와 원고는 보존하고, 새 결과를 다시 확인하게 됩니다.');}
  }
  const topics=board?.topics||[],tasks=board?.tasks||[];
+ const discovery=focusTaskId?tasks.find(t=>t.id===focusTaskId&&!t.topic_id):undefined;
  const picked=activeTopic?topics.find(t=>t.id===activeTopic):[...topics].filter(t=>t.origin==='evidence').reverse()[0]||topics[0];
  const own=picked?tasks.filter(t=>t.topic_id===picked.id&&t.status!=='cancelled'&&t.plan===picked.plan):[];
  const next=own.find(t=>t.status!=='done');
@@ -62,7 +63,8 @@ export function EditorialFlow({refreshKey,onChange,focusTopicId,focusTaskId,onRe
   <label htmlFor={`${uid}-topic`}>현재 작업할 주제<select id={`${uid}-topic`} value={picked?.id||''} onChange={e=>{setActiveTopic(e.target.value);setActiveTask('');onTopic?.(e.target.value);}}>{topics.map(t=><option key={t.id} value={t.id}>{t.title} · 자료 {t.evidence?.length||0}건 · {states[t.state]||t.state}</option>)}</select></label>
   {!board&&!error&&<p role="status">선택한 주제와 작업 기록을 불러오고 있습니다…</p>}
   {board&&!picked&&<p>{activeTopic?'선택한 작업실을 불러오고 있습니다. ':''}아직 표시할 작업이 없습니다. 자료 선택 화면에서 기사를 고르고 조사 시작을 눌러주세요.</p>}
-  {picked&&<article className={styles.topic}>
+  {discovery&&<article className={styles.topic}><h3>키워드·새 주제 조사 요청</h3><p>{taskStates[discovery.status]||discovery.status}</p><p style={{whiteSpace:'pre-wrap'}}>{discovery.instruction}</p><h4>조사 결과</h4><p style={{whiteSpace:'pre-wrap'}}>{discovery.result||'아직 조사 결과가 등록되지 않았습니다. 접수와 완료는 다릅니다.'}</p><p>근거가 확보된 후보를 자료 선택 화면에서 검토하고 결정한 뒤 원고 제작으로 진행합니다.</p></article>}
+  {!discovery&&picked&&<article className={styles.topic}>
    <span className={styles.badge}>{picked.origin==='evidence'?'직접 선택한 자료':'주제 후보'} · {states[picked.state]||picked.state}</span><h3>{picked.title}</h3>
    <p>선택 자료 {picked.evidence?.length||0}건 · 결과 확인 완료 {own.filter(t=>t.status==='done').length}/{own.length}단계</p>
    {picked.needs_review&&<p className="ai-error">근거가 바뀌었습니다. 새 자료를 다시 검토한 뒤 진행해야 합니다.</p>}

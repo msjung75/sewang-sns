@@ -1,8 +1,9 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {issueGuidance,type IssueBasket,type IssueBoard,type IssueTopic,type IssueTask} from '../lib/editorial-guidance';
+import {issueGuidance,issueScope,type IssueBasket,type IssueBoard,type IssueTopic,type IssueTask} from '../lib/editorial-guidance';
 const basket:IssueBasket={revision:2,items:[{evidence:{id:'a',title:'기사 A'}},{evidence:{id:'b',title:'기사 B'}}],note:'',updated_at:null};
 const topic:IssueTopic={id:'request',title:'선택 자료',origin:'evidence',state:'research',note:'',plan:1,revision:1,needs_review:false,evidence:basket.items.map(i=>i.evidence),updated_at:'2026-10-18T10:00:00Z'};
 const task=(stage:string,status:string):IssueTask=>({id:stage,topic_id:topic.id,stage,status,plan:1,version:1,result:status==='awaiting_review'?'조사 결과':'',updated_at:'2026-10-18T10:00:00Z',report_id:null});
+test('two selected articles and three AI proposals are five review items, not two or old request duplicates',()=>{const b:IssueBoard={topics:[topic,{...topic,id:'ai1',origin:'ai',state:'select'},{...topic,id:'ai2',origin:'ai'},{...topic,id:'ai3',origin:'ai',state:'keep'},{...topic,id:'excluded',origin:'ai',state:'exclude'}],tasks:[],updated_at:null};const scope=issueScope(b,basket);assert.equal(scope.total,5);assert.equal(scope.topics.length,3);assert.equal(scope.uniqueSources,2);});
 test('a basket is not an actual research request; additions and reordering need an explicit new request',()=>{
  let board:IssueBoard={topics:[],tasks:[],updated_at:null};assert.equal(issueGuidance(basket,board,[]).kind,'compose');
  board={...board,topics:[{...topic,evidence:[basket.items[0].evidence]}]};assert.equal(issueGuidance(basket,board,[]).previousCount,1);
