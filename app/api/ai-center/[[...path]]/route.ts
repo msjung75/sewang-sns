@@ -11,7 +11,7 @@ async function proxy(req:NextRequest,{params}:{params:{path?:string[]}}) {
  if(!await authorized(req))return NextResponse.json({error:'대표 로그인 후 사용할 수 있습니다.'},{status:401});
  if(req.method!=='GET'&&!sameOrigin(req))return NextResponse.json({error:'허용되지 않은 요청'},{status:403});
  const route=(params.path||[]).join('/');
- if(!(route===''&&req.method==='GET')&&!(route==='research'&&req.method==='GET')&&!(route==='research/signals'&&req.method==='GET')&&!(route==='research/reading'&&req.method==='GET')&&!(route==='research/basket'&&req.method==='POST')&&!(route==='research/workflow'&&['GET','POST'].includes(req.method))&&!(route==='research/decision'&&req.method==='POST')&&!(route==='reports'&&req.method==='POST')&&!(/^[A-Za-z0-9_-]{1,80}\/(decision|translations|schedule|receipt|cancel)$/.test(route)&&!route.startsWith('research/')&&req.method==='POST'))return NextResponse.json({error:'허용되지 않은 경로'},{status:404});
+ if(!(route==='push'&&['GET','POST'].includes(req.method))&&!(route===''&&req.method==='GET')&&!(route==='research'&&req.method==='GET')&&!(route==='research/signals'&&req.method==='GET')&&!(route==='research/reading'&&req.method==='GET')&&!(route==='research/basket'&&req.method==='POST')&&!(route==='research/workflow'&&['GET','POST'].includes(req.method))&&!(route==='research/decision'&&req.method==='POST')&&!(route==='reports'&&req.method==='POST')&&!(/^[A-Za-z0-9_-]{1,80}\/(decision|translations|schedule|receipt|cancel)$/.test(route)&&!route.startsWith('research/')&&req.method==='POST'))return NextResponse.json({error:'허용되지 않은 경로'},{status:404});
  let body=req.method==='GET'?undefined:await req.text();
  if(body&&Buffer.byteLength(body)>180000)return NextResponse.json({error:'입력 길이 초과'},{status:413});
  try{
